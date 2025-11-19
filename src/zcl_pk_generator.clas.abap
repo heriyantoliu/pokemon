@@ -53,5 +53,6 @@ CLASS zcl_pk_generator IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD generate_pokemon_species.
+    zcl_pk_species_gen=>generator( ).
   ENDMETHOD.
 ENDCLASS.
