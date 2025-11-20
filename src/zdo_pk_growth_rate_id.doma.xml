@@ -39,21 +39,21 @@
      <VALPOS>0004</VALPOS>
      <DDLANGUAGE>E</DDLANGUAGE>
      <DOMVALUE_L>4</DOMVALUE_L>
-     <DDTEXT>Medium-Slow</DDTEXT>
+     <DDTEXT>Medium Slow</DDTEXT>
     </DD07V>
     <DD07V>
      <DOMNAME>ZDO_PK_GROWTH_RATE_ID</DOMNAME>
      <VALPOS>0005</VALPOS>
      <DDLANGUAGE>E</DDLANGUAGE>
      <DOMVALUE_L>5</DOMVALUE_L>
-     <DDTEXT>Slow-Then-Very-Fast</DDTEXT>
+     <DDTEXT>Slow Then Very Fast</DDTEXT>
     </DD07V>
     <DD07V>
      <DOMNAME>ZDO_PK_GROWTH_RATE_ID</DOMNAME>
      <VALPOS>0006</VALPOS>
      <DDLANGUAGE>E</DDLANGUAGE>
      <DOMVALUE_L>6</DOMVALUE_L>
-     <DDTEXT>Fast-Then-Very-Slow</DDTEXT>
+     <DDTEXT>Fast Then Very Slow</DDTEXT>
     </DD07V>
    </DD07V_TAB>
   </asx:values>
