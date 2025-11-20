@@ -1,0 +1,10 @@
+@EndUserText.label: 'Pokemon (List Report Page)'
+@ObjectModel.leadingEntity.name: 'ZPK_C_Pokemon_LRP'
+define service ZPK_Pokemon_LRP {
+  expose ZPK_C_Pokemon_LRP      as Pokemon;
+  expose ZPK_C_Poke_Ability_LRP as PokeAbility;
+  expose ZPK_C_Poke_Move_LRP    as PokeMove;
+  expose ZPK_C_Poke_Species_LRP as PokeSpecies;
+  expose ZPK_C_Poke_Stats_LRP   as PokeStats;
+  expose ZPK_C_Poke_Type_LRP    as PokeType;
+}
