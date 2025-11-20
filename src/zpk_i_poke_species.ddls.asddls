@@ -15,9 +15,11 @@ define view entity ZPK_I_Poke_Species
   as select from zpk_poke_species
 
   association [1..1] to ZPK_I_Generation as _Generation on $projection.GenerationID = _Generation.ID
+  association [1..1] to ZPK_I_Pokemon as _Pokemon on $projection.ID = _Pokemon.ID
 
 {
       @ObjectModel.text.element: [ 'Identifier' ]
+      @ObjectModel.foreignKey.association: '_Pokemon'
   key id                      as ID,
 
       @Semantics.text: true
@@ -44,5 +46,6 @@ define view entity ZPK_I_Poke_Species
       species_order           as SpeciesOrder,
       conquest_order          as ConquestOrder,
 
-      _Generation
+      _Generation,
+      _Pokemon
 }
