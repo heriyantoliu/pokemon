@@ -6,7 +6,11 @@
 "ZPK_POKE_MOVES"
 ],
 "ASSOCIATED":
-[],
+[
+"ZPK_I_MOVE",
+"ZPK_I_POKEMON",
+"ZPK_I_VERSION_GROUP"
+],
 "BASE":
 [],
 "ANNO_REF":

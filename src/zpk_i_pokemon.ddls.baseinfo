@@ -6,7 +6,9 @@
 "ZPK_POKEMON"
 ],
 "ASSOCIATED":
-[],
+[
+"ZPK_I_POKE_SPECIES"
+],
 "BASE":
 [],
 "ANNO_REF":

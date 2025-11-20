@@ -6,7 +6,9 @@
 "ZPK_VERSION_GRP"
 ],
 "ASSOCIATED":
-[],
+[
+"ZPK_I_GENERATION"
+],
 "BASE":
 [],
 "ANNO_REF":
