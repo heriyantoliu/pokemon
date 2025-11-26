@@ -1,0 +1,185 @@
+@Metadata.layer: #CUSTOMER
+
+@Search.searchable: true
+
+@UI.headerInfo: { typeName: 'Pokemon',
+                  typeNamePlural: 'Pokemons',
+                  title: { value: 'Identifier', type: #STANDARD },
+                  imageUrl: 'PokemonSprites' }
+
+annotate entity ZPK_C_Pokemon_LRP
+  with
+
+{
+  @UI.facet: [ { id: 'HeightDataPointFacet',
+                 position: 10,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'Height' },
+               { id: 'WeightDataPointFacet',
+                 position: 20,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'Weight' },
+               { id: 'BaseExperienceDataPointFacet',
+                 position: 30,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'BaseExperience' },
+               { id: 'IsDefaultDataPointFacet',
+                 position: 40,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'IsDefault' },
+               { id: 'SpeciesCollectionFacet', label: 'Species', type: #COLLECTION, purpose: #STANDARD },
+               { id: 'BasicInfoFieldGroupReferenceFacet',
+                 label: 'Basic Info',
+                 position: 10,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'SpeciesCollectionFacet',
+                 targetQualifier: 'BasicInfoFieldGroup' },
+               { id: 'EvolutionFieldGroupReferenceFacet',
+                 label: 'Evolution',
+                 position: 20,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'SpeciesCollectionFacet',
+                 targetQualifier: 'EvolutionFieldGroup' },
+               { id: 'CaptureGrowthFieldGroupReferenceFacet',
+                 label: 'Capture & Growth',
+                 position: 30,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'SpeciesCollectionFacet',
+                 targetQualifier: 'CaptureGrowthFieldGroup' },
+               { id: 'GenderFieldGroupReferenceFacet',
+                 label: 'Gender',
+                 position: 40,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'SpeciesCollectionFacet',
+                 targetQualifier: 'GenderFieldGroup' },
+               { id: 'FormMetadataFieldGroupReferenceFacet',
+                 label: 'Form Metadata',
+                 position: 50,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'SpeciesCollectionFacet',
+                 targetQualifier: 'FormMetadataFieldGroup' },
+               { id: 'PokemonAbilityLineItemReferenceFacet',
+                 label: 'Ability',
+                 type: #LINEITEM_REFERENCE,
+                 purpose: #STANDARD,
+                 targetElement: '_Poke_Ability' } ]
+  @UI.hidden: true
+  ID;
+
+  @EndUserText.label: 'Pokemon'
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.7
+  @Search.ranking: #HIGH
+  @UI.lineItem: [ { position: 20 } ]
+  Identifier;
+
+  //  SpeciesID;
+  @EndUserText.label: 'Height'
+  @UI.dataPoint.title: 'Height'
+  Height;
+
+  @EndUserText.label: 'Weight'
+  @UI.dataPoint.title: 'Weight'
+  Weight;
+
+  @EndUserText.label: 'Base Experience'
+  @UI.dataPoint.title: 'Base Experience'
+  BaseExperience;
+
+  @UI.hidden: true
+  PokemonOrder;
+
+  @EndUserText.label: 'Default'
+  @UI.dataPoint.title: 'Default'
+  IsDefault;
+
+  @Consumption.filter.hidden: true
+  @EndUserText.label: 'Sprites'
+  @UI.lineItem: [ { position: 10 } ]
+  PokemonSprites;
+
+  @UI.fieldGroup: [ { qualifier: 'BasicInfoFieldGroup', position: 10 } ]
+  GenerationID;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_Color_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Color'
+  @UI.fieldGroup: [ { qualifier: 'BasicInfoFieldGroup', position: 20 } ]
+  @UI.lineItem: [ { position: 70 } ]
+  @UI.selectionField: [ { position: 10 } ]
+  @UI.textArrangement: #TEXT_ONLY
+  ColorID;
+
+  @UI.hidden: true
+  ColorDescription;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_Shape_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Shape'
+  @UI.fieldGroup: [ { qualifier: 'BasicInfoFieldGroup', position: 30 } ]
+  @UI.lineItem: [ { position: 80 } ]
+  @UI.selectionField: [ { position: 20 } ]
+  @UI.textArrangement: #TEXT_ONLY
+  ShapeID;
+
+  @UI.hidden: true
+  ShapeDescription;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_Habitat_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Habitat'
+  @UI.fieldGroup: [ { qualifier: 'BasicInfoFieldGroup', position: 40 } ]
+  @UI.lineItem: [ { position: 90 } ]
+  @UI.selectionField: [ { position: 30 } ]
+  @UI.textArrangement: #TEXT_ONLY
+  HabitatID;
+
+  @UI.hidden: true
+  HabitatDescription;
+
+  @EndUserText.label: 'Is Baby'
+  @UI.fieldGroup: [ { qualifier: 'EvolutionFieldGroup', position: 10 } ]
+  IsBaby;
+
+  @EndUserText.label: 'Has Gender Differences'
+  @UI.fieldGroup: [ { qualifier: 'EvolutionFieldGroup', position: 20 } ]
+  HasGenderDifferences;
+
+  @EndUserText.label: 'Capture Rate'
+  @UI.fieldGroup: [ { qualifier: 'CaptureGrowthFieldGroup', position: 10 } ]
+  CaptureRate;
+
+  @EndUserText.label: 'Base Happiness'
+  @UI.fieldGroup: [ { qualifier: 'CaptureGrowthFieldGroup', position: 20 } ]
+  BaseHappiness;
+
+  @EndUserText.label: 'Growth Rate ID'
+  @UI.fieldGroup: [ { qualifier: 'CaptureGrowthFieldGroup', position: 30 } ]
+  GrowthRateID;
+
+  @EndUserText.label: 'Hatch Counter'
+  @UI.fieldGroup: [ { qualifier: 'CaptureGrowthFieldGroup', position: 40 } ]
+  HatchCounter;
+
+  @EndUserText.label: 'Gender Rate'
+  @UI.fieldGroup: [ { qualifier: 'GenderFieldGroup', position: 10 } ]
+  GenderRate;
+
+  @EndUserText.label: 'Order'
+  @UI.fieldGroup: [ { qualifier: 'FormMetadataFieldGroup', position: 10 } ]
+  SpeciesOrder;
+
+  @EndUserText.label: 'Form Switchable'
+  @UI.fieldGroup: [ { qualifier: 'FormMetadataFieldGroup', position: 20 } ]
+  FormsSwitchable;
+
+  @EndUserText.label: 'Conquest Order'
+  @UI.fieldGroup: [ { qualifier: 'FormMetadataFieldGroup', position: 30 } ]
+  ConquestOrder;
+}

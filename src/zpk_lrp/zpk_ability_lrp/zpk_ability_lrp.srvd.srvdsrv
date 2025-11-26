@@ -1,0 +1,7 @@
+@EndUserText.label: 'Ability (List Report Page)'
+@ObjectModel.leadingEntity.name: 'ZPK_C_ABILITY_LRP'
+define service ZPK_Ability_LRP {
+  expose ZPK_C_Ability_LRP      as Ability;
+  expose ZPK_C_Generation_VH    as GenerationVH;
+  expose ZPK_C_Ability_Poke_LRP as AbilityPoke;
+}

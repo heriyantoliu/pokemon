@@ -28,7 +28,7 @@ define view entity ZPK_R_Poke_Species
       Identifier,
       GenerationID,
       EvolvesFromSpeciesID,
-      EvolutionChainID,
+      EvolutionChainID,            
       ColorID,
       ShapeID,
       HabitatID,

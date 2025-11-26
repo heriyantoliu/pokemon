@@ -17,6 +17,7 @@ define view entity ZPK_C_Poke_Species_LRP
       GenerationID,
       EvolvesFromSpeciesID,
       EvolutionChainID,
+                  
       ColorID,
       ShapeID,
       HabitatID,

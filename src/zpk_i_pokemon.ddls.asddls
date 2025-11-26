@@ -31,6 +31,9 @@ define view entity ZPK_I_Pokemon
       base_experience as BaseExperience,
       pokemon_order   as PokemonOrder,
       is_default      as IsDefault,
+      
+      concat('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/', concat(ltrim(id, '0'), '.png'))
+                                                                                                                        as PokemonSprites,
 
       _Poke_Species
 }

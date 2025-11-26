@@ -1,0 +1,42 @@
+@Metadata.layer: #CUSTOMER
+
+@UI.headerInfo: { typeName: 'Ability',
+                  typeNamePlural: 'Abilities',
+                  title: { value: 'Identifier', type: #STANDARD } }
+
+annotate entity ZPK_C_Ability_LRP
+  with
+
+{
+  @UI.facet: [ { id: 'GeneralInfoIdentificationReferenceFacet',
+                 label: 'General info',
+                 position: 10,
+                 type: #IDENTIFICATION_REFERENCE,
+                 targetQualifier: 'GeneralInfoIdentificationReference' },
+                 { id: 'PokemonLineItemReferenceFacet',
+                 label: 'Pokemon',
+                 position: 20,
+                 type: #LINEITEM_REFERENCE,
+                 purpose: #STANDARD,
+                 targetElement: '_Ability_Poke' } ]
+  @UI.identification: [ { position: 10, qualifier: 'GeneralInfoIdentificationReference' } ]
+  ID;
+
+  @EndUserText.label: 'Ability'
+  @UI.lineItem: [ { position: 10 } ]
+  Identifier;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_GENERATION_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Generation'
+  @UI.identification: [ { position: 20, qualifier: 'GeneralInfoIdentificationReference' } ]
+  @UI.lineItem: [ { position: 20 } ]
+  @UI.selectionField: [ { position: 10 } ]
+  @UI.textArrangement: #TEXT_ONLY
+  GenerationID;
+
+  @EndUserText.label: 'Is Main Series'
+  @UI.identification: [ { position: 30, qualifier: 'GeneralInfoIdentificationReference' } ]
+  @UI.lineItem: [ { position: 30 } ]
+  @UI.selectionField: [ { position: 20 } ]
+  IsMainSeries;
+}

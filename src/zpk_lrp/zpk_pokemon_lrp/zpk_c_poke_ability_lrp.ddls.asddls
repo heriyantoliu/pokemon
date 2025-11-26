@@ -12,7 +12,12 @@ define view entity ZPK_C_Poke_Ability_LRP
 
 {
   key PokemonID,
+
+      @ObjectModel.text.element: [ 'AbilityDescription' ]
   key AbilityID,
+
+      @Semantics.text: true
+      _Ability.Identifier as AbilityDescription,
 
       IsHidden,
       Slot,

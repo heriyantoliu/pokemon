@@ -1,0 +1,22 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZPK_C_Poke_Ability_LRP
+  with 
+{
+  @EndUserText.label: 'Ability'
+//  @UI.lineItem: [{ position: 10 }, { type: #FOR_INTENT_BASED_NAVIGATION, semanticObject: 'ZPK_ABILITY', semanticObjectAction: 'DISPLAY', value: 'AbilityID' }]
+//  @UI.identification: [ { type: #FOR_INTENT_BASED_NAVIGATION, semanticObject: 'ZPK_ABILITY', semanticObjectAction: 'DISPLAY' } ]
+  @UI.textArrangement: #TEXT_ONLY
+  
+  AbilityID;
+  @EndUserText.label: 'Is Hidden'
+  @UI.lineItem: [{ position: 20 }]
+  IsHidden;
+  @EndUserText.label: 'Slot'
+  @UI.lineItem: [{ position: 30 }]
+  Slot;
+//  /* Associations */
+//  _Ability;
+//  _IsHidden;
+//  _Pokemon;
+  
+}

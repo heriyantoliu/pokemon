@@ -7,4 +7,7 @@ define service ZPK_Pokemon_LRP {
   expose ZPK_C_Poke_Species_LRP as PokeSpecies;
   expose ZPK_C_Poke_Stats_LRP   as PokeStats;
   expose ZPK_C_Poke_Type_LRP    as PokeType;
+  expose ZPK_C_Color_VH         as ColorVH;
+  expose ZPK_C_Shape_VH         as ShapeVH;
+  expose ZPK_C_Habitat_VH       as HabitatVH;
 }

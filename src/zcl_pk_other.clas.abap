@@ -22,70 +22,158 @@ CLASS zcl_pk_other IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD generate_contest_effect.
-    DATA: lt_contest_effect TYPE TABLE OF zpk_contest_eff.
+    DATA lt_contest_effect TYPE TABLE OF zpk_contest_eff.
 
-    INSERT VALUE #( id = '1' appeal = '4' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '2' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '3' appeal = '6' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '4' appeal = '1' jam = '4'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '5' appeal = '1' jam = '3'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '6' appeal = '4' jam = '4'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '7' appeal = '8' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '8' appeal = '2' jam = '2'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '9' appeal = '2' jam = '3'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '10' appeal = '2' jam = '1'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '11' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '12' appeal = '2' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '13' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '14' appeal = '2' jam = '1'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '15' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '16' appeal = '2' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '17' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '18' appeal = '2' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '19' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '20' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '21' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '22' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '23' appeal = '2' jam = '1'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '24' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '25' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '26' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '27' appeal = '2' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '28' appeal = '2' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '29' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '30' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '31' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '32' appeal = '1' jam = '0'  ) INTO TABLE lt_contest_effect.
-    INSERT VALUE #( id = '33' appeal = '3' jam = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '1'
+                    appeal = '4'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '2'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '3'
+                    appeal = '6'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '4'
+                    appeal = '1'
+                    jam    = '4'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '5'
+                    appeal = '1'
+                    jam    = '3'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '6'
+                    appeal = '4'
+                    jam    = '4'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '7'
+                    appeal = '8'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '8'
+                    appeal = '2'
+                    jam    = '2'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '9'
+                    appeal = '2'
+                    jam    = '3'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '10'
+                    appeal = '2'
+                    jam    = '1'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '11'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '12'
+                    appeal = '2'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '13'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '14'
+                    appeal = '2'
+                    jam    = '1'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '15'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '16'
+                    appeal = '2'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '17'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '18'
+                    appeal = '2'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '19'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '20'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '21'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '22'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '23'
+                    appeal = '2'
+                    jam    = '1'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '24'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '25'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '26'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '27'
+                    appeal = '2'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '28'
+                    appeal = '2'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '29'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '30'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '31'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '32'
+                    appeal = '1'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
+    INSERT VALUE #( id     = '33'
+                    appeal = '3'
+                    jam    = '0'  ) INTO TABLE lt_contest_effect.
 
     MODIFY zpk_contest_eff FROM TABLE @lt_contest_effect.
   ENDMETHOD.
 
   METHOD generate_super_contest_effect.
-    DATA: lt_super_contest_effect TYPE TABLE OF zpk_spr_cont_eff.
+    DATA lt_super_contest_effect TYPE TABLE OF zpk_spr_cont_eff.
 
-    INSERT VALUE #( id = '1' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '2' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '4' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '5' appeal = '3'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '6' appeal = '1'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '7' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '8' appeal = '0'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '9' appeal = '0'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '10' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '11' appeal = '0'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '12' appeal = '0'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '13' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '14' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '15' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '16' appeal = '0'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '17' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '18' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '19' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '20' appeal = '1'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '21' appeal = '0'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '22' appeal = '2'  ) INTO TABLE lt_super_contest_effect.
-    INSERT VALUE #( id = '23' appeal = '1'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '1'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '2'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '4'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '5'
+                    appeal = '3'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '6'
+                    appeal = '1'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '7'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '8'
+                    appeal = '0'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '9'
+                    appeal = '0'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '10'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '11'
+                    appeal = '0'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '12'
+                    appeal = '0'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '13'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '14'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '15'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '16'
+                    appeal = '0'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '17'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '18'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '19'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '20'
+                    appeal = '1'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '21'
+                    appeal = '0'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '22'
+                    appeal = '2'  ) INTO TABLE lt_super_contest_effect.
+    INSERT VALUE #( id     = '23'
+                    appeal = '1'  ) INTO TABLE lt_super_contest_effect.
 
     MODIFY zpk_spr_cont_eff FROM TABLE @lt_super_contest_effect.
   ENDMETHOD.
@@ -221,7 +309,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
     DATA lt_move TYPE TABLE OF zpk_move.
 
     INSERT VALUE #( id                      = '1'
-                    identifier              = 'pound'
+                    identifier              = 'Pound'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 40
@@ -236,7 +324,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '2'
-                    identifier              = 'karate-chop'
+                    identifier              = 'Karate Chop'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 50
@@ -251,7 +339,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '3'
-                    identifier              = 'double-slap'
+                    identifier              = 'Double Slap'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 15
@@ -266,7 +354,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '4'
-                    identifier              = 'comet-punch'
+                    identifier              = 'Comet Punch'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 18
@@ -281,7 +369,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '5'
-                    identifier              = 'mega-punch'
+                    identifier              = 'Mega Punch'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 80
@@ -296,7 +384,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '6'
-                    identifier              = 'pay-day'
+                    identifier              = 'Pay Day'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 40
@@ -311,7 +399,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '11'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '7'
-                    identifier              = 'fire-punch'
+                    identifier              = 'Fire Punch'
                     generation_id           = '1'
                     type_id                 = '10'
                     power                   = 75
@@ -326,7 +414,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '8'
-                    identifier              = 'ice-punch'
+                    identifier              = 'Ice Punch'
                     generation_id           = '1'
                     type_id                 = '15'
                     power                   = 75
@@ -341,7 +429,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '9'
-                    identifier              = 'thunder-punch'
+                    identifier              = 'Thunder Punch'
                     generation_id           = '1'
                     type_id                 = '13'
                     power                   = 75
@@ -356,7 +444,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10'
-                    identifier              = 'scratch'
+                    identifier              = 'Scratch'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 40
@@ -371,7 +459,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '11'
-                    identifier              = 'vice-grip'
+                    identifier              = 'Vice Grip'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 55
@@ -386,7 +474,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '12'
-                    identifier              = 'guillotine'
+                    identifier              = 'Guillotine'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -401,7 +489,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '13'
-                    identifier              = 'razor-wind'
+                    identifier              = 'Razor Wind'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 80
@@ -416,7 +504,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '14'
-                    identifier              = 'swords-dance'
+                    identifier              = 'Swords Dance'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -431,7 +519,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '15'
-                    identifier              = 'cut'
+                    identifier              = 'Cut'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 50
@@ -446,7 +534,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '16'
-                    identifier              = 'gust'
+                    identifier              = 'Gust'
                     generation_id           = '1'
                     type_id                 = '3'
                     power                   = 40
@@ -461,7 +549,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '17'
-                    identifier              = 'wing-attack'
+                    identifier              = 'Wing Attack'
                     generation_id           = '1'
                     type_id                 = '3'
                     power                   = 60
@@ -476,7 +564,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '18'
-                    identifier              = 'whirlwind'
+                    identifier              = 'Whirlwind'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -491,7 +579,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '19'
-                    identifier              = 'fly'
+                    identifier              = 'Fly'
                     generation_id           = '1'
                     type_id                 = '3'
                     power                   = 90
@@ -506,7 +594,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '20'
-                    identifier              = 'bind'
+                    identifier              = 'Bind'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 15
@@ -521,7 +609,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '21'
-                    identifier              = 'slam'
+                    identifier              = 'Slam'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 80
@@ -536,7 +624,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '22'
-                    identifier              = 'vine-whip'
+                    identifier              = 'Vine Whip'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 45
@@ -551,7 +639,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '23'
-                    identifier              = 'stomp'
+                    identifier              = 'Stomp'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 65
@@ -566,7 +654,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '24'
-                    identifier              = 'double-kick'
+                    identifier              = 'Double Kick'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 30
@@ -581,7 +669,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '25'
-                    identifier              = 'mega-kick'
+                    identifier              = 'Mega Kick'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 120
@@ -596,7 +684,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '26'
-                    identifier              = 'jump-kick'
+                    identifier              = 'Jump Kick'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 100
@@ -611,7 +699,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '27'
-                    identifier              = 'rolling-kick'
+                    identifier              = 'Rolling Kick'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 60
@@ -626,7 +714,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '28'
-                    identifier              = 'sand-attack'
+                    identifier              = 'Sand Attack'
                     generation_id           = '1'
                     type_id                 = '5'
                     power                   = 0
@@ -641,7 +729,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '29'
-                    identifier              = 'headbutt'
+                    identifier              = 'Headbutt'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 70
@@ -656,7 +744,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '30'
-                    identifier              = 'horn-attack'
+                    identifier              = 'Horn Attack'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 65
@@ -671,7 +759,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '31'
-                    identifier              = 'fury-attack'
+                    identifier              = 'Fury Attack'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 15
@@ -686,7 +774,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '32'
-                    identifier              = 'horn-drill'
+                    identifier              = 'Horn Drill'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -701,7 +789,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '33'
-                    identifier              = 'tackle'
+                    identifier              = 'Tackle'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 40
@@ -716,7 +804,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '34'
-                    identifier              = 'body-slam'
+                    identifier              = 'Body Slam'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 85
@@ -731,7 +819,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '35'
-                    identifier              = 'wrap'
+                    identifier              = 'Wrap'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 15
@@ -746,7 +834,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '36'
-                    identifier              = 'take-down'
+                    identifier              = 'Take Down'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 90
@@ -761,7 +849,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '37'
-                    identifier              = 'thrash'
+                    identifier              = 'Thrash'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 120
@@ -776,7 +864,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '38'
-                    identifier              = 'double-edge'
+                    identifier              = 'Double Edge'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 120
@@ -791,7 +879,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '39'
-                    identifier              = 'tail-whip'
+                    identifier              = 'Tail Whip'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -806,7 +894,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '40'
-                    identifier              = 'poison-sting'
+                    identifier              = 'Poison Sting'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 15
@@ -821,7 +909,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '41'
-                    identifier              = 'twineedle'
+                    identifier              = 'Twineedle'
                     generation_id           = '1'
                     type_id                 = '7'
                     power                   = 25
@@ -836,7 +924,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '42'
-                    identifier              = 'pin-missile'
+                    identifier              = 'Pin Missile'
                     generation_id           = '1'
                     type_id                 = '7'
                     power                   = 25
@@ -851,7 +939,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '43'
-                    identifier              = 'leer'
+                    identifier              = 'Leer'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -866,7 +954,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '44'
-                    identifier              = 'bite'
+                    identifier              = 'Bite'
                     generation_id           = '1'
                     type_id                 = '17'
                     power                   = 60
@@ -881,7 +969,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '45'
-                    identifier              = 'growl'
+                    identifier              = 'Growl'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -896,7 +984,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '46'
-                    identifier              = 'roar'
+                    identifier              = 'Roar'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -911,7 +999,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '47'
-                    identifier              = 'sing'
+                    identifier              = 'Sing'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -926,7 +1014,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '48'
-                    identifier              = 'supersonic'
+                    identifier              = 'Supersonic'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -941,7 +1029,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '49'
-                    identifier              = 'sonic-boom'
+                    identifier              = 'Sonic Boom'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -956,7 +1044,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '50'
-                    identifier              = 'disable'
+                    identifier              = 'Disable'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -971,7 +1059,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '51'
-                    identifier              = 'acid'
+                    identifier              = 'Acid'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 40
@@ -986,7 +1074,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '52'
-                    identifier              = 'ember'
+                    identifier              = 'Ember'
                     generation_id           = '1'
                     type_id                 = '10'
                     power                   = 40
@@ -1001,7 +1089,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '53'
-                    identifier              = 'flamethrower'
+                    identifier              = 'Flamethrower'
                     generation_id           = '1'
                     type_id                 = '10'
                     power                   = 90
@@ -1016,7 +1104,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '54'
-                    identifier              = 'mist'
+                    identifier              = 'Mist'
                     generation_id           = '1'
                     type_id                 = '15'
                     power                   = 0
@@ -1031,7 +1119,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '55'
-                    identifier              = 'water-gun'
+                    identifier              = 'Water Gun'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 40
@@ -1046,7 +1134,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '56'
-                    identifier              = 'hydro-pump'
+                    identifier              = 'Hydro Pump'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 110
@@ -1061,7 +1149,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '57'
-                    identifier              = 'surf'
+                    identifier              = 'Surf'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 90
@@ -1076,7 +1164,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '58'
-                    identifier              = 'ice-beam'
+                    identifier              = 'Ice Beam'
                     generation_id           = '1'
                     type_id                 = '15'
                     power                   = 90
@@ -1091,7 +1179,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '59'
-                    identifier              = 'blizzard'
+                    identifier              = 'Blizzard'
                     generation_id           = '1'
                     type_id                 = '15'
                     power                   = 110
@@ -1106,7 +1194,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '60'
-                    identifier              = 'psybeam'
+                    identifier              = 'Psybeam'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 65
@@ -1121,7 +1209,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '61'
-                    identifier              = 'bubble-beam'
+                    identifier              = 'Bubble Beam'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 65
@@ -1136,7 +1224,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '62'
-                    identifier              = 'aurora-beam'
+                    identifier              = 'Aurora Beam'
                     generation_id           = '1'
                     type_id                 = '15'
                     power                   = 65
@@ -1151,7 +1239,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '63'
-                    identifier              = 'hyper-beam'
+                    identifier              = 'Hyper Beam'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 150
@@ -1166,7 +1254,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '64'
-                    identifier              = 'peck'
+                    identifier              = 'Peck'
                     generation_id           = '1'
                     type_id                 = '3'
                     power                   = 35
@@ -1181,7 +1269,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '65'
-                    identifier              = 'drill-peck'
+                    identifier              = 'Drill Peck'
                     generation_id           = '1'
                     type_id                 = '3'
                     power                   = 80
@@ -1196,7 +1284,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '66'
-                    identifier              = 'submission'
+                    identifier              = 'Submission'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 80
@@ -1211,7 +1299,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '67'
-                    identifier              = 'low-kick'
+                    identifier              = 'Low Kick'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 0
@@ -1226,7 +1314,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '68'
-                    identifier              = 'counter'
+                    identifier              = 'Counter'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 0
@@ -1241,7 +1329,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '69'
-                    identifier              = 'seismic-toss'
+                    identifier              = 'Seismic Toss'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 0
@@ -1256,7 +1344,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '70'
-                    identifier              = 'strength'
+                    identifier              = 'Strength'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 80
@@ -1271,7 +1359,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '71'
-                    identifier              = 'absorb'
+                    identifier              = 'Absorb'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 20
@@ -1286,7 +1374,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '72'
-                    identifier              = 'mega-drain'
+                    identifier              = 'Mega Drain'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 40
@@ -1301,7 +1389,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '73'
-                    identifier              = 'leech-seed'
+                    identifier              = 'Leech Seed'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 0
@@ -1316,7 +1404,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '8'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '74'
-                    identifier              = 'growth'
+                    identifier              = 'Growth'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1331,7 +1419,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '75'
-                    identifier              = 'razor-leaf'
+                    identifier              = 'Razor Leaf'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 55
@@ -1346,7 +1434,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '76'
-                    identifier              = 'solar-beam'
+                    identifier              = 'Solar Beam'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 120
@@ -1361,7 +1449,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '77'
-                    identifier              = 'poison-powder'
+                    identifier              = 'Poison Powder'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 0
@@ -1376,7 +1464,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '78'
-                    identifier              = 'stun-spore'
+                    identifier              = 'Stun Spore'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 0
@@ -1391,7 +1479,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '79'
-                    identifier              = 'sleep-powder'
+                    identifier              = 'Sleep Powder'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 0
@@ -1406,7 +1494,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '80'
-                    identifier              = 'petal-dance'
+                    identifier              = 'Petal Dance'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 120
@@ -1421,7 +1509,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '81'
-                    identifier              = 'string-shot'
+                    identifier              = 'String Shot'
                     generation_id           = '1'
                     type_id                 = '7'
                     power                   = 0
@@ -1436,7 +1524,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '82'
-                    identifier              = 'dragon-rage'
+                    identifier              = 'Dragon Rage'
                     generation_id           = '1'
                     type_id                 = '16'
                     power                   = 0
@@ -1451,7 +1539,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '26'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '83'
-                    identifier              = 'fire-spin'
+                    identifier              = 'Fire Spin'
                     generation_id           = '1'
                     type_id                 = '10'
                     power                   = 35
@@ -1466,7 +1554,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '84'
-                    identifier              = 'thunder-shock'
+                    identifier              = 'Thunder Shock'
                     generation_id           = '1'
                     type_id                 = '13'
                     power                   = 40
@@ -1481,7 +1569,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '85'
-                    identifier              = 'thunderbolt'
+                    identifier              = 'Thunderbolt'
                     generation_id           = '1'
                     type_id                 = '13'
                     power                   = 90
@@ -1496,7 +1584,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '86'
-                    identifier              = 'thunder-wave'
+                    identifier              = 'Thunder Wave'
                     generation_id           = '1'
                     type_id                 = '13'
                     power                   = 0
@@ -1511,7 +1599,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '87'
-                    identifier              = 'thunder'
+                    identifier              = 'Thunder'
                     generation_id           = '1'
                     type_id                 = '13'
                     power                   = 110
@@ -1526,7 +1614,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '8'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '88'
-                    identifier              = 'rock-throw'
+                    identifier              = 'Rock Throw'
                     generation_id           = '1'
                     type_id                 = '6'
                     power                   = 50
@@ -1541,7 +1629,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '89'
-                    identifier              = 'earthquake'
+                    identifier              = 'Earthquake'
                     generation_id           = '1'
                     type_id                 = '5'
                     power                   = 100
@@ -1556,7 +1644,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '90'
-                    identifier              = 'fissure'
+                    identifier              = 'Fissure'
                     generation_id           = '1'
                     type_id                 = '5'
                     power                   = 0
@@ -1571,7 +1659,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '91'
-                    identifier              = 'dig'
+                    identifier              = 'Dig'
                     generation_id           = '1'
                     type_id                 = '5'
                     power                   = 80
@@ -1586,7 +1674,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '92'
-                    identifier              = 'toxic'
+                    identifier              = 'Toxic'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 0
@@ -1601,7 +1689,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '93'
-                    identifier              = 'confusion'
+                    identifier              = 'Confusion'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 50
@@ -1616,7 +1704,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '94'
-                    identifier              = 'psychic'
+                    identifier              = 'Psychic'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 90
@@ -1631,7 +1719,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '95'
-                    identifier              = 'hypnosis'
+                    identifier              = 'Hypnosis'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -1646,7 +1734,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '96'
-                    identifier              = 'meditate'
+                    identifier              = 'Meditate'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -1661,7 +1749,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '97'
-                    identifier              = 'agility'
+                    identifier              = 'Agility'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -1676,7 +1764,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '30'
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '98'
-                    identifier              = 'quick-attack'
+                    identifier              = 'Quick Attack'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 40
@@ -1691,7 +1779,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '30'
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '99'
-                    identifier              = 'rage'
+                    identifier              = 'Rage'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 20
@@ -1706,7 +1794,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '100'
-                    identifier              = 'teleport'
+                    identifier              = 'Teleport'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -1721,7 +1809,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '101'
-                    identifier              = 'night-shade'
+                    identifier              = 'Night Shade'
                     generation_id           = '1'
                     type_id                 = '8'
                     power                   = 0
@@ -1736,7 +1824,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '102'
-                    identifier              = 'mimic'
+                    identifier              = 'Mimic'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1751,7 +1839,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '19'
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '103'
-                    identifier              = 'screech'
+                    identifier              = 'Screech'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1766,7 +1854,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '104'
-                    identifier              = 'double-team'
+                    identifier              = 'Double Team'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1781,7 +1869,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '105'
-                    identifier              = 'recover'
+                    identifier              = 'Recover'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1796,7 +1884,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '106'
-                    identifier              = 'harden'
+                    identifier              = 'Harden'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1811,7 +1899,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '107'
-                    identifier              = 'minimize'
+                    identifier              = 'Minimize'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1826,7 +1914,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '108'
-                    identifier              = 'smokescreen'
+                    identifier              = 'Smokescreen'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1841,7 +1929,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '22'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '109'
-                    identifier              = 'confuse-ray'
+                    identifier              = 'Confuse Ray'
                     generation_id           = '1'
                     type_id                 = '8'
                     power                   = 0
@@ -1856,7 +1944,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '110'
-                    identifier              = 'withdraw'
+                    identifier              = 'Withdraw'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 0
@@ -1871,7 +1959,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '111'
-                    identifier              = 'defense-curl'
+                    identifier              = 'Defense Curl'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1886,7 +1974,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '112'
-                    identifier              = 'barrier'
+                    identifier              = 'Barrier'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -1901,7 +1989,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '113'
-                    identifier              = 'light-screen'
+                    identifier              = 'Light Screen'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -1916,7 +2004,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '114'
-                    identifier              = 'haze'
+                    identifier              = 'Haze'
                     generation_id           = '1'
                     type_id                 = '15'
                     power                   = 0
@@ -1931,7 +2019,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '115'
-                    identifier              = 'reflect'
+                    identifier              = 'Reflect'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -1946,7 +2034,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '116'
-                    identifier              = 'focus-energy'
+                    identifier              = 'Focus Energy'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1961,7 +2049,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '117'
-                    identifier              = 'bide'
+                    identifier              = 'Bide'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1976,7 +2064,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '118'
-                    identifier              = 'metronome'
+                    identifier              = 'Metronome'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -1991,7 +2079,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '119'
-                    identifier              = 'mirror-move'
+                    identifier              = 'Mirror Move'
                     generation_id           = '1'
                     type_id                 = '3'
                     power                   = 0
@@ -2006,7 +2094,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '19'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '120'
-                    identifier              = 'self-destruct'
+                    identifier              = 'Self Destruct'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 200
@@ -2021,7 +2109,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '7'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '121'
-                    identifier              = 'egg-bomb'
+                    identifier              = 'Egg Bomb'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 100
@@ -2036,7 +2124,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '122'
-                    identifier              = 'lick'
+                    identifier              = 'Lick'
                     generation_id           = '1'
                     type_id                 = '8'
                     power                   = 30
@@ -2051,7 +2139,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '123'
-                    identifier              = 'smog'
+                    identifier              = 'Smog'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 30
@@ -2066,7 +2154,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '124'
-                    identifier              = 'sludge'
+                    identifier              = 'Sludge'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 65
@@ -2081,7 +2169,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '125'
-                    identifier              = 'bone-club'
+                    identifier              = 'Bone Club'
                     generation_id           = '1'
                     type_id                 = '5'
                     power                   = 65
@@ -2096,7 +2184,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '126'
-                    identifier              = 'fire-blast'
+                    identifier              = 'Fire Blast'
                     generation_id           = '1'
                     type_id                 = '10'
                     power                   = 110
@@ -2111,7 +2199,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '127'
-                    identifier              = 'waterfall'
+                    identifier              = 'Waterfall'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 80
@@ -2126,7 +2214,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '128'
-                    identifier              = 'clamp'
+                    identifier              = 'Clamp'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 35
@@ -2141,7 +2229,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '129'
-                    identifier              = 'swift'
+                    identifier              = 'Swift'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 60
@@ -2156,7 +2244,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '27'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '130'
-                    identifier              = 'skull-bash'
+                    identifier              = 'Skull Bash'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 130
@@ -2171,7 +2259,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '131'
-                    identifier              = 'spike-cannon'
+                    identifier              = 'Spike Cannon'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 20
@@ -2186,7 +2274,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '132'
-                    identifier              = 'constrict'
+                    identifier              = 'Constrict'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 10
@@ -2201,7 +2289,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '133'
-                    identifier              = 'amnesia'
+                    identifier              = 'Amnesia'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -2216,7 +2304,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '134'
-                    identifier              = 'kinesis'
+                    identifier              = 'Kinesis'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -2231,7 +2319,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '135'
-                    identifier              = 'soft-boiled'
+                    identifier              = 'Soft Boiled'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2246,7 +2334,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '136'
-                    identifier              = 'high-jump-kick'
+                    identifier              = 'High Jump Kick'
                     generation_id           = '1'
                     type_id                 = '2'
                     power                   = 130
@@ -2261,7 +2349,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '137'
-                    identifier              = 'glare'
+                    identifier              = 'Glare'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2276,7 +2364,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '138'
-                    identifier              = 'dream-eater'
+                    identifier              = 'Dream Eater'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 100
@@ -2291,7 +2379,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '8'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '139'
-                    identifier              = 'poison-gas'
+                    identifier              = 'Poison Gas'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 0
@@ -2306,7 +2394,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '140'
-                    identifier              = 'barrage'
+                    identifier              = 'Barrage'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 15
@@ -2321,7 +2409,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '141'
-                    identifier              = 'leech-life'
+                    identifier              = 'Leech Life'
                     generation_id           = '1'
                     type_id                 = '7'
                     power                   = 80
@@ -2336,7 +2424,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '142'
-                    identifier              = 'lovely-kiss'
+                    identifier              = 'Lovely Kiss'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2351,7 +2439,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '143'
-                    identifier              = 'sky-attack'
+                    identifier              = 'Sky Attack'
                     generation_id           = '1'
                     type_id                 = '3'
                     power                   = 140
@@ -2366,7 +2454,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '144'
-                    identifier              = 'transform'
+                    identifier              = 'Transform'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2381,7 +2469,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '145'
-                    identifier              = 'bubble'
+                    identifier              = 'Bubble'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 40
@@ -2396,7 +2484,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '8'
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '146'
-                    identifier              = 'dizzy-punch'
+                    identifier              = 'Dizzy Punch'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 70
@@ -2411,7 +2499,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '147'
-                    identifier              = 'spore'
+                    identifier              = 'Spore'
                     generation_id           = '1'
                     type_id                 = '12'
                     power                   = 0
@@ -2426,7 +2514,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '148'
-                    identifier              = 'flash'
+                    identifier              = 'Flash'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2441,7 +2529,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '22'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '149'
-                    identifier              = 'psywave'
+                    identifier              = 'Psywave'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -2456,7 +2544,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '150'
-                    identifier              = 'splash'
+                    identifier              = 'Splash'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2471,7 +2559,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '151'
-                    identifier              = 'acid-armor'
+                    identifier              = 'Acid Armor'
                     generation_id           = '1'
                     type_id                 = '4'
                     power                   = 0
@@ -2486,7 +2574,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '152'
-                    identifier              = 'crabhammer'
+                    identifier              = 'Crabhammer'
                     generation_id           = '1'
                     type_id                 = '11'
                     power                   = 100
@@ -2501,7 +2589,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '153'
-                    identifier              = 'explosion'
+                    identifier              = 'Explosion'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 250
@@ -2516,7 +2604,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '7'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '154'
-                    identifier              = 'fury-swipes'
+                    identifier              = 'Fury Swipes'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 18
@@ -2531,7 +2619,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '155'
-                    identifier              = 'bonemerang'
+                    identifier              = 'Bonemerang'
                     generation_id           = '1'
                     type_id                 = '5'
                     power                   = 50
@@ -2546,7 +2634,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '156'
-                    identifier              = 'rest'
+                    identifier              = 'Rest'
                     generation_id           = '1'
                     type_id                 = '14'
                     power                   = 0
@@ -2561,7 +2649,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '157'
-                    identifier              = 'rock-slide'
+                    identifier              = 'Rock Slide'
                     generation_id           = '1'
                     type_id                 = '6'
                     power                   = 75
@@ -2576,7 +2664,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '158'
-                    identifier              = 'hyper-fang'
+                    identifier              = 'Hyper Fang'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 80
@@ -2591,7 +2679,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '159'
-                    identifier              = 'sharpen'
+                    identifier              = 'Sharpen'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2606,7 +2694,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '160'
-                    identifier              = 'conversion'
+                    identifier              = 'Conversion'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2621,7 +2709,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '161'
-                    identifier              = 'tri-attack'
+                    identifier              = 'Tri Attack'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 80
@@ -2636,7 +2724,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '8'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '162'
-                    identifier              = 'super-fang'
+                    identifier              = 'Super Fang'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2651,7 +2739,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '163'
-                    identifier              = 'slash'
+                    identifier              = 'Slash'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 70
@@ -2666,7 +2754,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '164'
-                    identifier              = 'substitute'
+                    identifier              = 'Substitute'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 0
@@ -2681,7 +2769,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '165'
-                    identifier              = 'struggle'
+                    identifier              = 'Struggle'
                     generation_id           = '1'
                     type_id                 = '1'
                     power                   = 50
@@ -2696,7 +2784,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '166'
-                    identifier              = 'sketch'
+                    identifier              = 'Sketch'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -2711,7 +2799,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '19'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '167'
-                    identifier              = 'triple-kick'
+                    identifier              = 'Triple Kick'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 10
@@ -2726,7 +2814,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '168'
-                    identifier              = 'thief'
+                    identifier              = 'Thief'
                     generation_id           = '2'
                     type_id                 = '17'
                     power                   = 60
@@ -2741,7 +2829,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '20'
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '169'
-                    identifier              = 'spider-web'
+                    identifier              = 'Spider Web'
                     generation_id           = '2'
                     type_id                 = '7'
                     power                   = 0
@@ -2756,7 +2844,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '170'
-                    identifier              = 'mind-reader'
+                    identifier              = 'Mind Reader'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -2771,7 +2859,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '171'
-                    identifier              = 'nightmare'
+                    identifier              = 'Nightmare'
                     generation_id           = '2'
                     type_id                 = '8'
                     power                   = 0
@@ -2786,7 +2874,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '172'
-                    identifier              = 'flame-wheel'
+                    identifier              = 'Flame Wheel'
                     generation_id           = '2'
                     type_id                 = '10'
                     power                   = 60
@@ -2801,7 +2889,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '173'
-                    identifier              = 'snore'
+                    identifier              = 'Snore'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 50
@@ -2816,7 +2904,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '174'
-                    identifier              = 'curse'
+                    identifier              = 'Curse'
                     generation_id           = '2'
                     type_id                 = '8'
                     power                   = 0
@@ -2831,7 +2919,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '31'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '175'
-                    identifier              = 'flail'
+                    identifier              = 'Flail'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -2846,7 +2934,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '26'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '176'
-                    identifier              = 'conversion-2'
+                    identifier              = 'Conversion 2'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -2861,7 +2949,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '177'
-                    identifier              = 'aeroblast'
+                    identifier              = 'Aeroblast'
                     generation_id           = '2'
                     type_id                 = '3'
                     power                   = 100
@@ -2876,7 +2964,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '178'
-                    identifier              = 'cotton-spore'
+                    identifier              = 'Cotton Spore'
                     generation_id           = '2'
                     type_id                 = '12'
                     power                   = 0
@@ -2891,7 +2979,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '179'
-                    identifier              = 'reversal'
+                    identifier              = 'Reversal'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 0
@@ -2906,7 +2994,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '180'
-                    identifier              = 'spite'
+                    identifier              = 'Spite'
                     generation_id           = '2'
                     type_id                 = '8'
                     power                   = 0
@@ -2921,7 +3009,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '26'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '181'
-                    identifier              = 'powder-snow'
+                    identifier              = 'Powder Snow'
                     generation_id           = '2'
                     type_id                 = '15'
                     power                   = 40
@@ -2936,7 +3024,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '182'
-                    identifier              = 'protect'
+                    identifier              = 'Protect'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -2951,7 +3039,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '183'
-                    identifier              = 'mach-punch'
+                    identifier              = 'Mach Punch'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 40
@@ -2966,7 +3054,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '30'
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '184'
-                    identifier              = 'scary-face'
+                    identifier              = 'Scary Face'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -2981,7 +3069,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '185'
-                    identifier              = 'feint-attack'
+                    identifier              = 'Feint Attack'
                     generation_id           = '2'
                     type_id                 = '17'
                     power                   = 60
@@ -2996,7 +3084,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '27'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '186'
-                    identifier              = 'sweet-kiss'
+                    identifier              = 'Sweet Kiss'
                     generation_id           = '2'
                     type_id                 = '18'
                     power                   = 0
@@ -3011,7 +3099,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '187'
-                    identifier              = 'belly-drum'
+                    identifier              = 'Belly Drum'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3026,7 +3114,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '188'
-                    identifier              = 'sludge-bomb'
+                    identifier              = 'Sludge Bomb'
                     generation_id           = '2'
                     type_id                 = '4'
                     power                   = 90
@@ -3041,7 +3129,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '189'
-                    identifier              = 'mud-slap'
+                    identifier              = 'Mud Slap'
                     generation_id           = '2'
                     type_id                 = '5'
                     power                   = 20
@@ -3056,7 +3144,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '190'
-                    identifier              = 'octazooka'
+                    identifier              = 'Octazooka'
                     generation_id           = '2'
                     type_id                 = '11'
                     power                   = 65
@@ -3071,7 +3159,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '191'
-                    identifier              = 'spikes'
+                    identifier              = 'Spikes'
                     generation_id           = '2'
                     type_id                 = '5'
                     power                   = 0
@@ -3086,7 +3174,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '192'
-                    identifier              = 'zap-cannon'
+                    identifier              = 'Zap Cannon'
                     generation_id           = '2'
                     type_id                 = '13'
                     power                   = 120
@@ -3101,7 +3189,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '193'
-                    identifier              = 'foresight'
+                    identifier              = 'Foresight'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3116,7 +3204,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '194'
-                    identifier              = 'destiny-bond'
+                    identifier              = 'Destiny Bond'
                     generation_id           = '2'
                     type_id                 = '8'
                     power                   = 0
@@ -3131,7 +3219,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '7'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '195'
-                    identifier              = 'perish-song'
+                    identifier              = 'Perish Song'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3146,7 +3234,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '196'
-                    identifier              = 'icy-wind'
+                    identifier              = 'Icy Wind'
                     generation_id           = '2'
                     type_id                 = '15'
                     power                   = 55
@@ -3161,7 +3249,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '197'
-                    identifier              = 'detect'
+                    identifier              = 'Detect'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 0
@@ -3176,7 +3264,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '198'
-                    identifier              = 'bone-rush'
+                    identifier              = 'Bone Rush'
                     generation_id           = '2'
                     type_id                 = '5'
                     power                   = 25
@@ -3191,7 +3279,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '199'
-                    identifier              = 'lock-on'
+                    identifier              = 'Lock On'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3206,7 +3294,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '200'
-                    identifier              = 'outrage'
+                    identifier              = 'Outrage'
                     generation_id           = '2'
                     type_id                 = '16'
                     power                   = 120
@@ -3221,7 +3309,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '201'
-                    identifier              = 'sandstorm'
+                    identifier              = 'Sandstorm'
                     generation_id           = '2'
                     type_id                 = '6'
                     power                   = 0
@@ -3236,7 +3324,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '202'
-                    identifier              = 'giga-drain'
+                    identifier              = 'Giga Drain'
                     generation_id           = '2'
                     type_id                 = '12'
                     power                   = 75
@@ -3251,7 +3339,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '203'
-                    identifier              = 'endure'
+                    identifier              = 'Endure'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3266,7 +3354,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '204'
-                    identifier              = 'charm'
+                    identifier              = 'Charm'
                     generation_id           = '2'
                     type_id                 = '18'
                     power                   = 0
@@ -3281,7 +3369,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '205'
-                    identifier              = 'rollout'
+                    identifier              = 'Rollout'
                     generation_id           = '2'
                     type_id                 = '6'
                     power                   = 30
@@ -3296,7 +3384,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '206'
-                    identifier              = 'false-swipe'
+                    identifier              = 'False Swipe'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 40
@@ -3311,7 +3399,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '207'
-                    identifier              = 'swagger'
+                    identifier              = 'Swagger'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3326,7 +3414,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '27'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '208'
-                    identifier              = 'milk-drink'
+                    identifier              = 'Milk Drink'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3341,7 +3429,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '209'
-                    identifier              = 'spark'
+                    identifier              = 'Spark'
                     generation_id           = '2'
                     type_id                 = '13'
                     power                   = 65
@@ -3356,7 +3444,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '210'
-                    identifier              = 'fury-cutter'
+                    identifier              = 'Fury Cutter'
                     generation_id           = '2'
                     type_id                 = '7'
                     power                   = 40
@@ -3371,7 +3459,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '211'
-                    identifier              = 'steel-wing'
+                    identifier              = 'Steel Wing'
                     generation_id           = '2'
                     type_id                 = '9'
                     power                   = 70
@@ -3386,7 +3474,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '212'
-                    identifier              = 'mean-look'
+                    identifier              = 'Mean Look'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3401,7 +3489,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '213'
-                    identifier              = 'attract'
+                    identifier              = 'Attract'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3416,7 +3504,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '214'
-                    identifier              = 'sleep-talk'
+                    identifier              = 'Sleep Talk'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3431,7 +3519,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '215'
-                    identifier              = 'heal-bell'
+                    identifier              = 'Heal Bell'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3446,7 +3534,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '216'
-                    identifier              = 'return'
+                    identifier              = 'Return'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3461,7 +3549,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '13'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '217'
-                    identifier              = 'present'
+                    identifier              = 'Present'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3476,7 +3564,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '218'
-                    identifier              = 'frustration'
+                    identifier              = 'Frustration'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3491,7 +3579,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '13'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '219'
-                    identifier              = 'safeguard'
+                    identifier              = 'Safeguard'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3506,7 +3594,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '220'
-                    identifier              = 'pain-split'
+                    identifier              = 'Pain Split'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3521,7 +3609,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '221'
-                    identifier              = 'sacred-fire'
+                    identifier              = 'Sacred Fire'
                     generation_id           = '2'
                     type_id                 = '10'
                     power                   = 100
@@ -3536,7 +3624,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '222'
-                    identifier              = 'magnitude'
+                    identifier              = 'Magnitude'
                     generation_id           = '2'
                     type_id                 = '5'
                     power                   = 0
@@ -3551,7 +3639,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '11'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '223'
-                    identifier              = 'dynamic-punch'
+                    identifier              = 'Dynamic Punch'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 100
@@ -3566,7 +3654,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '224'
-                    identifier              = 'megahorn'
+                    identifier              = 'Megahorn'
                     generation_id           = '2'
                     type_id                 = '7'
                     power                   = 120
@@ -3581,7 +3669,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '225'
-                    identifier              = 'dragon-breath'
+                    identifier              = 'Dragon Breath'
                     generation_id           = '2'
                     type_id                 = '16'
                     power                   = 60
@@ -3596,7 +3684,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '226'
-                    identifier              = 'baton-pass'
+                    identifier              = 'Baton Pass'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3611,7 +3699,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '227'
-                    identifier              = 'encore'
+                    identifier              = 'Encore'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3626,7 +3714,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '228'
-                    identifier              = 'pursuit'
+                    identifier              = 'Pursuit'
                     generation_id           = '2'
                     type_id                 = '17'
                     power                   = 40
@@ -3641,7 +3729,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '229'
-                    identifier              = 'rapid-spin'
+                    identifier              = 'Rapid Spin'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 50
@@ -3656,7 +3744,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '230'
-                    identifier              = 'sweet-scent'
+                    identifier              = 'Sweet Scent'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3671,7 +3759,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '231'
-                    identifier              = 'iron-tail'
+                    identifier              = 'Iron Tail'
                     generation_id           = '2'
                     type_id                 = '9'
                     power                   = 100
@@ -3686,7 +3774,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '232'
-                    identifier              = 'metal-claw'
+                    identifier              = 'Metal Claw'
                     generation_id           = '2'
                     type_id                 = '9'
                     power                   = 50
@@ -3701,7 +3789,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '233'
-                    identifier              = 'vital-throw'
+                    identifier              = 'Vital Throw'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 70
@@ -3716,7 +3804,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '31'
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '234'
-                    identifier              = 'morning-sun'
+                    identifier              = 'Morning Sun'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3731,7 +3819,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '25'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '235'
-                    identifier              = 'synthesis'
+                    identifier              = 'Synthesis'
                     generation_id           = '2'
                     type_id                 = '12'
                     power                   = 0
@@ -3746,7 +3834,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '25'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '236'
-                    identifier              = 'moonlight'
+                    identifier              = 'Moonlight'
                     generation_id           = '2'
                     type_id                 = '18'
                     power                   = 0
@@ -3761,7 +3849,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '25'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '237'
-                    identifier              = 'hidden-power'
+                    identifier              = 'Hidden Power'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 60
@@ -3776,7 +3864,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '238'
-                    identifier              = 'cross-chop'
+                    identifier              = 'Cross Chop'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 100
@@ -3791,7 +3879,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '239'
-                    identifier              = 'twister'
+                    identifier              = 'Twister'
                     generation_id           = '2'
                     type_id                 = '16'
                     power                   = 40
@@ -3806,7 +3894,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '240'
-                    identifier              = 'rain-dance'
+                    identifier              = 'Rain Dance'
                     generation_id           = '2'
                     type_id                 = '11'
                     power                   = 0
@@ -3821,7 +3909,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '11'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '241'
-                    identifier              = 'sunny-day'
+                    identifier              = 'Sunny Day'
                     generation_id           = '2'
                     type_id                 = '10'
                     power                   = 0
@@ -3836,7 +3924,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '11'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '242'
-                    identifier              = 'crunch'
+                    identifier              = 'Crunch'
                     generation_id           = '2'
                     type_id                 = '17'
                     power                   = 80
@@ -3851,7 +3939,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '243'
-                    identifier              = 'mirror-coat'
+                    identifier              = 'Mirror Coat'
                     generation_id           = '2'
                     type_id                 = '14'
                     power                   = 0
@@ -3866,7 +3954,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '244'
-                    identifier              = 'psych-up'
+                    identifier              = 'Psych Up'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 0
@@ -3881,7 +3969,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '245'
-                    identifier              = 'extreme-speed'
+                    identifier              = 'Extreme Speed'
                     generation_id           = '2'
                     type_id                 = '1'
                     power                   = 80
@@ -3896,7 +3984,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '30'
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '246'
-                    identifier              = 'ancient-power'
+                    identifier              = 'Ancient Power'
                     generation_id           = '2'
                     type_id                 = '6'
                     power                   = 60
@@ -3911,7 +3999,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '247'
-                    identifier              = 'shadow-ball'
+                    identifier              = 'Shadow Ball'
                     generation_id           = '2'
                     type_id                 = '8'
                     power                   = 80
@@ -3926,7 +4014,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '22'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '248'
-                    identifier              = 'future-sight'
+                    identifier              = 'Future Sight'
                     generation_id           = '2'
                     type_id                 = '14'
                     power                   = 120
@@ -3941,7 +4029,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '249'
-                    identifier              = 'rock-smash'
+                    identifier              = 'Rock Smash'
                     generation_id           = '2'
                     type_id                 = '2'
                     power                   = 40
@@ -3956,7 +4044,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '29'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '250'
-                    identifier              = 'whirlpool'
+                    identifier              = 'Whirlpool'
                     generation_id           = '2'
                     type_id                 = '11'
                     power                   = 35
@@ -3971,7 +4059,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '251'
-                    identifier              = 'beat-up'
+                    identifier              = 'Beat Up'
                     generation_id           = '2'
                     type_id                 = '17'
                     power                   = 0
@@ -3986,7 +4074,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '252'
-                    identifier              = 'fake-out'
+                    identifier              = 'Fake Out'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 40
@@ -4001,7 +4089,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '253'
-                    identifier              = 'uproar'
+                    identifier              = 'Uproar'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 90
@@ -4016,7 +4104,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '254'
-                    identifier              = 'stockpile'
+                    identifier              = 'Stockpile'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4031,7 +4119,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '255'
-                    identifier              = 'spit-up'
+                    identifier              = 'Spit Up'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4046,7 +4134,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '256'
-                    identifier              = 'swallow'
+                    identifier              = 'Swallow'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4061,7 +4149,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '257'
-                    identifier              = 'heat-wave'
+                    identifier              = 'Heat Wave'
                     generation_id           = '3'
                     type_id                 = '10'
                     power                   = 95
@@ -4076,7 +4164,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '258'
-                    identifier              = 'hail'
+                    identifier              = 'Hail'
                     generation_id           = '3'
                     type_id                 = '15'
                     power                   = 0
@@ -4091,7 +4179,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '259'
-                    identifier              = 'torment'
+                    identifier              = 'Torment'
                     generation_id           = '3'
                     type_id                 = '17'
                     power                   = 0
@@ -4106,7 +4194,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '260'
-                    identifier              = 'flatter'
+                    identifier              = 'Flatter'
                     generation_id           = '3'
                     type_id                 = '17'
                     power                   = 0
@@ -4121,7 +4209,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '261'
-                    identifier              = 'will-o-wisp'
+                    identifier              = 'Will O Wisp'
                     generation_id           = '3'
                     type_id                 = '10'
                     power                   = 0
@@ -4136,7 +4224,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '262'
-                    identifier              = 'memento'
+                    identifier              = 'Memento'
                     generation_id           = '3'
                     type_id                 = '17'
                     power                   = 0
@@ -4151,7 +4239,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '7'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '263'
-                    identifier              = 'facade'
+                    identifier              = 'Facade'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 70
@@ -4166,7 +4254,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '264'
-                    identifier              = 'focus-punch'
+                    identifier              = 'Focus Punch'
                     generation_id           = '3'
                     type_id                 = '2'
                     power                   = 150
@@ -4181,7 +4269,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '31'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '265'
-                    identifier              = 'smelling-salts'
+                    identifier              = 'Smelling Salts'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 70
@@ -4196,7 +4284,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '266'
-                    identifier              = 'follow-me'
+                    identifier              = 'Follow Me'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4211,7 +4299,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '267'
-                    identifier              = 'nature-power'
+                    identifier              = 'Nature Power'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4226,7 +4314,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '11'
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '268'
-                    identifier              = 'charge'
+                    identifier              = 'Charge'
                     generation_id           = '3'
                     type_id                 = '13'
                     power                   = 0
@@ -4241,7 +4329,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '269'
-                    identifier              = 'taunt'
+                    identifier              = 'Taunt'
                     generation_id           = '3'
                     type_id                 = '17'
                     power                   = 0
@@ -4256,7 +4344,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '270'
-                    identifier              = 'helping-hand'
+                    identifier              = 'Helping Hand'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4271,7 +4359,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '271'
-                    identifier              = 'trick'
+                    identifier              = 'Trick'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 0
@@ -4286,7 +4374,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '272'
-                    identifier              = 'role-play'
+                    identifier              = 'Role Play'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 0
@@ -4301,7 +4389,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '20'
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '273'
-                    identifier              = 'wish'
+                    identifier              = 'Wish'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4316,7 +4404,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '274'
-                    identifier              = 'assist'
+                    identifier              = 'Assist'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4331,7 +4419,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '25'
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '275'
-                    identifier              = 'ingrain'
+                    identifier              = 'Ingrain'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 0
@@ -4346,7 +4434,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '276'
-                    identifier              = 'superpower'
+                    identifier              = 'Superpower'
                     generation_id           = '3'
                     type_id                 = '2'
                     power                   = 120
@@ -4361,7 +4449,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '277'
-                    identifier              = 'magic-coat'
+                    identifier              = 'Magic Coat'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 0
@@ -4376,7 +4464,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '278'
-                    identifier              = 'recycle'
+                    identifier              = 'Recycle'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4391,7 +4479,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '17'
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '279'
-                    identifier              = 'revenge'
+                    identifier              = 'Revenge'
                     generation_id           = '3'
                     type_id                 = '2'
                     power                   = 60
@@ -4406,7 +4494,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '31'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '280'
-                    identifier              = 'brick-break'
+                    identifier              = 'Brick Break'
                     generation_id           = '3'
                     type_id                 = '2'
                     power                   = 75
@@ -4421,7 +4509,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '281'
-                    identifier              = 'yawn'
+                    identifier              = 'Yawn'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4436,7 +4524,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '282'
-                    identifier              = 'knock-off'
+                    identifier              = 'Knock Off'
                     generation_id           = '3'
                     type_id                 = '17'
                     power                   = 65
@@ -4451,7 +4539,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '283'
-                    identifier              = 'endeavor'
+                    identifier              = 'Endeavor'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4466,7 +4554,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '284'
-                    identifier              = 'eruption'
+                    identifier              = 'Eruption'
                     generation_id           = '3'
                     type_id                 = '10'
                     power                   = 150
@@ -4481,7 +4569,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '26'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '285'
-                    identifier              = 'skill-swap'
+                    identifier              = 'Skill Swap'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 0
@@ -4496,7 +4584,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '20'
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '286'
-                    identifier              = 'imprison'
+                    identifier              = 'Imprison'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 0
@@ -4511,7 +4599,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '287'
-                    identifier              = 'refresh'
+                    identifier              = 'Refresh'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4526,7 +4614,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '288'
-                    identifier              = 'grudge'
+                    identifier              = 'Grudge'
                     generation_id           = '3'
                     type_id                 = '8'
                     power                   = 0
@@ -4541,7 +4629,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '26'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '289'
-                    identifier              = 'snatch'
+                    identifier              = 'Snatch'
                     generation_id           = '3'
                     type_id                 = '17'
                     power                   = 0
@@ -4556,7 +4644,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '290'
-                    identifier              = 'secret-power'
+                    identifier              = 'Secret Power'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 70
@@ -4571,7 +4659,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '29'
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '291'
-                    identifier              = 'dive'
+                    identifier              = 'Dive'
                     generation_id           = '3'
                     type_id                 = '11'
                     power                   = 80
@@ -4586,7 +4674,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '292'
-                    identifier              = 'arm-thrust'
+                    identifier              = 'Arm Thrust'
                     generation_id           = '3'
                     type_id                 = '2'
                     power                   = 15
@@ -4601,7 +4689,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '293'
-                    identifier              = 'camouflage'
+                    identifier              = 'Camouflage'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4616,7 +4704,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '294'
-                    identifier              = 'tail-glow'
+                    identifier              = 'Tail Glow'
                     generation_id           = '3'
                     type_id                 = '7'
                     power                   = 0
@@ -4631,7 +4719,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '295'
-                    identifier              = 'luster-purge'
+                    identifier              = 'Luster Purge'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 95
@@ -4646,7 +4734,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '296'
-                    identifier              = 'mist-ball'
+                    identifier              = 'Mist Ball'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 95
@@ -4661,7 +4749,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '297'
-                    identifier              = 'feather-dance'
+                    identifier              = 'Feather Dance'
                     generation_id           = '3'
                     type_id                 = '3'
                     power                   = 0
@@ -4676,7 +4764,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '298'
-                    identifier              = 'teeter-dance'
+                    identifier              = 'Teeter Dance'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4691,7 +4779,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '299'
-                    identifier              = 'blaze-kick'
+                    identifier              = 'Blaze Kick'
                     generation_id           = '3'
                     type_id                 = '10'
                     power                   = 85
@@ -4706,7 +4794,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '300'
-                    identifier              = 'mud-sport'
+                    identifier              = 'Mud Sport'
                     generation_id           = '3'
                     type_id                 = '5'
                     power                   = 0
@@ -4721,7 +4809,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '301'
-                    identifier              = 'ice-ball'
+                    identifier              = 'Ice Ball'
                     generation_id           = '3'
                     type_id                 = '15'
                     power                   = 30
@@ -4736,7 +4824,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '302'
-                    identifier              = 'needle-arm'
+                    identifier              = 'Needle Arm'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 60
@@ -4751,7 +4839,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '303'
-                    identifier              = 'slack-off'
+                    identifier              = 'Slack Off'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4766,7 +4854,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '26'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '304'
-                    identifier              = 'hyper-voice'
+                    identifier              = 'Hyper Voice'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 90
@@ -4781,7 +4869,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '305'
-                    identifier              = 'poison-fang'
+                    identifier              = 'Poison Fang'
                     generation_id           = '3'
                     type_id                 = '4'
                     power                   = 50
@@ -4796,7 +4884,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '306'
-                    identifier              = 'crush-claw'
+                    identifier              = 'Crush Claw'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 75
@@ -4811,7 +4899,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '307'
-                    identifier              = 'blast-burn'
+                    identifier              = 'Blast Burn'
                     generation_id           = '3'
                     type_id                 = '10'
                     power                   = 150
@@ -4826,7 +4914,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '308'
-                    identifier              = 'hydro-cannon'
+                    identifier              = 'Hydro Cannon'
                     generation_id           = '3'
                     type_id                 = '11'
                     power                   = 150
@@ -4841,7 +4929,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '309'
-                    identifier              = 'meteor-mash'
+                    identifier              = 'Meteor Mash'
                     generation_id           = '3'
                     type_id                 = '9'
                     power                   = 90
@@ -4856,7 +4944,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '310'
-                    identifier              = 'astonish'
+                    identifier              = 'Astonish'
                     generation_id           = '3'
                     type_id                 = '8'
                     power                   = 30
@@ -4871,7 +4959,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '9'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '311'
-                    identifier              = 'weather-ball'
+                    identifier              = 'Weather Ball'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 50
@@ -4886,7 +4974,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '312'
-                    identifier              = 'aromatherapy'
+                    identifier              = 'Aromatherapy'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 0
@@ -4901,7 +4989,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '313'
-                    identifier              = 'fake-tears'
+                    identifier              = 'Fake Tears'
                     generation_id           = '3'
                     type_id                 = '17'
                     power                   = 0
@@ -4916,7 +5004,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '28'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '314'
-                    identifier              = 'air-cutter'
+                    identifier              = 'Air Cutter'
                     generation_id           = '3'
                     type_id                 = '3'
                     power                   = 60
@@ -4931,7 +5019,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '315'
-                    identifier              = 'overheat'
+                    identifier              = 'Overheat'
                     generation_id           = '3'
                     type_id                 = '10'
                     power                   = 130
@@ -4946,7 +5034,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '316'
-                    identifier              = 'odor-sleuth'
+                    identifier              = 'Odor Sleuth'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -4961,7 +5049,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '317'
-                    identifier              = 'rock-tomb'
+                    identifier              = 'Rock Tomb'
                     generation_id           = '3'
                     type_id                 = '6'
                     power                   = 60
@@ -4976,7 +5064,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '318'
-                    identifier              = 'silver-wind'
+                    identifier              = 'Silver Wind'
                     generation_id           = '3'
                     type_id                 = '7'
                     power                   = 60
@@ -4991,7 +5079,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '319'
-                    identifier              = 'metal-sound'
+                    identifier              = 'Metal Sound'
                     generation_id           = '3'
                     type_id                 = '9'
                     power                   = 0
@@ -5006,7 +5094,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '10'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '320'
-                    identifier              = 'grass-whistle'
+                    identifier              = 'Grass Whistle'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 0
@@ -5021,7 +5109,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '321'
-                    identifier              = 'tickle'
+                    identifier              = 'Tickle'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -5036,7 +5124,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '322'
-                    identifier              = 'cosmic-power'
+                    identifier              = 'Cosmic Power'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 0
@@ -5051,7 +5139,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '323'
-                    identifier              = 'water-spout'
+                    identifier              = 'Water Spout'
                     generation_id           = '3'
                     type_id                 = '11'
                     power                   = 150
@@ -5066,7 +5154,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '26'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '324'
-                    identifier              = 'signal-beam'
+                    identifier              = 'Signal Beam'
                     generation_id           = '3'
                     type_id                 = '7'
                     power                   = 75
@@ -5081,7 +5169,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '325'
-                    identifier              = 'shadow-punch'
+                    identifier              = 'Shadow Punch'
                     generation_id           = '3'
                     type_id                 = '8'
                     power                   = 60
@@ -5096,7 +5184,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '27'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '326'
-                    identifier              = 'extrasensory'
+                    identifier              = 'Extrasensory'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 80
@@ -5111,7 +5199,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '4'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '327'
-                    identifier              = 'sky-uppercut'
+                    identifier              = 'Sky Uppercut'
                     generation_id           = '3'
                     type_id                 = '2'
                     power                   = 85
@@ -5126,7 +5214,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '328'
-                    identifier              = 'sand-tomb'
+                    identifier              = 'Sand Tomb'
                     generation_id           = '3'
                     type_id                 = '5'
                     power                   = 35
@@ -5141,7 +5229,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '329'
-                    identifier              = 'sheer-cold'
+                    identifier              = 'Sheer Cold'
                     generation_id           = '3'
                     type_id                 = '15'
                     power                   = 0
@@ -5156,7 +5244,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '9'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '330'
-                    identifier              = 'muddy-water'
+                    identifier              = 'Muddy Water'
                     generation_id           = '3'
                     type_id                 = '11'
                     power                   = 90
@@ -5171,7 +5259,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '10'
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '331'
-                    identifier              = 'bullet-seed'
+                    identifier              = 'Bullet Seed'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 25
@@ -5186,7 +5274,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '14'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '332'
-                    identifier              = 'aerial-ace'
+                    identifier              = 'Aerial Ace'
                     generation_id           = '3'
                     type_id                 = '3'
                     power                   = 60
@@ -5201,7 +5289,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '27'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '333'
-                    identifier              = 'icicle-spear'
+                    identifier              = 'Icicle Spear'
                     generation_id           = '3'
                     type_id                 = '15'
                     power                   = 25
@@ -5216,7 +5304,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '334'
-                    identifier              = 'iron-defense'
+                    identifier              = 'Iron Defense'
                     generation_id           = '3'
                     type_id                 = '9'
                     power                   = 0
@@ -5231,7 +5319,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '335'
-                    identifier              = 'block'
+                    identifier              = 'Block'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -5246,7 +5334,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '18'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '336'
-                    identifier              = 'howl'
+                    identifier              = 'Howl'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 0
@@ -5261,7 +5349,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '337'
-                    identifier              = 'dragon-claw'
+                    identifier              = 'Dragon Claw'
                     generation_id           = '3'
                     type_id                 = '16'
                     power                   = 80
@@ -5276,7 +5364,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '23'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '338'
-                    identifier              = 'frenzy-plant'
+                    identifier              = 'Frenzy Plant'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 150
@@ -5291,7 +5379,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '6'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '339'
-                    identifier              = 'bulk-up'
+                    identifier              = 'Bulk Up'
                     generation_id           = '3'
                     type_id                 = '2'
                     power                   = 0
@@ -5306,7 +5394,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '340'
-                    identifier              = 'bounce'
+                    identifier              = 'Bounce'
                     generation_id           = '3'
                     type_id                 = '3'
                     power                   = 85
@@ -5321,7 +5409,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '15'
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '341'
-                    identifier              = 'mud-shot'
+                    identifier              = 'Mud Shot'
                     generation_id           = '3'
                     type_id                 = '5'
                     power                   = 55
@@ -5336,7 +5424,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '5'
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '342'
-                    identifier              = 'poison-tail'
+                    identifier              = 'Poison Tail'
                     generation_id           = '3'
                     type_id                 = '4'
                     power                   = 50
@@ -5351,7 +5439,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '33'
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '343'
-                    identifier              = 'covet'
+                    identifier              = 'Covet'
                     generation_id           = '3'
                     type_id                 = '1'
                     power                   = 60
@@ -5366,7 +5454,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '20'
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '344'
-                    identifier              = 'volt-tackle'
+                    identifier              = 'Volt Tackle'
                     generation_id           = '3'
                     type_id                 = '13'
                     power                   = 120
@@ -5381,7 +5469,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '345'
-                    identifier              = 'magical-leaf'
+                    identifier              = 'Magical Leaf'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 60
@@ -5396,7 +5484,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '27'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '346'
-                    identifier              = 'water-sport'
+                    identifier              = 'Water Sport'
                     generation_id           = '3'
                     type_id                 = '11'
                     power                   = 0
@@ -5411,7 +5499,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '1'
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '347'
-                    identifier              = 'calm-mind'
+                    identifier              = 'Calm Mind'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 0
@@ -5426,7 +5514,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '16'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '348'
-                    identifier              = 'leaf-blade'
+                    identifier              = 'Leaf Blade'
                     generation_id           = '3'
                     type_id                 = '12'
                     power                   = 90
@@ -5441,7 +5529,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '2'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '349'
-                    identifier              = 'dragon-dance'
+                    identifier              = 'Dragon Dance'
                     generation_id           = '3'
                     type_id                 = '16'
                     power                   = 0
@@ -5456,7 +5544,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '32'
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '350'
-                    identifier              = 'rock-blast'
+                    identifier              = 'Rock Blast'
                     generation_id           = '3'
                     type_id                 = '6'
                     power                   = 25
@@ -5471,7 +5559,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '12'
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '351'
-                    identifier              = 'shock-wave'
+                    identifier              = 'Shock Wave'
                     generation_id           = '3'
                     type_id                 = '13'
                     power                   = 60
@@ -5486,7 +5574,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '27'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '352'
-                    identifier              = 'water-pulse'
+                    identifier              = 'Water Pulse'
                     generation_id           = '3'
                     type_id                 = '11'
                     power                   = 60
@@ -5501,7 +5589,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '21'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '353'
-                    identifier              = 'doom-desire'
+                    identifier              = 'Doom Desire'
                     generation_id           = '3'
                     type_id                 = '9'
                     power                   = 140
@@ -5516,7 +5604,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '24'
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '354'
-                    identifier              = 'psycho-boost'
+                    identifier              = 'Psycho Boost'
                     generation_id           = '3'
                     type_id                 = '14'
                     power                   = 140
@@ -5531,7 +5619,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = '3'
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '355'
-                    identifier              = 'roost'
+                    identifier              = 'Roost'
                     generation_id           = '4'
                     type_id                 = '3'
                     power                   = 0
@@ -5546,7 +5634,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '356'
-                    identifier              = 'gravity'
+                    identifier              = 'Gravity'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5561,7 +5649,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '357'
-                    identifier              = 'miracle-eye'
+                    identifier              = 'Miracle Eye'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5576,7 +5664,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '358'
-                    identifier              = 'wake-up-slap'
+                    identifier              = 'Wake Up Slap'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 70
@@ -5591,7 +5679,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '359'
-                    identifier              = 'hammer-arm'
+                    identifier              = 'Hammer Arm'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 100
@@ -5606,7 +5694,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '2'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '360'
-                    identifier              = 'gyro-ball'
+                    identifier              = 'Gyro Ball'
                     generation_id           = '4'
                     type_id                 = '9'
                     power                   = 0
@@ -5621,7 +5709,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '361'
-                    identifier              = 'healing-wish'
+                    identifier              = 'Healing Wish'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5636,7 +5724,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '362'
-                    identifier              = 'brine'
+                    identifier              = 'Brine'
                     generation_id           = '4'
                     type_id                 = '11'
                     power                   = 65
@@ -5651,7 +5739,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '363'
-                    identifier              = 'natural-gift'
+                    identifier              = 'Natural Gift'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -5666,7 +5754,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '364'
-                    identifier              = 'feint'
+                    identifier              = 'Feint'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 30
@@ -5681,7 +5769,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '365'
-                    identifier              = 'pluck'
+                    identifier              = 'Pluck'
                     generation_id           = '4'
                     type_id                 = '3'
                     power                   = 60
@@ -5696,7 +5784,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '366'
-                    identifier              = 'tailwind'
+                    identifier              = 'Tailwind'
                     generation_id           = '4'
                     type_id                 = '3'
                     power                   = 0
@@ -5711,7 +5799,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '367'
-                    identifier              = 'acupressure'
+                    identifier              = 'Acupressure'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -5726,7 +5814,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '368'
-                    identifier              = 'metal-burst'
+                    identifier              = 'Metal Burst'
                     generation_id           = '4'
                     type_id                 = '9'
                     power                   = 0
@@ -5741,7 +5829,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '369'
-                    identifier              = 'u-turn'
+                    identifier              = 'U Turn'
                     generation_id           = '4'
                     type_id                 = '7'
                     power                   = 70
@@ -5756,7 +5844,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '370'
-                    identifier              = 'close-combat'
+                    identifier              = 'Close Combat'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 120
@@ -5771,7 +5859,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '371'
-                    identifier              = 'payback'
+                    identifier              = 'Payback'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 50
@@ -5786,7 +5874,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '6'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '372'
-                    identifier              = 'assurance'
+                    identifier              = 'Assurance'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 60
@@ -5801,7 +5889,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '373'
-                    identifier              = 'embargo'
+                    identifier              = 'Embargo'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 0
@@ -5816,7 +5904,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '374'
-                    identifier              = 'fling'
+                    identifier              = 'Fling'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 0
@@ -5831,7 +5919,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '375'
-                    identifier              = 'psycho-shift'
+                    identifier              = 'Psycho Shift'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5846,7 +5934,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '376'
-                    identifier              = 'trump-card'
+                    identifier              = 'Trump Card'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -5861,7 +5949,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '377'
-                    identifier              = 'heal-block'
+                    identifier              = 'Heal Block'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5876,7 +5964,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '378'
-                    identifier              = 'wring-out'
+                    identifier              = 'Wring Out'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -5891,7 +5979,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '379'
-                    identifier              = 'power-trick'
+                    identifier              = 'Power Trick'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5906,7 +5994,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '380'
-                    identifier              = 'gastro-acid'
+                    identifier              = 'Gastro Acid'
                     generation_id           = '4'
                     type_id                 = '4'
                     power                   = 0
@@ -5921,7 +6009,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '381'
-                    identifier              = 'lucky-chant'
+                    identifier              = 'Lucky Chant'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -5936,7 +6024,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '382'
-                    identifier              = 'me-first'
+                    identifier              = 'Me First'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -5951,7 +6039,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '383'
-                    identifier              = 'copycat'
+                    identifier              = 'Copycat'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -5966,7 +6054,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '384'
-                    identifier              = 'power-swap'
+                    identifier              = 'Power Swap'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5981,7 +6069,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '385'
-                    identifier              = 'guard-swap'
+                    identifier              = 'Guard Swap'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -5996,7 +6084,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '386'
-                    identifier              = 'punishment'
+                    identifier              = 'Punishment'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 0
@@ -6011,7 +6099,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '387'
-                    identifier              = 'last-resort'
+                    identifier              = 'Last Resort'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 140
@@ -6026,7 +6114,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '21'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '388'
-                    identifier              = 'worry-seed'
+                    identifier              = 'Worry Seed'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 0
@@ -6041,7 +6129,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '389'
-                    identifier              = 'sucker-punch'
+                    identifier              = 'Sucker Punch'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 70
@@ -6056,7 +6144,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '390'
-                    identifier              = 'toxic-spikes'
+                    identifier              = 'Toxic Spikes'
                     generation_id           = '4'
                     type_id                 = '4'
                     power                   = 0
@@ -6071,7 +6159,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '391'
-                    identifier              = 'heart-swap'
+                    identifier              = 'Heart Swap'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -6086,7 +6174,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '16'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '392'
-                    identifier              = 'aqua-ring'
+                    identifier              = 'Aqua Ring'
                     generation_id           = '4'
                     type_id                 = '11'
                     power                   = 0
@@ -6101,7 +6189,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '393'
-                    identifier              = 'magnet-rise'
+                    identifier              = 'Magnet Rise'
                     generation_id           = '4'
                     type_id                 = '13'
                     power                   = 0
@@ -6116,7 +6204,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '394'
-                    identifier              = 'flare-blitz'
+                    identifier              = 'Flare Blitz'
                     generation_id           = '4'
                     type_id                 = '10'
                     power                   = 120
@@ -6131,7 +6219,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '395'
-                    identifier              = 'force-palm'
+                    identifier              = 'Force Palm'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 60
@@ -6146,7 +6234,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '396'
-                    identifier              = 'aura-sphere'
+                    identifier              = 'Aura Sphere'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 80
@@ -6161,7 +6249,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '397'
-                    identifier              = 'rock-polish'
+                    identifier              = 'Rock Polish'
                     generation_id           = '4'
                     type_id                 = '6'
                     power                   = 0
@@ -6176,7 +6264,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '398'
-                    identifier              = 'poison-jab'
+                    identifier              = 'Poison Jab'
                     generation_id           = '4'
                     type_id                 = '4'
                     power                   = 80
@@ -6191,7 +6279,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '399'
-                    identifier              = 'dark-pulse'
+                    identifier              = 'Dark Pulse'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 80
@@ -6206,7 +6294,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '400'
-                    identifier              = 'night-slash'
+                    identifier              = 'Night Slash'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 70
@@ -6221,7 +6309,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '401'
-                    identifier              = 'aqua-tail'
+                    identifier              = 'Aqua Tail'
                     generation_id           = '4'
                     type_id                 = '11'
                     power                   = 90
@@ -6236,7 +6324,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '402'
-                    identifier              = 'seed-bomb'
+                    identifier              = 'Seed Bomb'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 80
@@ -6251,7 +6339,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '403'
-                    identifier              = 'air-slash'
+                    identifier              = 'Air Slash'
                     generation_id           = '4'
                     type_id                 = '3'
                     power                   = 75
@@ -6266,7 +6354,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '404'
-                    identifier              = 'x-scissor'
+                    identifier              = 'X Scissor'
                     generation_id           = '4'
                     type_id                 = '7'
                     power                   = 80
@@ -6281,7 +6369,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '405'
-                    identifier              = 'bug-buzz'
+                    identifier              = 'Bug Buzz'
                     generation_id           = '4'
                     type_id                 = '7'
                     power                   = 90
@@ -6296,7 +6384,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '406'
-                    identifier              = 'dragon-pulse'
+                    identifier              = 'Dragon Pulse'
                     generation_id           = '4'
                     type_id                 = '16'
                     power                   = 85
@@ -6311,7 +6399,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '407'
-                    identifier              = 'dragon-rush'
+                    identifier              = 'Dragon Rush'
                     generation_id           = '4'
                     type_id                 = '16'
                     power                   = 100
@@ -6326,7 +6414,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '408'
-                    identifier              = 'power-gem'
+                    identifier              = 'Power Gem'
                     generation_id           = '4'
                     type_id                 = '6'
                     power                   = 80
@@ -6341,7 +6429,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '409'
-                    identifier              = 'drain-punch'
+                    identifier              = 'Drain Punch'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 75
@@ -6356,7 +6444,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '20'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '410'
-                    identifier              = 'vacuum-wave'
+                    identifier              = 'Vacuum Wave'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 40
@@ -6371,7 +6459,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '411'
-                    identifier              = 'focus-blast'
+                    identifier              = 'Focus Blast'
                     generation_id           = '4'
                     type_id                 = '2'
                     power                   = 120
@@ -6386,7 +6474,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '412'
-                    identifier              = 'energy-ball'
+                    identifier              = 'Energy Ball'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 90
@@ -6401,7 +6489,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '413'
-                    identifier              = 'brave-bird'
+                    identifier              = 'Brave Bird'
                     generation_id           = '4'
                     type_id                 = '3'
                     power                   = 120
@@ -6416,7 +6504,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '414'
-                    identifier              = 'earth-power'
+                    identifier              = 'Earth Power'
                     generation_id           = '4'
                     type_id                 = '5'
                     power                   = 90
@@ -6431,7 +6519,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '415'
-                    identifier              = 'switcheroo'
+                    identifier              = 'Switcheroo'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 0
@@ -6446,7 +6534,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '416'
-                    identifier              = 'giga-impact'
+                    identifier              = 'Giga Impact'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 150
@@ -6461,7 +6549,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '417'
-                    identifier              = 'nasty-plot'
+                    identifier              = 'Nasty Plot'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 0
@@ -6476,7 +6564,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '418'
-                    identifier              = 'bullet-punch'
+                    identifier              = 'Bullet Punch'
                     generation_id           = '4'
                     type_id                 = '9'
                     power                   = 40
@@ -6491,7 +6579,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '419'
-                    identifier              = 'avalanche'
+                    identifier              = 'Avalanche'
                     generation_id           = '4'
                     type_id                 = '15'
                     power                   = 60
@@ -6506,7 +6594,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '420'
-                    identifier              = 'ice-shard'
+                    identifier              = 'Ice Shard'
                     generation_id           = '4'
                     type_id                 = '15'
                     power                   = 40
@@ -6521,7 +6609,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '421'
-                    identifier              = 'shadow-claw'
+                    identifier              = 'Shadow Claw'
                     generation_id           = '4'
                     type_id                 = '8'
                     power                   = 70
@@ -6536,7 +6624,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '422'
-                    identifier              = 'thunder-fang'
+                    identifier              = 'Thunder Fang'
                     generation_id           = '4'
                     type_id                 = '13'
                     power                   = 65
@@ -6551,7 +6639,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '423'
-                    identifier              = 'ice-fang'
+                    identifier              = 'Ice Fang'
                     generation_id           = '4'
                     type_id                 = '15'
                     power                   = 65
@@ -6566,7 +6654,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '424'
-                    identifier              = 'fire-fang'
+                    identifier              = 'Fire Fang'
                     generation_id           = '4'
                     type_id                 = '10'
                     power                   = 65
@@ -6581,7 +6669,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '425'
-                    identifier              = 'shadow-sneak'
+                    identifier              = 'Shadow Sneak'
                     generation_id           = '4'
                     type_id                 = '8'
                     power                   = 40
@@ -6596,7 +6684,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '426'
-                    identifier              = 'mud-bomb'
+                    identifier              = 'Mud Bomb'
                     generation_id           = '4'
                     type_id                 = '5'
                     power                   = 65
@@ -6611,7 +6699,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '427'
-                    identifier              = 'psycho-cut'
+                    identifier              = 'Psycho Cut'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 70
@@ -6626,7 +6714,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '428'
-                    identifier              = 'zen-headbutt'
+                    identifier              = 'Zen Headbutt'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 80
@@ -6641,7 +6729,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '429'
-                    identifier              = 'mirror-shot'
+                    identifier              = 'Mirror Shot'
                     generation_id           = '4'
                     type_id                 = '9'
                     power                   = 65
@@ -6656,7 +6744,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '430'
-                    identifier              = 'flash-cannon'
+                    identifier              = 'Flash Cannon'
                     generation_id           = '4'
                     type_id                 = '9'
                     power                   = 80
@@ -6671,7 +6759,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '431'
-                    identifier              = 'rock-climb'
+                    identifier              = 'Rock Climb'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 90
@@ -6686,7 +6774,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '432'
-                    identifier              = 'defog'
+                    identifier              = 'Defog'
                     generation_id           = '4'
                     type_id                 = '3'
                     power                   = 0
@@ -6701,7 +6789,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '433'
-                    identifier              = 'trick-room'
+                    identifier              = 'Trick Room'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -6716,7 +6804,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '434'
-                    identifier              = 'draco-meteor'
+                    identifier              = 'Draco Meteor'
                     generation_id           = '4'
                     type_id                 = '16'
                     power                   = 130
@@ -6731,7 +6819,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '435'
-                    identifier              = 'discharge'
+                    identifier              = 'Discharge'
                     generation_id           = '4'
                     type_id                 = '13'
                     power                   = 80
@@ -6746,7 +6834,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '436'
-                    identifier              = 'lava-plume'
+                    identifier              = 'Lava Plume'
                     generation_id           = '4'
                     type_id                 = '10'
                     power                   = 80
@@ -6761,7 +6849,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '437'
-                    identifier              = 'leaf-storm'
+                    identifier              = 'Leaf Storm'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 130
@@ -6776,7 +6864,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '438'
-                    identifier              = 'power-whip'
+                    identifier              = 'Power Whip'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 120
@@ -6791,7 +6879,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '439'
-                    identifier              = 'rock-wrecker'
+                    identifier              = 'Rock Wrecker'
                     generation_id           = '4'
                     type_id                 = '6'
                     power                   = 150
@@ -6806,7 +6894,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '440'
-                    identifier              = 'cross-poison'
+                    identifier              = 'Cross Poison'
                     generation_id           = '4'
                     type_id                 = '4'
                     power                   = 70
@@ -6821,7 +6909,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '441'
-                    identifier              = 'gunk-shot'
+                    identifier              = 'Gunk Shot'
                     generation_id           = '4'
                     type_id                 = '4'
                     power                   = 120
@@ -6836,7 +6924,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '442'
-                    identifier              = 'iron-head'
+                    identifier              = 'Iron Head'
                     generation_id           = '4'
                     type_id                 = '9'
                     power                   = 80
@@ -6851,7 +6939,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '443'
-                    identifier              = 'magnet-bomb'
+                    identifier              = 'Magnet Bomb'
                     generation_id           = '4'
                     type_id                 = '9'
                     power                   = 60
@@ -6866,7 +6954,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '5'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '444'
-                    identifier              = 'stone-edge'
+                    identifier              = 'Stone Edge'
                     generation_id           = '4'
                     type_id                 = '6'
                     power                   = 100
@@ -6881,7 +6969,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '445'
-                    identifier              = 'captivate'
+                    identifier              = 'Captivate'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -6896,7 +6984,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '446'
-                    identifier              = 'stealth-rock'
+                    identifier              = 'Stealth Rock'
                     generation_id           = '4'
                     type_id                 = '6'
                     power                   = 0
@@ -6911,7 +6999,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '13'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '447'
-                    identifier              = 'grass-knot'
+                    identifier              = 'Grass Knot'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 0
@@ -6926,7 +7014,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '448'
-                    identifier              = 'chatter'
+                    identifier              = 'Chatter'
                     generation_id           = '4'
                     type_id                 = '3'
                     power                   = 65
@@ -6941,7 +7029,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '23'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '449'
-                    identifier              = 'judgment'
+                    identifier              = 'Judgment'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 100
@@ -6956,7 +7044,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '14'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '450'
-                    identifier              = 'bug-bite'
+                    identifier              = 'Bug Bite'
                     generation_id           = '4'
                     type_id                 = '7'
                     power                   = 60
@@ -6971,7 +7059,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '12'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '451'
-                    identifier              = 'charge-beam'
+                    identifier              = 'Charge Beam'
                     generation_id           = '4'
                     type_id                 = '13'
                     power                   = 50
@@ -6986,7 +7074,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '17'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '452'
-                    identifier              = 'wood-hammer'
+                    identifier              = 'Wood Hammer'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 120
@@ -7001,7 +7089,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '18'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '453'
-                    identifier              = 'aqua-jet'
+                    identifier              = 'Aqua Jet'
                     generation_id           = '4'
                     type_id                 = '11'
                     power                   = 40
@@ -7016,7 +7104,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '1'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '454'
-                    identifier              = 'attack-order'
+                    identifier              = 'Attack Order'
                     generation_id           = '4'
                     type_id                 = '7'
                     power                   = 90
@@ -7031,7 +7119,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '455'
-                    identifier              = 'defend-order'
+                    identifier              = 'Defend Order'
                     generation_id           = '4'
                     type_id                 = '7'
                     power                   = 0
@@ -7046,7 +7134,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '456'
-                    identifier              = 'heal-order'
+                    identifier              = 'Heal Order'
                     generation_id           = '4'
                     type_id                 = '7'
                     power                   = 0
@@ -7061,7 +7149,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '457'
-                    identifier              = 'head-smash'
+                    identifier              = 'Head Smash'
                     generation_id           = '4'
                     type_id                 = '6'
                     power                   = 150
@@ -7076,7 +7164,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '458'
-                    identifier              = 'double-hit'
+                    identifier              = 'Double Hit'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 35
@@ -7091,7 +7179,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '459'
-                    identifier              = 'roar-of-time'
+                    identifier              = 'Roar Of Time'
                     generation_id           = '4'
                     type_id                 = '16'
                     power                   = 150
@@ -7106,7 +7194,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '460'
-                    identifier              = 'spacial-rend'
+                    identifier              = 'Spacial Rend'
                     generation_id           = '4'
                     type_id                 = '16'
                     power                   = 100
@@ -7121,7 +7209,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '4'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '461'
-                    identifier              = 'lunar-dance'
+                    identifier              = 'Lunar Dance'
                     generation_id           = '4'
                     type_id                 = '14'
                     power                   = 0
@@ -7136,7 +7224,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '8'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '462'
-                    identifier              = 'crush-grip'
+                    identifier              = 'Crush Grip'
                     generation_id           = '4'
                     type_id                 = '1'
                     power                   = 0
@@ -7151,7 +7239,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '15'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '463'
-                    identifier              = 'magma-storm'
+                    identifier              = 'Magma Storm'
                     generation_id           = '4'
                     type_id                 = '10'
                     power                   = 100
@@ -7166,7 +7254,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '7'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '464'
-                    identifier              = 'dark-void'
+                    identifier              = 'Dark Void'
                     generation_id           = '4'
                     type_id                 = '17'
                     power                   = 0
@@ -7181,7 +7269,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '19'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '465'
-                    identifier              = 'seed-flare'
+                    identifier              = 'Seed Flare'
                     generation_id           = '4'
                     type_id                 = '12'
                     power                   = 120
@@ -7196,7 +7284,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '466'
-                    identifier              = 'ominous-wind'
+                    identifier              = 'Ominous Wind'
                     generation_id           = '4'
                     type_id                 = '8'
                     power                   = 60
@@ -7211,7 +7299,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '11'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '467'
-                    identifier              = 'shadow-force'
+                    identifier              = 'Shadow Force'
                     generation_id           = '4'
                     type_id                 = '8'
                     power                   = 120
@@ -7226,7 +7314,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = '22'  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '468'
-                    identifier              = 'hone-claws'
+                    identifier              = 'Hone Claws'
                     generation_id           = '5'
                     type_id                 = '17'
                     power                   = 0
@@ -7241,7 +7329,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '469'
-                    identifier              = 'wide-guard'
+                    identifier              = 'Wide Guard'
                     generation_id           = '5'
                     type_id                 = '6'
                     power                   = 0
@@ -7256,7 +7344,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '470'
-                    identifier              = 'guard-split'
+                    identifier              = 'Guard Split'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 0
@@ -7271,7 +7359,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '471'
-                    identifier              = 'power-split'
+                    identifier              = 'Power Split'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 0
@@ -7286,7 +7374,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '472'
-                    identifier              = 'wonder-room'
+                    identifier              = 'Wonder Room'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 0
@@ -7301,7 +7389,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '473'
-                    identifier              = 'psyshock'
+                    identifier              = 'Psyshock'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 80
@@ -7316,7 +7404,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '474'
-                    identifier              = 'venoshock'
+                    identifier              = 'Venoshock'
                     generation_id           = '5'
                     type_id                 = '4'
                     power                   = 65
@@ -7331,7 +7419,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '475'
-                    identifier              = 'autotomize'
+                    identifier              = 'Autotomize'
                     generation_id           = '5'
                     type_id                 = '9'
                     power                   = 0
@@ -7346,7 +7434,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '476'
-                    identifier              = 'rage-powder'
+                    identifier              = 'Rage Powder'
                     generation_id           = '5'
                     type_id                 = '7'
                     power                   = 0
@@ -7361,7 +7449,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '477'
-                    identifier              = 'telekinesis'
+                    identifier              = 'Telekinesis'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 0
@@ -7376,7 +7464,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '478'
-                    identifier              = 'magic-room'
+                    identifier              = 'Magic Room'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 0
@@ -7391,7 +7479,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '479'
-                    identifier              = 'smack-down'
+                    identifier              = 'Smack Down'
                     generation_id           = '5'
                     type_id                 = '6'
                     power                   = 50
@@ -7406,7 +7494,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '480'
-                    identifier              = 'storm-throw'
+                    identifier              = 'Storm Throw'
                     generation_id           = '5'
                     type_id                 = '2'
                     power                   = 60
@@ -7421,7 +7509,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '481'
-                    identifier              = 'flame-burst'
+                    identifier              = 'Flame Burst'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 70
@@ -7436,7 +7524,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '482'
-                    identifier              = 'sludge-wave'
+                    identifier              = 'Sludge Wave'
                     generation_id           = '5'
                     type_id                 = '4'
                     power                   = 95
@@ -7451,7 +7539,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '483'
-                    identifier              = 'quiver-dance'
+                    identifier              = 'Quiver Dance'
                     generation_id           = '5'
                     type_id                 = '7'
                     power                   = 0
@@ -7466,7 +7554,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '484'
-                    identifier              = 'heavy-slam'
+                    identifier              = 'Heavy Slam'
                     generation_id           = '5'
                     type_id                 = '9'
                     power                   = 0
@@ -7481,7 +7569,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '485'
-                    identifier              = 'synchronoise'
+                    identifier              = 'Synchronoise'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 120
@@ -7496,7 +7584,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '486'
-                    identifier              = 'electro-ball'
+                    identifier              = 'Electro Ball'
                     generation_id           = '5'
                     type_id                 = '13'
                     power                   = 0
@@ -7511,7 +7599,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '487'
-                    identifier              = 'soak'
+                    identifier              = 'Soak'
                     generation_id           = '5'
                     type_id                 = '11'
                     power                   = 0
@@ -7526,7 +7614,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '488'
-                    identifier              = 'flame-charge'
+                    identifier              = 'Flame Charge'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 50
@@ -7541,7 +7629,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '489'
-                    identifier              = 'coil'
+                    identifier              = 'Coil'
                     generation_id           = '5'
                     type_id                 = '4'
                     power                   = 0
@@ -7556,7 +7644,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '490'
-                    identifier              = 'low-sweep'
+                    identifier              = 'Low Sweep'
                     generation_id           = '5'
                     type_id                 = '2'
                     power                   = 65
@@ -7571,7 +7659,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '491'
-                    identifier              = 'acid-spray'
+                    identifier              = 'Acid Spray'
                     generation_id           = '5'
                     type_id                 = '4'
                     power                   = 40
@@ -7586,7 +7674,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '492'
-                    identifier              = 'foul-play'
+                    identifier              = 'Foul Play'
                     generation_id           = '5'
                     type_id                 = '17'
                     power                   = 95
@@ -7601,7 +7689,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '493'
-                    identifier              = 'simple-beam'
+                    identifier              = 'Simple Beam'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 0
@@ -7616,7 +7704,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '494'
-                    identifier              = 'entrainment'
+                    identifier              = 'Entrainment'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 0
@@ -7631,7 +7719,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '495'
-                    identifier              = 'after-you'
+                    identifier              = 'After You'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 0
@@ -7646,7 +7734,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '496'
-                    identifier              = 'round'
+                    identifier              = 'Round'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 60
@@ -7661,7 +7749,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '497'
-                    identifier              = 'echoed-voice'
+                    identifier              = 'Echoed Voice'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 40
@@ -7676,7 +7764,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '498'
-                    identifier              = 'chip-away'
+                    identifier              = 'Chip Away'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 70
@@ -7691,7 +7779,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '499'
-                    identifier              = 'clear-smog'
+                    identifier              = 'Clear Smog'
                     generation_id           = '5'
                     type_id                 = '4'
                     power                   = 50
@@ -7706,7 +7794,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '500'
-                    identifier              = 'stored-power'
+                    identifier              = 'Stored Power'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 20
@@ -7721,7 +7809,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '501'
-                    identifier              = 'quick-guard'
+                    identifier              = 'Quick Guard'
                     generation_id           = '5'
                     type_id                 = '2'
                     power                   = 0
@@ -7736,7 +7824,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '502'
-                    identifier              = 'ally-switch'
+                    identifier              = 'Ally Switch'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 0
@@ -7751,7 +7839,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '503'
-                    identifier              = 'scald'
+                    identifier              = 'Scald'
                     generation_id           = '5'
                     type_id                 = '11'
                     power                   = 80
@@ -7766,7 +7854,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '504'
-                    identifier              = 'shell-smash'
+                    identifier              = 'Shell Smash'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 0
@@ -7781,7 +7869,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '505'
-                    identifier              = 'heal-pulse'
+                    identifier              = 'Heal Pulse'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 0
@@ -7796,7 +7884,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '506'
-                    identifier              = 'hex'
+                    identifier              = 'Hex'
                     generation_id           = '5'
                     type_id                 = '8'
                     power                   = 65
@@ -7811,7 +7899,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '507'
-                    identifier              = 'sky-drop'
+                    identifier              = 'Sky Drop'
                     generation_id           = '5'
                     type_id                 = '3'
                     power                   = 60
@@ -7826,7 +7914,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '508'
-                    identifier              = 'shift-gear'
+                    identifier              = 'Shift Gear'
                     generation_id           = '5'
                     type_id                 = '9'
                     power                   = 0
@@ -7841,7 +7929,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '509'
-                    identifier              = 'circle-throw'
+                    identifier              = 'Circle Throw'
                     generation_id           = '5'
                     type_id                 = '2'
                     power                   = 60
@@ -7856,7 +7944,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '510'
-                    identifier              = 'incinerate'
+                    identifier              = 'Incinerate'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 60
@@ -7871,7 +7959,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '511'
-                    identifier              = 'quash'
+                    identifier              = 'Quash'
                     generation_id           = '5'
                     type_id                 = '17'
                     power                   = 0
@@ -7886,7 +7974,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '512'
-                    identifier              = 'acrobatics'
+                    identifier              = 'Acrobatics'
                     generation_id           = '5'
                     type_id                 = '3'
                     power                   = 55
@@ -7901,7 +7989,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '513'
-                    identifier              = 'reflect-type'
+                    identifier              = 'Reflect Type'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 0
@@ -7916,7 +8004,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '514'
-                    identifier              = 'retaliate'
+                    identifier              = 'Retaliate'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 70
@@ -7931,7 +8019,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '515'
-                    identifier              = 'final-gambit'
+                    identifier              = 'Final Gambit'
                     generation_id           = '5'
                     type_id                 = '2'
                     power                   = 0
@@ -7946,7 +8034,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '516'
-                    identifier              = 'bestow'
+                    identifier              = 'Bestow'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 0
@@ -7961,7 +8049,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '517'
-                    identifier              = 'inferno'
+                    identifier              = 'Inferno'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 100
@@ -7976,7 +8064,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '518'
-                    identifier              = 'water-pledge'
+                    identifier              = 'Water Pledge'
                     generation_id           = '5'
                     type_id                 = '11'
                     power                   = 80
@@ -7991,7 +8079,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '519'
-                    identifier              = 'fire-pledge'
+                    identifier              = 'Fire Pledge'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 80
@@ -8006,7 +8094,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '520'
-                    identifier              = 'grass-pledge'
+                    identifier              = 'Grass Pledge'
                     generation_id           = '5'
                     type_id                 = '12'
                     power                   = 80
@@ -8021,7 +8109,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '521'
-                    identifier              = 'volt-switch'
+                    identifier              = 'Volt Switch'
                     generation_id           = '5'
                     type_id                 = '13'
                     power                   = 70
@@ -8036,7 +8124,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '522'
-                    identifier              = 'struggle-bug'
+                    identifier              = 'Struggle Bug'
                     generation_id           = '5'
                     type_id                 = '7'
                     power                   = 50
@@ -8051,7 +8139,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '523'
-                    identifier              = 'bulldoze'
+                    identifier              = 'Bulldoze'
                     generation_id           = '5'
                     type_id                 = '5'
                     power                   = 60
@@ -8066,7 +8154,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '524'
-                    identifier              = 'frost-breath'
+                    identifier              = 'Frost Breath'
                     generation_id           = '5'
                     type_id                 = '15'
                     power                   = 60
@@ -8081,7 +8169,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '525'
-                    identifier              = 'dragon-tail'
+                    identifier              = 'Dragon Tail'
                     generation_id           = '5'
                     type_id                 = '16'
                     power                   = 60
@@ -8096,7 +8184,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '526'
-                    identifier              = 'work-up'
+                    identifier              = 'Work Up'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 0
@@ -8111,7 +8199,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '527'
-                    identifier              = 'electroweb'
+                    identifier              = 'Electroweb'
                     generation_id           = '5'
                     type_id                 = '13'
                     power                   = 55
@@ -8126,7 +8214,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '528'
-                    identifier              = 'wild-charge'
+                    identifier              = 'Wild Charge'
                     generation_id           = '5'
                     type_id                 = '13'
                     power                   = 90
@@ -8141,7 +8229,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '529'
-                    identifier              = 'drill-run'
+                    identifier              = 'Drill Run'
                     generation_id           = '5'
                     type_id                 = '5'
                     power                   = 80
@@ -8156,7 +8244,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '530'
-                    identifier              = 'dual-chop'
+                    identifier              = 'Dual Chop'
                     generation_id           = '5'
                     type_id                 = '16'
                     power                   = 40
@@ -8171,7 +8259,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '531'
-                    identifier              = 'heart-stamp'
+                    identifier              = 'Heart Stamp'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 60
@@ -8186,7 +8274,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '532'
-                    identifier              = 'horn-leech'
+                    identifier              = 'Horn Leech'
                     generation_id           = '5'
                     type_id                 = '12'
                     power                   = 75
@@ -8201,7 +8289,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '533'
-                    identifier              = 'sacred-sword'
+                    identifier              = 'Sacred Sword'
                     generation_id           = '5'
                     type_id                 = '2'
                     power                   = 90
@@ -8216,7 +8304,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '534'
-                    identifier              = 'razor-shell'
+                    identifier              = 'Razor Shell'
                     generation_id           = '5'
                     type_id                 = '11'
                     power                   = 75
@@ -8231,7 +8319,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '535'
-                    identifier              = 'heat-crash'
+                    identifier              = 'Heat Crash'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 0
@@ -8246,7 +8334,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '536'
-                    identifier              = 'leaf-tornado'
+                    identifier              = 'Leaf Tornado'
                     generation_id           = '5'
                     type_id                 = '12'
                     power                   = 65
@@ -8261,7 +8349,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '537'
-                    identifier              = 'steamroller'
+                    identifier              = 'Steamroller'
                     generation_id           = '5'
                     type_id                 = '7'
                     power                   = 65
@@ -8276,7 +8364,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '538'
-                    identifier              = 'cotton-guard'
+                    identifier              = 'Cotton Guard'
                     generation_id           = '5'
                     type_id                 = '12'
                     power                   = 0
@@ -8291,7 +8379,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '539'
-                    identifier              = 'night-daze'
+                    identifier              = 'Night Daze'
                     generation_id           = '5'
                     type_id                 = '17'
                     power                   = 85
@@ -8306,7 +8394,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '540'
-                    identifier              = 'psystrike'
+                    identifier              = 'Psystrike'
                     generation_id           = '5'
                     type_id                 = '14'
                     power                   = 100
@@ -8321,7 +8409,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '541'
-                    identifier              = 'tail-slap'
+                    identifier              = 'Tail Slap'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 25
@@ -8336,7 +8424,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '542'
-                    identifier              = 'hurricane'
+                    identifier              = 'Hurricane'
                     generation_id           = '5'
                     type_id                 = '3'
                     power                   = 110
@@ -8351,7 +8439,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '543'
-                    identifier              = 'head-charge'
+                    identifier              = 'Head Charge'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 120
@@ -8366,7 +8454,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '544'
-                    identifier              = 'gear-grind'
+                    identifier              = 'Gear Grind'
                     generation_id           = '5'
                     type_id                 = '9'
                     power                   = 50
@@ -8381,7 +8469,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '545'
-                    identifier              = 'searing-shot'
+                    identifier              = 'Searing Shot'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 100
@@ -8396,7 +8484,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '546'
-                    identifier              = 'techno-blast'
+                    identifier              = 'Techno Blast'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 120
@@ -8411,7 +8499,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '547'
-                    identifier              = 'relic-song'
+                    identifier              = 'Relic Song'
                     generation_id           = '5'
                     type_id                 = '1'
                     power                   = 75
@@ -8426,7 +8514,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '548'
-                    identifier              = 'secret-sword'
+                    identifier              = 'Secret Sword'
                     generation_id           = '5'
                     type_id                 = '2'
                     power                   = 85
@@ -8441,7 +8529,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '549'
-                    identifier              = 'glaciate'
+                    identifier              = 'Glaciate'
                     generation_id           = '5'
                     type_id                 = '15'
                     power                   = 65
@@ -8456,7 +8544,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '550'
-                    identifier              = 'bolt-strike'
+                    identifier              = 'Bolt Strike'
                     generation_id           = '5'
                     type_id                 = '13'
                     power                   = 130
@@ -8471,7 +8559,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '551'
-                    identifier              = 'blue-flare'
+                    identifier              = 'Blue Flare'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 130
@@ -8486,7 +8574,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '552'
-                    identifier              = 'fiery-dance'
+                    identifier              = 'Fiery Dance'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 80
@@ -8501,7 +8589,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '553'
-                    identifier              = 'freeze-shock'
+                    identifier              = 'Freeze Shock'
                     generation_id           = '5'
                     type_id                 = '15'
                     power                   = 140
@@ -8516,7 +8604,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '554'
-                    identifier              = 'ice-burn'
+                    identifier              = 'Ice Burn'
                     generation_id           = '5'
                     type_id                 = '15'
                     power                   = 140
@@ -8531,7 +8619,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '555'
-                    identifier              = 'snarl'
+                    identifier              = 'Snarl'
                     generation_id           = '5'
                     type_id                 = '17'
                     power                   = 55
@@ -8546,7 +8634,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '556'
-                    identifier              = 'icicle-crash'
+                    identifier              = 'Icicle Crash'
                     generation_id           = '5'
                     type_id                 = '15'
                     power                   = 85
@@ -8561,7 +8649,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '557'
-                    identifier              = 'v-create'
+                    identifier              = 'V Create'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 180
@@ -8576,7 +8664,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '558'
-                    identifier              = 'fusion-flare'
+                    identifier              = 'Fusion Flare'
                     generation_id           = '5'
                     type_id                 = '10'
                     power                   = 100
@@ -8591,7 +8679,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '559'
-                    identifier              = 'fusion-bolt'
+                    identifier              = 'Fusion Bolt'
                     generation_id           = '5'
                     type_id                 = '13'
                     power                   = 100
@@ -8606,7 +8694,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '560'
-                    identifier              = 'flying-press'
+                    identifier              = 'Flying Press'
                     generation_id           = '6'
                     type_id                 = '2'
                     power                   = 100
@@ -8621,7 +8709,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '561'
-                    identifier              = 'mat-block'
+                    identifier              = 'Mat Block'
                     generation_id           = '6'
                     type_id                 = '2'
                     power                   = 0
@@ -8636,7 +8724,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '562'
-                    identifier              = 'belch'
+                    identifier              = 'Belch'
                     generation_id           = '6'
                     type_id                 = '4'
                     power                   = 120
@@ -8651,7 +8739,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '563'
-                    identifier              = 'rototiller'
+                    identifier              = 'Rototiller'
                     generation_id           = '6'
                     type_id                 = '5'
                     power                   = 0
@@ -8666,7 +8754,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '564'
-                    identifier              = 'sticky-web'
+                    identifier              = 'Sticky Web'
                     generation_id           = '6'
                     type_id                 = '7'
                     power                   = 0
@@ -8681,7 +8769,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '565'
-                    identifier              = 'fell-stinger'
+                    identifier              = 'Fell Stinger'
                     generation_id           = '6'
                     type_id                 = '7'
                     power                   = 50
@@ -8696,7 +8784,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '566'
-                    identifier              = 'phantom-force'
+                    identifier              = 'Phantom Force'
                     generation_id           = '6'
                     type_id                 = '8'
                     power                   = 90
@@ -8711,7 +8799,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '567'
-                    identifier              = 'trick-or-treat'
+                    identifier              = 'Trick Or Treat'
                     generation_id           = '6'
                     type_id                 = '8'
                     power                   = 0
@@ -8726,7 +8814,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '568'
-                    identifier              = 'noble-roar'
+                    identifier              = 'Noble Roar'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 0
@@ -8741,7 +8829,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '569'
-                    identifier              = 'ion-deluge'
+                    identifier              = 'Ion Deluge'
                     generation_id           = '6'
                     type_id                 = '13'
                     power                   = 0
@@ -8756,7 +8844,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '570'
-                    identifier              = 'parabolic-charge'
+                    identifier              = 'Parabolic Charge'
                     generation_id           = '6'
                     type_id                 = '13'
                     power                   = 65
@@ -8771,7 +8859,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '571'
-                    identifier              = 'forests-curse'
+                    identifier              = 'Forests Curse'
                     generation_id           = '6'
                     type_id                 = '12'
                     power                   = 0
@@ -8786,7 +8874,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '572'
-                    identifier              = 'petal-blizzard'
+                    identifier              = 'Petal Blizzard'
                     generation_id           = '6'
                     type_id                 = '12'
                     power                   = 90
@@ -8801,7 +8889,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '573'
-                    identifier              = 'freeze-dry'
+                    identifier              = 'Freeze Dry'
                     generation_id           = '6'
                     type_id                 = '15'
                     power                   = 70
@@ -8816,7 +8904,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '574'
-                    identifier              = 'disarming-voice'
+                    identifier              = 'Disarming Voice'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 40
@@ -8831,7 +8919,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '575'
-                    identifier              = 'parting-shot'
+                    identifier              = 'Parting Shot'
                     generation_id           = '6'
                     type_id                 = '17'
                     power                   = 0
@@ -8846,7 +8934,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '576'
-                    identifier              = 'topsy-turvy'
+                    identifier              = 'Topsy Turvy'
                     generation_id           = '6'
                     type_id                 = '17'
                     power                   = 0
@@ -8861,7 +8949,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '577'
-                    identifier              = 'draining-kiss'
+                    identifier              = 'Draining Kiss'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 50
@@ -8876,7 +8964,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '578'
-                    identifier              = 'crafty-shield'
+                    identifier              = 'Crafty Shield'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 0
@@ -8891,7 +8979,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '579'
-                    identifier              = 'flower-shield'
+                    identifier              = 'Flower Shield'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 0
@@ -8906,7 +8994,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '580'
-                    identifier              = 'grassy-terrain'
+                    identifier              = 'Grassy Terrain'
                     generation_id           = '6'
                     type_id                 = '12'
                     power                   = 0
@@ -8921,7 +9009,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '581'
-                    identifier              = 'misty-terrain'
+                    identifier              = 'Misty Terrain'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 0
@@ -8936,7 +9024,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '582'
-                    identifier              = 'electrify'
+                    identifier              = 'Electrify'
                     generation_id           = '6'
                     type_id                 = '13'
                     power                   = 0
@@ -8951,7 +9039,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '583'
-                    identifier              = 'play-rough'
+                    identifier              = 'Play Rough'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 90
@@ -8966,7 +9054,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '584'
-                    identifier              = 'fairy-wind'
+                    identifier              = 'Fairy Wind'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 40
@@ -8981,7 +9069,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '585'
-                    identifier              = 'moonblast'
+                    identifier              = 'Moonblast'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 95
@@ -8996,7 +9084,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '586'
-                    identifier              = 'boomburst'
+                    identifier              = 'Boomburst'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 140
@@ -9011,7 +9099,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '587'
-                    identifier              = 'fairy-lock'
+                    identifier              = 'Fairy Lock'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 0
@@ -9026,7 +9114,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '588'
-                    identifier              = 'kings-shield'
+                    identifier              = 'Kings Shield'
                     generation_id           = '6'
                     type_id                 = '9'
                     power                   = 0
@@ -9041,7 +9129,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '589'
-                    identifier              = 'play-nice'
+                    identifier              = 'Play Nice'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 0
@@ -9056,7 +9144,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '590'
-                    identifier              = 'confide'
+                    identifier              = 'Confide'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 0
@@ -9071,7 +9159,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '591'
-                    identifier              = 'diamond-storm'
+                    identifier              = 'Diamond Storm'
                     generation_id           = '6'
                     type_id                 = '6'
                     power                   = 100
@@ -9086,7 +9174,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '592'
-                    identifier              = 'steam-eruption'
+                    identifier              = 'Steam Eruption'
                     generation_id           = '6'
                     type_id                 = '11'
                     power                   = 110
@@ -9101,7 +9189,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '593'
-                    identifier              = 'hyperspace-hole'
+                    identifier              = 'Hyperspace Hole'
                     generation_id           = '6'
                     type_id                 = '14'
                     power                   = 80
@@ -9116,7 +9204,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '594'
-                    identifier              = 'water-shuriken'
+                    identifier              = 'Water Shuriken'
                     generation_id           = '6'
                     type_id                 = '11'
                     power                   = 15
@@ -9131,7 +9219,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '595'
-                    identifier              = 'mystical-fire'
+                    identifier              = 'Mystical Fire'
                     generation_id           = '6'
                     type_id                 = '10'
                     power                   = 75
@@ -9146,7 +9234,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '596'
-                    identifier              = 'spiky-shield'
+                    identifier              = 'Spiky Shield'
                     generation_id           = '6'
                     type_id                 = '12'
                     power                   = 0
@@ -9161,7 +9249,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '597'
-                    identifier              = 'aromatic-mist'
+                    identifier              = 'Aromatic Mist'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 0
@@ -9176,7 +9264,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '598'
-                    identifier              = 'eerie-impulse'
+                    identifier              = 'Eerie Impulse'
                     generation_id           = '6'
                     type_id                 = '13'
                     power                   = 0
@@ -9191,7 +9279,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '599'
-                    identifier              = 'venom-drench'
+                    identifier              = 'Venom Drench'
                     generation_id           = '6'
                     type_id                 = '4'
                     power                   = 0
@@ -9206,7 +9294,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '600'
-                    identifier              = 'powder'
+                    identifier              = 'Powder'
                     generation_id           = '6'
                     type_id                 = '7'
                     power                   = 0
@@ -9221,7 +9309,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '601'
-                    identifier              = 'geomancy'
+                    identifier              = 'Geomancy'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 0
@@ -9236,7 +9324,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '602'
-                    identifier              = 'magnetic-flux'
+                    identifier              = 'Magnetic Flux'
                     generation_id           = '6'
                     type_id                 = '13'
                     power                   = 0
@@ -9251,7 +9339,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '603'
-                    identifier              = 'happy-hour'
+                    identifier              = 'Happy Hour'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 0
@@ -9266,7 +9354,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '604'
-                    identifier              = 'electric-terrain'
+                    identifier              = 'Electric Terrain'
                     generation_id           = '6'
                     type_id                 = '13'
                     power                   = 0
@@ -9281,7 +9369,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '605'
-                    identifier              = 'dazzling-gleam'
+                    identifier              = 'Dazzling Gleam'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 80
@@ -9296,7 +9384,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '606'
-                    identifier              = 'celebrate'
+                    identifier              = 'Celebrate'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 0
@@ -9311,7 +9399,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '607'
-                    identifier              = 'hold-hands'
+                    identifier              = 'Hold Hands'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 0
@@ -9326,7 +9414,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '608'
-                    identifier              = 'baby-doll-eyes'
+                    identifier              = 'Baby Doll Eyes'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 0
@@ -9341,7 +9429,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '609'
-                    identifier              = 'nuzzle'
+                    identifier              = 'Nuzzle'
                     generation_id           = '6'
                     type_id                 = '13'
                     power                   = 20
@@ -9356,7 +9444,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '610'
-                    identifier              = 'hold-back'
+                    identifier              = 'Hold Back'
                     generation_id           = '6'
                     type_id                 = '1'
                     power                   = 40
@@ -9371,7 +9459,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '611'
-                    identifier              = 'infestation'
+                    identifier              = 'Infestation'
                     generation_id           = '6'
                     type_id                 = '7'
                     power                   = 20
@@ -9386,7 +9474,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '612'
-                    identifier              = 'power-up-punch'
+                    identifier              = 'Power Up Punch'
                     generation_id           = '6'
                     type_id                 = '2'
                     power                   = 40
@@ -9401,7 +9489,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '613'
-                    identifier              = 'oblivion-wing'
+                    identifier              = 'Oblivion Wing'
                     generation_id           = '6'
                     type_id                 = '3'
                     power                   = 80
@@ -9416,7 +9504,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '614'
-                    identifier              = 'thousand-arrows'
+                    identifier              = 'Thousand Arrows'
                     generation_id           = '6'
                     type_id                 = '5'
                     power                   = 90
@@ -9431,7 +9519,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '615'
-                    identifier              = 'thousand-waves'
+                    identifier              = 'Thousand Waves'
                     generation_id           = '6'
                     type_id                 = '5'
                     power                   = 90
@@ -9446,7 +9534,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '616'
-                    identifier              = 'lands-wrath'
+                    identifier              = 'Lands Wrath'
                     generation_id           = '6'
                     type_id                 = '5'
                     power                   = 90
@@ -9461,7 +9549,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '617'
-                    identifier              = 'light-of-ruin'
+                    identifier              = 'Light Of Ruin'
                     generation_id           = '6'
                     type_id                 = '18'
                     power                   = 140
@@ -9476,7 +9564,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '618'
-                    identifier              = 'origin-pulse'
+                    identifier              = 'Origin Pulse'
                     generation_id           = '6'
                     type_id                 = '11'
                     power                   = 110
@@ -9491,7 +9579,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '619'
-                    identifier              = 'precipice-blades'
+                    identifier              = 'Precipice Blades'
                     generation_id           = '6'
                     type_id                 = '5'
                     power                   = 120
@@ -9506,7 +9594,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '620'
-                    identifier              = 'dragon-ascent'
+                    identifier              = 'Dragon Ascent'
                     generation_id           = '6'
                     type_id                 = '3'
                     power                   = 120
@@ -9521,7 +9609,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '621'
-                    identifier              = 'hyperspace-fury'
+                    identifier              = 'Hyperspace Fury'
                     generation_id           = '6'
                     type_id                 = '17'
                     power                   = 100
@@ -9536,7 +9624,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '622'
-                    identifier              = 'breakneck-blitz--physical'
+                    identifier              = 'Breakneck Blitz  Physical'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 0
@@ -9551,7 +9639,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '623'
-                    identifier              = 'breakneck-blitz--special'
+                    identifier              = 'Breakneck Blitz  Special'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 0
@@ -9566,7 +9654,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '624'
-                    identifier              = 'all-out-pummeling--physical'
+                    identifier              = 'All Out Pummeling  Physical'
                     generation_id           = '7'
                     type_id                 = '2'
                     power                   = 0
@@ -9581,7 +9669,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '625'
-                    identifier              = 'all-out-pummeling--special'
+                    identifier              = 'All Out Pummeling  Special'
                     generation_id           = '7'
                     type_id                 = '2'
                     power                   = 0
@@ -9596,7 +9684,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '626'
-                    identifier              = 'supersonic-skystrike--physical'
+                    identifier              = 'Supersonic Skystrike  Physical'
                     generation_id           = '7'
                     type_id                 = '3'
                     power                   = 0
@@ -9611,7 +9699,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '627'
-                    identifier              = 'supersonic-skystrike--special'
+                    identifier              = 'Supersonic Skystrike  Special'
                     generation_id           = '7'
                     type_id                 = '3'
                     power                   = 0
@@ -9626,7 +9714,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '628'
-                    identifier              = 'acid-downpour--physical'
+                    identifier              = 'Acid Downpour  Physical'
                     generation_id           = '7'
                     type_id                 = '4'
                     power                   = 0
@@ -9641,7 +9729,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '629'
-                    identifier              = 'acid-downpour--special'
+                    identifier              = 'Acid Downpour  Special'
                     generation_id           = '7'
                     type_id                 = '4'
                     power                   = 0
@@ -9656,7 +9744,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '630'
-                    identifier              = 'tectonic-rage--physical'
+                    identifier              = 'Tectonic Rage  Physical'
                     generation_id           = '7'
                     type_id                 = '5'
                     power                   = 0
@@ -9671,7 +9759,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '631'
-                    identifier              = 'tectonic-rage--special'
+                    identifier              = 'Tectonic Rage  Special'
                     generation_id           = '7'
                     type_id                 = '5'
                     power                   = 0
@@ -9686,7 +9774,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '632'
-                    identifier              = 'continental-crush--physical'
+                    identifier              = 'Continental Crush  Physical'
                     generation_id           = '7'
                     type_id                 = '6'
                     power                   = 0
@@ -9701,7 +9789,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '633'
-                    identifier              = 'continental-crush--special'
+                    identifier              = 'Continental Crush  Special'
                     generation_id           = '7'
                     type_id                 = '6'
                     power                   = 0
@@ -9716,7 +9804,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '634'
-                    identifier              = 'savage-spin-out--physical'
+                    identifier              = 'Savage Spin Out  Physical'
                     generation_id           = '7'
                     type_id                 = '7'
                     power                   = 0
@@ -9731,7 +9819,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '635'
-                    identifier              = 'savage-spin-out--special'
+                    identifier              = 'Savage Spin Out  Special'
                     generation_id           = '7'
                     type_id                 = '7'
                     power                   = 0
@@ -9746,7 +9834,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '636'
-                    identifier              = 'never-ending-nightmare--physical'
+                    identifier              = 'Never Ending Nightmare  Physical'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 0
@@ -9761,7 +9849,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '637'
-                    identifier              = 'never-ending-nightmare--special'
+                    identifier              = 'Never Ending Nightmare  Special'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 0
@@ -9776,7 +9864,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '638'
-                    identifier              = 'corkscrew-crash--physical'
+                    identifier              = 'Corkscrew Crash  Physical'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 0
@@ -9791,7 +9879,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '639'
-                    identifier              = 'corkscrew-crash--special'
+                    identifier              = 'Corkscrew Crash  Special'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 0
@@ -9806,7 +9894,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '640'
-                    identifier              = 'inferno-overdrive--physical'
+                    identifier              = 'Inferno Overdrive  Physical'
                     generation_id           = '7'
                     type_id                 = '10'
                     power                   = 0
@@ -9821,7 +9909,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '641'
-                    identifier              = 'inferno-overdrive--special'
+                    identifier              = 'Inferno Overdrive  Special'
                     generation_id           = '7'
                     type_id                 = '10'
                     power                   = 0
@@ -9836,7 +9924,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '642'
-                    identifier              = 'hydro-vortex--physical'
+                    identifier              = 'Hydro Vortex  Physical'
                     generation_id           = '7'
                     type_id                 = '11'
                     power                   = 0
@@ -9851,7 +9939,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '643'
-                    identifier              = 'hydro-vortex--special'
+                    identifier              = 'Hydro Vortex  Special'
                     generation_id           = '7'
                     type_id                 = '11'
                     power                   = 0
@@ -9866,7 +9954,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '644'
-                    identifier              = 'bloom-doom--physical'
+                    identifier              = 'Bloom Doom  Physical'
                     generation_id           = '7'
                     type_id                 = '12'
                     power                   = 0
@@ -9881,7 +9969,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '645'
-                    identifier              = 'bloom-doom--special'
+                    identifier              = 'Bloom Doom  Special'
                     generation_id           = '7'
                     type_id                 = '12'
                     power                   = 0
@@ -9896,7 +9984,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '646'
-                    identifier              = 'gigavolt-havoc--physical'
+                    identifier              = 'Gigavolt Havoc  Physical'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 0
@@ -9911,7 +9999,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '647'
-                    identifier              = 'gigavolt-havoc--special'
+                    identifier              = 'Gigavolt Havoc  Special'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 0
@@ -9926,7 +10014,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '648'
-                    identifier              = 'shattered-psyche--physical'
+                    identifier              = 'Shattered Psyche  Physical'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 0
@@ -9941,7 +10029,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '649'
-                    identifier              = 'shattered-psyche--special'
+                    identifier              = 'Shattered Psyche  Special'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 0
@@ -9956,7 +10044,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '650'
-                    identifier              = 'subzero-slammer--physical'
+                    identifier              = 'Subzero Slammer  Physical'
                     generation_id           = '7'
                     type_id                 = '15'
                     power                   = 0
@@ -9971,7 +10059,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '651'
-                    identifier              = 'subzero-slammer--special'
+                    identifier              = 'Subzero Slammer  Special'
                     generation_id           = '7'
                     type_id                 = '15'
                     power                   = 0
@@ -9986,7 +10074,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '652'
-                    identifier              = 'devastating-drake--physical'
+                    identifier              = 'Devastating Drake  Physical'
                     generation_id           = '7'
                     type_id                 = '16'
                     power                   = 0
@@ -10001,7 +10089,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '653'
-                    identifier              = 'devastating-drake--special'
+                    identifier              = 'Devastating Drake  Special'
                     generation_id           = '7'
                     type_id                 = '16'
                     power                   = 0
@@ -10016,7 +10104,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '654'
-                    identifier              = 'black-hole-eclipse--physical'
+                    identifier              = 'Black Hole Eclipse  Physical'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 0
@@ -10031,7 +10119,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '655'
-                    identifier              = 'black-hole-eclipse--special'
+                    identifier              = 'Black Hole Eclipse  Special'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 0
@@ -10046,7 +10134,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '656'
-                    identifier              = 'twinkle-tackle--physical'
+                    identifier              = 'Twinkle Tackle  Physical'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 0
@@ -10061,7 +10149,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '657'
-                    identifier              = 'twinkle-tackle--special'
+                    identifier              = 'Twinkle Tackle  Special'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 0
@@ -10076,7 +10164,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '658'
-                    identifier              = 'catastropika'
+                    identifier              = 'Catastropika'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 210
@@ -10091,7 +10179,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '659'
-                    identifier              = 'shore-up'
+                    identifier              = 'Shore Up'
                     generation_id           = '7'
                     type_id                 = '5'
                     power                   = 0
@@ -10106,7 +10194,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '660'
-                    identifier              = 'first-impression'
+                    identifier              = 'First Impression'
                     generation_id           = '7'
                     type_id                 = '7'
                     power                   = 90
@@ -10121,7 +10209,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '661'
-                    identifier              = 'baneful-bunker'
+                    identifier              = 'Baneful Bunker'
                     generation_id           = '7'
                     type_id                 = '4'
                     power                   = 0
@@ -10136,7 +10224,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '662'
-                    identifier              = 'spirit-shackle'
+                    identifier              = 'Spirit Shackle'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 80
@@ -10151,7 +10239,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '663'
-                    identifier              = 'darkest-lariat'
+                    identifier              = 'Darkest Lariat'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 85
@@ -10166,7 +10254,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '664'
-                    identifier              = 'sparkling-aria'
+                    identifier              = 'Sparkling Aria'
                     generation_id           = '7'
                     type_id                 = '11'
                     power                   = 90
@@ -10181,7 +10269,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '665'
-                    identifier              = 'ice-hammer'
+                    identifier              = 'Ice Hammer'
                     generation_id           = '7'
                     type_id                 = '15'
                     power                   = 100
@@ -10196,7 +10284,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '666'
-                    identifier              = 'floral-healing'
+                    identifier              = 'Floral Healing'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 0
@@ -10211,7 +10299,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '667'
-                    identifier              = 'high-horsepower'
+                    identifier              = 'High Horsepower'
                     generation_id           = '7'
                     type_id                 = '5'
                     power                   = 95
@@ -10226,7 +10314,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '668'
-                    identifier              = 'strength-sap'
+                    identifier              = 'Strength Sap'
                     generation_id           = '7'
                     type_id                 = '12'
                     power                   = 0
@@ -10241,7 +10329,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '669'
-                    identifier              = 'solar-blade'
+                    identifier              = 'Solar Blade'
                     generation_id           = '7'
                     type_id                 = '12'
                     power                   = 125
@@ -10256,7 +10344,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '670'
-                    identifier              = 'leafage'
+                    identifier              = 'Leafage'
                     generation_id           = '7'
                     type_id                 = '12'
                     power                   = 40
@@ -10271,7 +10359,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '671'
-                    identifier              = 'spotlight'
+                    identifier              = 'Spotlight'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 0
@@ -10286,7 +10374,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '672'
-                    identifier              = 'toxic-thread'
+                    identifier              = 'Toxic Thread'
                     generation_id           = '7'
                     type_id                 = '4'
                     power                   = 0
@@ -10301,7 +10389,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '673'
-                    identifier              = 'laser-focus'
+                    identifier              = 'Laser Focus'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 0
@@ -10316,7 +10404,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '674'
-                    identifier              = 'gear-up'
+                    identifier              = 'Gear Up'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 0
@@ -10331,7 +10419,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '675'
-                    identifier              = 'throat-chop'
+                    identifier              = 'Throat Chop'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 80
@@ -10346,7 +10434,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '676'
-                    identifier              = 'pollen-puff'
+                    identifier              = 'Pollen Puff'
                     generation_id           = '7'
                     type_id                 = '7'
                     power                   = 90
@@ -10361,7 +10449,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '677'
-                    identifier              = 'anchor-shot'
+                    identifier              = 'Anchor Shot'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 80
@@ -10376,7 +10464,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '678'
-                    identifier              = 'psychic-terrain'
+                    identifier              = 'Psychic Terrain'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 0
@@ -10391,7 +10479,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '679'
-                    identifier              = 'lunge'
+                    identifier              = 'Lunge'
                     generation_id           = '7'
                     type_id                 = '7'
                     power                   = 80
@@ -10406,7 +10494,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '680'
-                    identifier              = 'fire-lash'
+                    identifier              = 'Fire Lash'
                     generation_id           = '7'
                     type_id                 = '10'
                     power                   = 80
@@ -10421,7 +10509,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '681'
-                    identifier              = 'power-trip'
+                    identifier              = 'Power Trip'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 20
@@ -10436,7 +10524,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '682'
-                    identifier              = 'burn-up'
+                    identifier              = 'Burn Up'
                     generation_id           = '7'
                     type_id                 = '10'
                     power                   = 130
@@ -10451,7 +10539,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '683'
-                    identifier              = 'speed-swap'
+                    identifier              = 'Speed Swap'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 0
@@ -10466,7 +10554,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '684'
-                    identifier              = 'smart-strike'
+                    identifier              = 'Smart Strike'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 70
@@ -10481,7 +10569,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '685'
-                    identifier              = 'purify'
+                    identifier              = 'Purify'
                     generation_id           = '7'
                     type_id                 = '4'
                     power                   = 0
@@ -10496,7 +10584,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '686'
-                    identifier              = 'revelation-dance'
+                    identifier              = 'Revelation Dance'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 90
@@ -10511,7 +10599,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '687'
-                    identifier              = 'core-enforcer'
+                    identifier              = 'Core Enforcer'
                     generation_id           = '7'
                     type_id                 = '16'
                     power                   = 100
@@ -10526,7 +10614,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '688'
-                    identifier              = 'trop-kick'
+                    identifier              = 'Trop Kick'
                     generation_id           = '7'
                     type_id                 = '12'
                     power                   = 70
@@ -10541,7 +10629,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '689'
-                    identifier              = 'instruct'
+                    identifier              = 'Instruct'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 0
@@ -10556,7 +10644,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '690'
-                    identifier              = 'beak-blast'
+                    identifier              = 'Beak Blast'
                     generation_id           = '7'
                     type_id                 = '3'
                     power                   = 100
@@ -10571,7 +10659,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '691'
-                    identifier              = 'clanging-scales'
+                    identifier              = 'Clanging Scales'
                     generation_id           = '7'
                     type_id                 = '16'
                     power                   = 110
@@ -10586,7 +10674,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '692'
-                    identifier              = 'dragon-hammer'
+                    identifier              = 'Dragon Hammer'
                     generation_id           = '7'
                     type_id                 = '16'
                     power                   = 90
@@ -10601,7 +10689,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '693'
-                    identifier              = 'brutal-swing'
+                    identifier              = 'Brutal Swing'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 60
@@ -10616,7 +10704,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '694'
-                    identifier              = 'aurora-veil'
+                    identifier              = 'Aurora Veil'
                     generation_id           = '7'
                     type_id                 = '15'
                     power                   = 0
@@ -10631,7 +10719,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '695'
-                    identifier              = 'sinister-arrow-raid'
+                    identifier              = 'Sinister Arrow Raid'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 180
@@ -10646,7 +10734,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '696'
-                    identifier              = 'malicious-moonsault'
+                    identifier              = 'Malicious Moonsault'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 180
@@ -10661,7 +10749,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '697'
-                    identifier              = 'oceanic-operetta'
+                    identifier              = 'Oceanic Operetta'
                     generation_id           = '7'
                     type_id                 = '11'
                     power                   = 195
@@ -10676,7 +10764,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '698'
-                    identifier              = 'guardian-of-alola'
+                    identifier              = 'Guardian Of Alola'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 0
@@ -10691,7 +10779,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '699'
-                    identifier              = 'soul-stealing-7-star-strike'
+                    identifier              = 'Soul Stealing 7 Star Strike'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 195
@@ -10706,7 +10794,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '700'
-                    identifier              = 'stoked-sparksurfer'
+                    identifier              = 'Stoked Sparksurfer'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 175
@@ -10721,7 +10809,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '701'
-                    identifier              = 'pulverizing-pancake'
+                    identifier              = 'Pulverizing Pancake'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 210
@@ -10736,7 +10824,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '702'
-                    identifier              = 'extreme-evoboost'
+                    identifier              = 'Extreme Evoboost'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 0
@@ -10751,7 +10839,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '703'
-                    identifier              = 'genesis-supernova'
+                    identifier              = 'Genesis Supernova'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 185
@@ -10766,7 +10854,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '704'
-                    identifier              = 'shell-trap'
+                    identifier              = 'Shell Trap'
                     generation_id           = '7'
                     type_id                 = '10'
                     power                   = 150
@@ -10781,7 +10869,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '705'
-                    identifier              = 'fleur-cannon'
+                    identifier              = 'Fleur Cannon'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 130
@@ -10796,7 +10884,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '706'
-                    identifier              = 'psychic-fangs'
+                    identifier              = 'Psychic Fangs'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 85
@@ -10811,7 +10899,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '707'
-                    identifier              = 'stomping-tantrum'
+                    identifier              = 'Stomping Tantrum'
                     generation_id           = '7'
                     type_id                 = '5'
                     power                   = 75
@@ -10826,7 +10914,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '708'
-                    identifier              = 'shadow-bone'
+                    identifier              = 'Shadow Bone'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 85
@@ -10841,7 +10929,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '709'
-                    identifier              = 'accelerock'
+                    identifier              = 'Accelerock'
                     generation_id           = '7'
                     type_id                 = '6'
                     power                   = 40
@@ -10856,7 +10944,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '710'
-                    identifier              = 'liquidation'
+                    identifier              = 'Liquidation'
                     generation_id           = '7'
                     type_id                 = '11'
                     power                   = 85
@@ -10871,7 +10959,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '711'
-                    identifier              = 'prismatic-laser'
+                    identifier              = 'Prismatic Laser'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 160
@@ -10886,7 +10974,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '712'
-                    identifier              = 'spectral-thief'
+                    identifier              = 'Spectral Thief'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 90
@@ -10901,7 +10989,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '713'
-                    identifier              = 'sunsteel-strike'
+                    identifier              = 'Sunsteel Strike'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 100
@@ -10916,7 +11004,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '714'
-                    identifier              = 'moongeist-beam'
+                    identifier              = 'Moongeist Beam'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 100
@@ -10931,7 +11019,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '715'
-                    identifier              = 'tearful-look'
+                    identifier              = 'Tearful Look'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 0
@@ -10946,7 +11034,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '716'
-                    identifier              = 'zing-zap'
+                    identifier              = 'Zing Zap'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 80
@@ -10961,7 +11049,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '717'
-                    identifier              = 'natures-madness'
+                    identifier              = 'Natures Madness'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 0
@@ -10976,7 +11064,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '718'
-                    identifier              = 'multi-attack'
+                    identifier              = 'Multi Attack'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 120
@@ -10991,7 +11079,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '719'
-                    identifier              = '10-000-000-volt-thunderbolt'
+                    identifier              = '10 000 000 Volt Thunderbolt'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 195
@@ -11006,7 +11094,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '720'
-                    identifier              = 'mind-blown'
+                    identifier              = 'Mind Blown'
                     generation_id           = '7'
                     type_id                 = '10'
                     power                   = 150
@@ -11021,7 +11109,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '721'
-                    identifier              = 'plasma-fists'
+                    identifier              = 'Plasma Fists'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 100
@@ -11036,7 +11124,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '722'
-                    identifier              = 'photon-geyser'
+                    identifier              = 'Photon Geyser'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 100
@@ -11051,7 +11139,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '723'
-                    identifier              = 'light-that-burns-the-sky'
+                    identifier              = 'Light That Burns The Sky'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 200
@@ -11066,7 +11154,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '724'
-                    identifier              = 'searing-sunraze-smash'
+                    identifier              = 'Searing Sunraze Smash'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 200
@@ -11081,7 +11169,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '725'
-                    identifier              = 'menacing-moonraze-maelstrom'
+                    identifier              = 'Menacing Moonraze Maelstrom'
                     generation_id           = '7'
                     type_id                 = '8'
                     power                   = 200
@@ -11096,7 +11184,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '726'
-                    identifier              = 'lets-snuggle-forever'
+                    identifier              = 'Lets Snuggle Forever'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 190
@@ -11111,7 +11199,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '727'
-                    identifier              = 'splintered-stormshards'
+                    identifier              = 'Splintered Stormshards'
                     generation_id           = '7'
                     type_id                 = '6'
                     power                   = 190
@@ -11126,7 +11214,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '728'
-                    identifier              = 'clangorous-soulblaze'
+                    identifier              = 'Clangorous Soulblaze'
                     generation_id           = '7'
                     type_id                 = '16'
                     power                   = 185
@@ -11141,7 +11229,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '729'
-                    identifier              = 'zippy-zap'
+                    identifier              = 'Zippy Zap'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 80
@@ -11156,7 +11244,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '730'
-                    identifier              = 'splishy-splash'
+                    identifier              = 'Splishy Splash'
                     generation_id           = '7'
                     type_id                 = '11'
                     power                   = 90
@@ -11171,7 +11259,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '731'
-                    identifier              = 'floaty-fall'
+                    identifier              = 'Floaty Fall'
                     generation_id           = '7'
                     type_id                 = '3'
                     power                   = 90
@@ -11186,7 +11274,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '732'
-                    identifier              = 'pika-papow'
+                    identifier              = 'Pika Papow'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 0
@@ -11201,7 +11289,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '733'
-                    identifier              = 'bouncy-bubble'
+                    identifier              = 'Bouncy Bubble'
                     generation_id           = '7'
                     type_id                 = '11'
                     power                   = 60
@@ -11216,7 +11304,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '734'
-                    identifier              = 'buzzy-buzz'
+                    identifier              = 'Buzzy Buzz'
                     generation_id           = '7'
                     type_id                 = '13'
                     power                   = 60
@@ -11231,7 +11319,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '735'
-                    identifier              = 'sizzly-slide'
+                    identifier              = 'Sizzly Slide'
                     generation_id           = '7'
                     type_id                 = '10'
                     power                   = 60
@@ -11246,7 +11334,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '736'
-                    identifier              = 'glitzy-glow'
+                    identifier              = 'Glitzy Glow'
                     generation_id           = '7'
                     type_id                 = '14'
                     power                   = 80
@@ -11261,7 +11349,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '737'
-                    identifier              = 'baddy-bad'
+                    identifier              = 'Baddy Bad'
                     generation_id           = '7'
                     type_id                 = '17'
                     power                   = 80
@@ -11276,7 +11364,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '738'
-                    identifier              = 'sappy-seed'
+                    identifier              = 'Sappy Seed'
                     generation_id           = '7'
                     type_id                 = '12'
                     power                   = 100
@@ -11291,7 +11379,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '739'
-                    identifier              = 'freezy-frost'
+                    identifier              = 'Freezy Frost'
                     generation_id           = '7'
                     type_id                 = '15'
                     power                   = 100
@@ -11306,7 +11394,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '740'
-                    identifier              = 'sparkly-swirl'
+                    identifier              = 'Sparkly Swirl'
                     generation_id           = '7'
                     type_id                 = '18'
                     power                   = 120
@@ -11321,7 +11409,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '741'
-                    identifier              = 'veevee-volley'
+                    identifier              = 'Veevee Volley'
                     generation_id           = '7'
                     type_id                 = '1'
                     power                   = 0
@@ -11336,7 +11424,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '742'
-                    identifier              = 'double-iron-bash'
+                    identifier              = 'Double Iron Bash'
                     generation_id           = '7'
                     type_id                 = '9'
                     power                   = 60
@@ -11351,7 +11439,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '743'
-                    identifier              = 'max-guard'
+                    identifier              = 'Max Guard'
                     generation_id           = '8'
                     type_id                 = '1'
                     power                   = 0
@@ -11366,7 +11454,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '744'
-                    identifier              = 'dynamax-cannon'
+                    identifier              = 'Dynamax Cannon'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 100
@@ -11381,7 +11469,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '745'
-                    identifier              = 'snipe-shot'
+                    identifier              = 'Snipe Shot'
                     generation_id           = '8'
                     type_id                 = '11'
                     power                   = 80
@@ -11396,7 +11484,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '746'
-                    identifier              = 'jaw-lock'
+                    identifier              = 'Jaw Lock'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 80
@@ -11411,7 +11499,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '747'
-                    identifier              = 'stuff-cheeks'
+                    identifier              = 'Stuff Cheeks'
                     generation_id           = '8'
                     type_id                 = '1'
                     power                   = 0
@@ -11426,7 +11514,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '748'
-                    identifier              = 'no-retreat'
+                    identifier              = 'No Retreat'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 0
@@ -11441,7 +11529,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '749'
-                    identifier              = 'tar-shot'
+                    identifier              = 'Tar Shot'
                     generation_id           = '8'
                     type_id                 = '6'
                     power                   = 0
@@ -11456,7 +11544,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '750'
-                    identifier              = 'magic-powder'
+                    identifier              = 'Magic Powder'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 0
@@ -11471,7 +11559,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '751'
-                    identifier              = 'dragon-darts'
+                    identifier              = 'Dragon Darts'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 50
@@ -11486,7 +11574,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '752'
-                    identifier              = 'teatime'
+                    identifier              = 'Teatime'
                     generation_id           = '8'
                     type_id                 = '1'
                     power                   = 0
@@ -11501,7 +11589,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '753'
-                    identifier              = 'octolock'
+                    identifier              = 'Octolock'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 0
@@ -11516,7 +11604,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '754'
-                    identifier              = 'bolt-beak'
+                    identifier              = 'Bolt Beak'
                     generation_id           = '8'
                     type_id                 = '13'
                     power                   = 85
@@ -11531,7 +11619,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '755'
-                    identifier              = 'fishious-rend'
+                    identifier              = 'Fishious Rend'
                     generation_id           = '8'
                     type_id                 = '11'
                     power                   = 85
@@ -11546,7 +11634,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '756'
-                    identifier              = 'court-change'
+                    identifier              = 'Court Change'
                     generation_id           = '8'
                     type_id                 = '1'
                     power                   = 0
@@ -11561,7 +11649,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '757'
-                    identifier              = 'max-flare'
+                    identifier              = 'Max Flare'
                     generation_id           = '8'
                     type_id                 = '10'
                     power                   = 100
@@ -11576,7 +11664,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '758'
-                    identifier              = 'max-flutterby'
+                    identifier              = 'Max Flutterby'
                     generation_id           = '8'
                     type_id                 = '7'
                     power                   = 10
@@ -11591,7 +11679,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '759'
-                    identifier              = 'max-lightning'
+                    identifier              = 'Max Lightning'
                     generation_id           = '8'
                     type_id                 = '13'
                     power                   = 10
@@ -11606,7 +11694,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '760'
-                    identifier              = 'max-strike'
+                    identifier              = 'Max Strike'
                     generation_id           = '8'
                     type_id                 = '1'
                     power                   = 10
@@ -11621,7 +11709,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '761'
-                    identifier              = 'max-knuckle'
+                    identifier              = 'Max Knuckle'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 10
@@ -11636,7 +11724,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '762'
-                    identifier              = 'max-phantasm'
+                    identifier              = 'Max Phantasm'
                     generation_id           = '8'
                     type_id                 = '8'
                     power                   = 10
@@ -11651,7 +11739,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '763'
-                    identifier              = 'max-hailstorm'
+                    identifier              = 'Max Hailstorm'
                     generation_id           = '8'
                     type_id                 = '15'
                     power                   = 10
@@ -11666,7 +11754,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '764'
-                    identifier              = 'max-ooze'
+                    identifier              = 'Max Ooze'
                     generation_id           = '8'
                     type_id                 = '4'
                     power                   = 10
@@ -11681,7 +11769,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '765'
-                    identifier              = 'max-geyser'
+                    identifier              = 'Max Geyser'
                     generation_id           = '8'
                     type_id                 = '11'
                     power                   = 10
@@ -11696,7 +11784,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '766'
-                    identifier              = 'max-airstream'
+                    identifier              = 'Max Airstream'
                     generation_id           = '8'
                     type_id                 = '3'
                     power                   = 10
@@ -11711,7 +11799,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '767'
-                    identifier              = 'max-starfall'
+                    identifier              = 'Max Starfall'
                     generation_id           = '8'
                     type_id                 = '18'
                     power                   = 10
@@ -11726,7 +11814,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '768'
-                    identifier              = 'max-wyrmwind'
+                    identifier              = 'Max Wyrmwind'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 10
@@ -11741,7 +11829,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '769'
-                    identifier              = 'max-mindstorm'
+                    identifier              = 'Max Mindstorm'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 10
@@ -11756,7 +11844,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '770'
-                    identifier              = 'max-rockfall'
+                    identifier              = 'Max Rockfall'
                     generation_id           = '8'
                     type_id                 = '6'
                     power                   = 10
@@ -11771,7 +11859,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '771'
-                    identifier              = 'max-quake'
+                    identifier              = 'Max Quake'
                     generation_id           = '8'
                     type_id                 = '5'
                     power                   = 10
@@ -11786,7 +11874,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '772'
-                    identifier              = 'max-darkness'
+                    identifier              = 'Max Darkness'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 10
@@ -11801,7 +11889,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '773'
-                    identifier              = 'max-overgrowth'
+                    identifier              = 'Max Overgrowth'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 10
@@ -11816,7 +11904,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '774'
-                    identifier              = 'max-steelspike'
+                    identifier              = 'Max Steelspike'
                     generation_id           = '8'
                     type_id                 = '9'
                     power                   = 10
@@ -11831,7 +11919,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '775'
-                    identifier              = 'clangorous-soul'
+                    identifier              = 'Clangorous Soul'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 0
@@ -11846,7 +11934,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '776'
-                    identifier              = 'body-press'
+                    identifier              = 'Body Press'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 80
@@ -11861,7 +11949,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '777'
-                    identifier              = 'decorate'
+                    identifier              = 'Decorate'
                     generation_id           = '8'
                     type_id                 = '18'
                     power                   = 0
@@ -11876,7 +11964,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '778'
-                    identifier              = 'drum-beating'
+                    identifier              = 'Drum Beating'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 80
@@ -11891,7 +11979,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '779'
-                    identifier              = 'snap-trap'
+                    identifier              = 'Snap Trap'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 35
@@ -11906,7 +11994,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '780'
-                    identifier              = 'pyro-ball'
+                    identifier              = 'Pyro Ball'
                     generation_id           = '8'
                     type_id                 = '10'
                     power                   = 120
@@ -11921,7 +12009,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '781'
-                    identifier              = 'behemoth-blade'
+                    identifier              = 'Behemoth Blade'
                     generation_id           = '8'
                     type_id                 = '9'
                     power                   = 100
@@ -11936,7 +12024,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '782'
-                    identifier              = 'behemoth-bash'
+                    identifier              = 'Behemoth Bash'
                     generation_id           = '8'
                     type_id                 = '9'
                     power                   = 100
@@ -11951,7 +12039,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '783'
-                    identifier              = 'aura-wheel'
+                    identifier              = 'Aura Wheel'
                     generation_id           = '8'
                     type_id                 = '13'
                     power                   = 110
@@ -11966,7 +12054,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '784'
-                    identifier              = 'breaking-swipe'
+                    identifier              = 'Breaking Swipe'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 60
@@ -11981,7 +12069,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '785'
-                    identifier              = 'branch-poke'
+                    identifier              = 'Branch Poke'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 40
@@ -11996,7 +12084,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '786'
-                    identifier              = 'overdrive'
+                    identifier              = 'Overdrive'
                     generation_id           = '8'
                     type_id                 = '13'
                     power                   = 80
@@ -12011,7 +12099,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '787'
-                    identifier              = 'apple-acid'
+                    identifier              = 'Apple Acid'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 80
@@ -12026,7 +12114,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '788'
-                    identifier              = 'grav-apple'
+                    identifier              = 'Grav Apple'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 80
@@ -12041,7 +12129,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '789'
-                    identifier              = 'spirit-break'
+                    identifier              = 'Spirit Break'
                     generation_id           = '8'
                     type_id                 = '18'
                     power                   = 75
@@ -12056,7 +12144,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '790'
-                    identifier              = 'strange-steam'
+                    identifier              = 'Strange Steam'
                     generation_id           = '8'
                     type_id                 = '18'
                     power                   = 90
@@ -12071,7 +12159,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '791'
-                    identifier              = 'life-dew'
+                    identifier              = 'Life Dew'
                     generation_id           = '8'
                     type_id                 = '11'
                     power                   = 0
@@ -12086,7 +12174,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '792'
-                    identifier              = 'obstruct'
+                    identifier              = 'Obstruct'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 0
@@ -12101,7 +12189,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '793'
-                    identifier              = 'false-surrender'
+                    identifier              = 'False Surrender'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 80
@@ -12116,7 +12204,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '794'
-                    identifier              = 'meteor-assault'
+                    identifier              = 'Meteor Assault'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 150
@@ -12131,7 +12219,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '795'
-                    identifier              = 'eternabeam'
+                    identifier              = 'Eternabeam'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 160
@@ -12146,7 +12234,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '796'
-                    identifier              = 'steel-beam'
+                    identifier              = 'Steel Beam'
                     generation_id           = '8'
                     type_id                 = '9'
                     power                   = 140
@@ -12161,7 +12249,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '797'
-                    identifier              = 'expanding-force'
+                    identifier              = 'Expanding Force'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 80
@@ -12176,7 +12264,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '798'
-                    identifier              = 'steel-roller'
+                    identifier              = 'Steel Roller'
                     generation_id           = '8'
                     type_id                 = '9'
                     power                   = 130
@@ -12191,7 +12279,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '799'
-                    identifier              = 'scale-shot'
+                    identifier              = 'Scale Shot'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 25
@@ -12206,7 +12294,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '800'
-                    identifier              = 'meteor-beam'
+                    identifier              = 'Meteor Beam'
                     generation_id           = '8'
                     type_id                 = '6'
                     power                   = 120
@@ -12221,7 +12309,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '801'
-                    identifier              = 'shell-side-arm'
+                    identifier              = 'Shell Side Arm'
                     generation_id           = '8'
                     type_id                 = '4'
                     power                   = 90
@@ -12236,7 +12324,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '802'
-                    identifier              = 'misty-explosion'
+                    identifier              = 'Misty Explosion'
                     generation_id           = '8'
                     type_id                 = '18'
                     power                   = 100
@@ -12251,7 +12339,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '803'
-                    identifier              = 'grassy-glide'
+                    identifier              = 'Grassy Glide'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 55
@@ -12266,7 +12354,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '804'
-                    identifier              = 'rising-voltage'
+                    identifier              = 'Rising Voltage'
                     generation_id           = '8'
                     type_id                 = '13'
                     power                   = 70
@@ -12281,7 +12369,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '805'
-                    identifier              = 'terrain-pulse'
+                    identifier              = 'Terrain Pulse'
                     generation_id           = '8'
                     type_id                 = '1'
                     power                   = 50
@@ -12296,7 +12384,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '806'
-                    identifier              = 'skitter-smack'
+                    identifier              = 'Skitter Smack'
                     generation_id           = '8'
                     type_id                 = '7'
                     power                   = 70
@@ -12311,7 +12399,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '807'
-                    identifier              = 'burning-jealousy'
+                    identifier              = 'Burning Jealousy'
                     generation_id           = '8'
                     type_id                 = '10'
                     power                   = 70
@@ -12326,7 +12414,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '808'
-                    identifier              = 'lash-out'
+                    identifier              = 'Lash Out'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 75
@@ -12341,7 +12429,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '809'
-                    identifier              = 'poltergeist'
+                    identifier              = 'Poltergeist'
                     generation_id           = '8'
                     type_id                 = '8'
                     power                   = 110
@@ -12356,7 +12444,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '810'
-                    identifier              = 'corrosive-gas'
+                    identifier              = 'Corrosive Gas'
                     generation_id           = '8'
                     type_id                 = '4'
                     power                   = 0
@@ -12371,7 +12459,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '811'
-                    identifier              = 'coaching'
+                    identifier              = 'Coaching'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 0
@@ -12386,7 +12474,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '812'
-                    identifier              = 'flip-turn'
+                    identifier              = 'Flip Turn'
                     generation_id           = '8'
                     type_id                 = '11'
                     power                   = 60
@@ -12401,7 +12489,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '813'
-                    identifier              = 'triple-axel'
+                    identifier              = 'Triple Axel'
                     generation_id           = '8'
                     type_id                 = '15'
                     power                   = 20
@@ -12416,7 +12504,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '814'
-                    identifier              = 'dual-wingbeat'
+                    identifier              = 'Dual Wingbeat'
                     generation_id           = '8'
                     type_id                 = '3'
                     power                   = 40
@@ -12431,7 +12519,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '815'
-                    identifier              = 'scorching-sands'
+                    identifier              = 'Scorching Sands'
                     generation_id           = '8'
                     type_id                 = '5'
                     power                   = 70
@@ -12446,7 +12534,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '816'
-                    identifier              = 'jungle-healing'
+                    identifier              = 'Jungle Healing'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 0
@@ -12461,7 +12549,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '817'
-                    identifier              = 'wicked-blow'
+                    identifier              = 'Wicked Blow'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 75
@@ -12476,7 +12564,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '818'
-                    identifier              = 'surging-strikes'
+                    identifier              = 'Surging Strikes'
                     generation_id           = '8'
                     type_id                 = '11'
                     power                   = 25
@@ -12491,7 +12579,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '819'
-                    identifier              = 'thunder-cage'
+                    identifier              = 'Thunder Cage'
                     generation_id           = '8'
                     type_id                 = '13'
                     power                   = 80
@@ -12506,7 +12594,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '820'
-                    identifier              = 'dragon-energy'
+                    identifier              = 'Dragon Energy'
                     generation_id           = '8'
                     type_id                 = '16'
                     power                   = 150
@@ -12521,7 +12609,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '821'
-                    identifier              = 'freezing-glare'
+                    identifier              = 'Freezing Glare'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 90
@@ -12536,7 +12624,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '822'
-                    identifier              = 'fiery-wrath'
+                    identifier              = 'Fiery Wrath'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 90
@@ -12551,7 +12639,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '823'
-                    identifier              = 'thunderous-kick'
+                    identifier              = 'Thunderous Kick'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 90
@@ -12566,7 +12654,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '824'
-                    identifier              = 'glacial-lance'
+                    identifier              = 'Glacial Lance'
                     generation_id           = '8'
                     type_id                 = '15'
                     power                   = 120
@@ -12581,7 +12669,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '825'
-                    identifier              = 'astral-barrage'
+                    identifier              = 'Astral Barrage'
                     generation_id           = '8'
                     type_id                 = '8'
                     power                   = 120
@@ -12596,7 +12684,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '826'
-                    identifier              = 'eerie-spell'
+                    identifier              = 'Eerie Spell'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 80
@@ -12611,7 +12699,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '827'
-                    identifier              = 'dire-claw'
+                    identifier              = 'Dire Claw'
                     generation_id           = '8'
                     type_id                 = '4'
                     power                   = 80
@@ -12626,7 +12714,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '828'
-                    identifier              = 'psyshield-bash'
+                    identifier              = 'Psyshield Bash'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 70
@@ -12641,7 +12729,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '829'
-                    identifier              = 'power-shift'
+                    identifier              = 'Power Shift'
                     generation_id           = '8'
                     type_id                 = '1'
                     power                   = 0
@@ -12656,7 +12744,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '830'
-                    identifier              = 'stone-axe'
+                    identifier              = 'Stone Axe'
                     generation_id           = '8'
                     type_id                 = '6'
                     power                   = 65
@@ -12671,7 +12759,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '831'
-                    identifier              = 'springtide-storm'
+                    identifier              = 'Springtide Storm'
                     generation_id           = '8'
                     type_id                 = '18'
                     power                   = 100
@@ -12686,7 +12774,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '832'
-                    identifier              = 'mystical-power'
+                    identifier              = 'Mystical Power'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 70
@@ -12701,7 +12789,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '833'
-                    identifier              = 'raging-fury'
+                    identifier              = 'Raging Fury'
                     generation_id           = '8'
                     type_id                 = '10'
                     power                   = 120
@@ -12716,7 +12804,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '834'
-                    identifier              = 'wave-crash'
+                    identifier              = 'Wave Crash'
                     generation_id           = '8'
                     type_id                 = '11'
                     power                   = 120
@@ -12731,7 +12819,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '835'
-                    identifier              = 'chloroblast'
+                    identifier              = 'Chloroblast'
                     generation_id           = '8'
                     type_id                 = '12'
                     power                   = 150
@@ -12746,7 +12834,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '836'
-                    identifier              = 'mountain-gale'
+                    identifier              = 'Mountain Gale'
                     generation_id           = '8'
                     type_id                 = '15'
                     power                   = 100
@@ -12761,7 +12849,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '837'
-                    identifier              = 'victory-dance'
+                    identifier              = 'Victory Dance'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 0
@@ -12776,7 +12864,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '838'
-                    identifier              = 'headlong-rush'
+                    identifier              = 'Headlong Rush'
                     generation_id           = '8'
                     type_id                 = '5'
                     power                   = 120
@@ -12791,7 +12879,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '839'
-                    identifier              = 'barb-barrage'
+                    identifier              = 'Barb Barrage'
                     generation_id           = '8'
                     type_id                 = '4'
                     power                   = 60
@@ -12806,7 +12894,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '840'
-                    identifier              = 'esper-wing'
+                    identifier              = 'Esper Wing'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 80
@@ -12821,7 +12909,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '841'
-                    identifier              = 'bitter-malice'
+                    identifier              = 'Bitter Malice'
                     generation_id           = '8'
                     type_id                 = '8'
                     power                   = 75
@@ -12836,7 +12924,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '842'
-                    identifier              = 'shelter'
+                    identifier              = 'Shelter'
                     generation_id           = '8'
                     type_id                 = '9'
                     power                   = 0
@@ -12851,7 +12939,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '843'
-                    identifier              = 'triple-arrows'
+                    identifier              = 'Triple Arrows'
                     generation_id           = '8'
                     type_id                 = '2'
                     power                   = 90
@@ -12866,7 +12954,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '844'
-                    identifier              = 'infernal-parade'
+                    identifier              = 'Infernal Parade'
                     generation_id           = '8'
                     type_id                 = '8'
                     power                   = 60
@@ -12881,7 +12969,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '845'
-                    identifier              = 'ceaseless-edge'
+                    identifier              = 'Ceaseless Edge'
                     generation_id           = '8'
                     type_id                 = '17'
                     power                   = 65
@@ -12896,7 +12984,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '846'
-                    identifier              = 'bleakwind-storm'
+                    identifier              = 'Bleakwind Storm'
                     generation_id           = '8'
                     type_id                 = '3'
                     power                   = 100
@@ -12911,7 +12999,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '847'
-                    identifier              = 'wildbolt-storm'
+                    identifier              = 'Wildbolt Storm'
                     generation_id           = '8'
                     type_id                 = '13'
                     power                   = 100
@@ -12926,7 +13014,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '848'
-                    identifier              = 'sandsear-storm'
+                    identifier              = 'Sandsear Storm'
                     generation_id           = '8'
                     type_id                 = '5'
                     power                   = 100
@@ -12941,7 +13029,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '849'
-                    identifier              = 'lunar-blessing'
+                    identifier              = 'Lunar Blessing'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 0
@@ -12956,7 +13044,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '850'
-                    identifier              = 'take-heart'
+                    identifier              = 'Take Heart'
                     generation_id           = '8'
                     type_id                 = '14'
                     power                   = 0
@@ -12971,7 +13059,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '851'
-                    identifier              = 'tera-blast'
+                    identifier              = 'Tera Blast'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 80
@@ -12986,7 +13074,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '852'
-                    identifier              = 'silk-trap'
+                    identifier              = 'Silk Trap'
                     generation_id           = '9'
                     type_id                 = '7'
                     power                   = 0
@@ -13001,7 +13089,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '853'
-                    identifier              = 'axe-kick'
+                    identifier              = 'Axe Kick'
                     generation_id           = '9'
                     type_id                 = '2'
                     power                   = 120
@@ -13016,7 +13104,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '854'
-                    identifier              = 'last-respects'
+                    identifier              = 'Last Respects'
                     generation_id           = '9'
                     type_id                 = '8'
                     power                   = 50
@@ -13031,7 +13119,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '855'
-                    identifier              = 'lumina-crash'
+                    identifier              = 'Lumina Crash'
                     generation_id           = '9'
                     type_id                 = '14'
                     power                   = 80
@@ -13046,7 +13134,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '856'
-                    identifier              = 'order-up'
+                    identifier              = 'Order Up'
                     generation_id           = '9'
                     type_id                 = '16'
                     power                   = 80
@@ -13061,7 +13149,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '857'
-                    identifier              = 'jet-punch'
+                    identifier              = 'Jet Punch'
                     generation_id           = '9'
                     type_id                 = '11'
                     power                   = 60
@@ -13076,7 +13164,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '858'
-                    identifier              = 'spicy-extract'
+                    identifier              = 'Spicy Extract'
                     generation_id           = '9'
                     type_id                 = '12'
                     power                   = 0
@@ -13091,7 +13179,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '859'
-                    identifier              = 'spin-out'
+                    identifier              = 'Spin Out'
                     generation_id           = '9'
                     type_id                 = '9'
                     power                   = 100
@@ -13106,7 +13194,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '860'
-                    identifier              = 'population-bomb'
+                    identifier              = 'Population Bomb'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 20
@@ -13121,7 +13209,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '861'
-                    identifier              = 'ice-spinner'
+                    identifier              = 'Ice Spinner'
                     generation_id           = '9'
                     type_id                 = '15'
                     power                   = 80
@@ -13136,7 +13224,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '862'
-                    identifier              = 'glaive-rush'
+                    identifier              = 'Glaive Rush'
                     generation_id           = '9'
                     type_id                 = '16'
                     power                   = 120
@@ -13151,7 +13239,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '863'
-                    identifier              = 'revival-blessing'
+                    identifier              = 'Revival Blessing'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 0
@@ -13166,7 +13254,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '864'
-                    identifier              = 'salt-cure'
+                    identifier              = 'Salt Cure'
                     generation_id           = '9'
                     type_id                 = '6'
                     power                   = 40
@@ -13181,7 +13269,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '865'
-                    identifier              = 'triple-dive'
+                    identifier              = 'Triple Dive'
                     generation_id           = '9'
                     type_id                 = '11'
                     power                   = 30
@@ -13196,7 +13284,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '866'
-                    identifier              = 'mortal-spin'
+                    identifier              = 'Mortal Spin'
                     generation_id           = '9'
                     type_id                 = '4'
                     power                   = 30
@@ -13211,7 +13299,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '867'
-                    identifier              = 'doodle'
+                    identifier              = 'Doodle'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 0
@@ -13226,7 +13314,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '868'
-                    identifier              = 'fillet-away'
+                    identifier              = 'Fillet Away'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 0
@@ -13241,7 +13329,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '869'
-                    identifier              = 'kowtow-cleave'
+                    identifier              = 'Kowtow Cleave'
                     generation_id           = '9'
                     type_id                 = '17'
                     power                   = 85
@@ -13256,7 +13344,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '870'
-                    identifier              = 'flower-trick'
+                    identifier              = 'Flower Trick'
                     generation_id           = '9'
                     type_id                 = '12'
                     power                   = 70
@@ -13271,7 +13359,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '871'
-                    identifier              = 'torch-song'
+                    identifier              = 'Torch Song'
                     generation_id           = '9'
                     type_id                 = '10'
                     power                   = 80
@@ -13286,7 +13374,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '872'
-                    identifier              = 'aqua-step'
+                    identifier              = 'Aqua Step'
                     generation_id           = '9'
                     type_id                 = '11'
                     power                   = 80
@@ -13301,7 +13389,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '873'
-                    identifier              = 'raging-bull'
+                    identifier              = 'Raging Bull'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 90
@@ -13316,7 +13404,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '874'
-                    identifier              = 'make-it-rain'
+                    identifier              = 'Make It Rain'
                     generation_id           = '9'
                     type_id                 = '9'
                     power                   = 120
@@ -13331,7 +13419,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '875'
-                    identifier              = 'psyblade'
+                    identifier              = 'Psyblade'
                     generation_id           = '9'
                     type_id                 = '14'
                     power                   = 80
@@ -13346,7 +13434,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '876'
-                    identifier              = 'hydro-steam'
+                    identifier              = 'Hydro Steam'
                     generation_id           = '9'
                     type_id                 = '11'
                     power                   = 80
@@ -13361,7 +13449,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '877'
-                    identifier              = 'ruination'
+                    identifier              = 'Ruination'
                     generation_id           = '9'
                     type_id                 = '17'
                     power                   = 1
@@ -13376,7 +13464,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '878'
-                    identifier              = 'collision-course'
+                    identifier              = 'Collision Course'
                     generation_id           = '9'
                     type_id                 = '2'
                     power                   = 100
@@ -13391,7 +13479,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '879'
-                    identifier              = 'electro-drift'
+                    identifier              = 'Electro Drift'
                     generation_id           = '9'
                     type_id                 = '13'
                     power                   = 100
@@ -13406,7 +13494,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '880'
-                    identifier              = 'shed-tail'
+                    identifier              = 'Shed Tail'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 0
@@ -13421,7 +13509,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '881'
-                    identifier              = 'chilly-reception'
+                    identifier              = 'Chilly Reception'
                     generation_id           = '9'
                     type_id                 = '15'
                     power                   = 0
@@ -13436,7 +13524,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '882'
-                    identifier              = 'tidy-up'
+                    identifier              = 'Tidy Up'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 0
@@ -13451,7 +13539,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '883'
-                    identifier              = 'snowscape'
+                    identifier              = 'Snowscape'
                     generation_id           = '9'
                     type_id                 = '15'
                     power                   = 0
@@ -13466,7 +13554,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '884'
-                    identifier              = 'pounce'
+                    identifier              = 'Pounce'
                     generation_id           = '9'
                     type_id                 = '7'
                     power                   = 50
@@ -13481,7 +13569,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '885'
-                    identifier              = 'trailblaze'
+                    identifier              = 'Trailblaze'
                     generation_id           = '9'
                     type_id                 = '12'
                     power                   = 50
@@ -13496,7 +13584,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '886'
-                    identifier              = 'chilling-water'
+                    identifier              = 'Chilling Water'
                     generation_id           = '9'
                     type_id                 = '11'
                     power                   = 50
@@ -13511,7 +13599,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '887'
-                    identifier              = 'hyper-drill'
+                    identifier              = 'Hyper Drill'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 100
@@ -13526,7 +13614,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '888'
-                    identifier              = 'twin-beam'
+                    identifier              = 'Twin Beam'
                     generation_id           = '9'
                     type_id                 = '14'
                     power                   = 40
@@ -13541,7 +13629,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '889'
-                    identifier              = 'rage-fist'
+                    identifier              = 'Rage Fist'
                     generation_id           = '9'
                     type_id                 = '8'
                     power                   = 50
@@ -13556,7 +13644,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '890'
-                    identifier              = 'armor-cannon'
+                    identifier              = 'Armor Cannon'
                     generation_id           = '9'
                     type_id                 = '10'
                     power                   = 120
@@ -13571,7 +13659,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '891'
-                    identifier              = 'bitter-blade'
+                    identifier              = 'Bitter Blade'
                     generation_id           = '9'
                     type_id                 = '10'
                     power                   = 90
@@ -13586,7 +13674,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '892'
-                    identifier              = 'double-shock'
+                    identifier              = 'Double Shock'
                     generation_id           = '9'
                     type_id                 = '13'
                     power                   = 120
@@ -13601,7 +13689,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '893'
-                    identifier              = 'gigaton-hammer'
+                    identifier              = 'Gigaton Hammer'
                     generation_id           = '9'
                     type_id                 = '9'
                     power                   = 160
@@ -13616,7 +13704,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '894'
-                    identifier              = 'comeuppance'
+                    identifier              = 'Comeuppance'
                     generation_id           = '9'
                     type_id                 = '17'
                     power                   = 1
@@ -13631,7 +13719,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '895'
-                    identifier              = 'aqua-cutter'
+                    identifier              = 'Aqua Cutter'
                     generation_id           = '9'
                     type_id                 = '11'
                     power                   = 70
@@ -13646,7 +13734,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '896'
-                    identifier              = 'blazing-torque'
+                    identifier              = 'Blazing Torque'
                     generation_id           = '9'
                     type_id                 = '10'
                     power                   = 80
@@ -13661,7 +13749,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '897'
-                    identifier              = 'wicked-torque'
+                    identifier              = 'Wicked Torque'
                     generation_id           = '9'
                     type_id                 = '17'
                     power                   = 80
@@ -13676,7 +13764,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '898'
-                    identifier              = 'noxious-torque'
+                    identifier              = 'Noxious Torque'
                     generation_id           = '9'
                     type_id                 = '4'
                     power                   = 100
@@ -13691,7 +13779,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '899'
-                    identifier              = 'combat-torque'
+                    identifier              = 'Combat Torque'
                     generation_id           = '9'
                     type_id                 = '2'
                     power                   = 100
@@ -13706,7 +13794,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '900'
-                    identifier              = 'magical-torque'
+                    identifier              = 'Magical Torque'
                     generation_id           = '9'
                     type_id                 = '18'
                     power                   = 100
@@ -13721,7 +13809,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '901'
-                    identifier              = 'blood-moon'
+                    identifier              = 'Blood Moon'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 140
@@ -13736,7 +13824,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '902'
-                    identifier              = 'matcha-gotcha'
+                    identifier              = 'Matcha Gotcha'
                     generation_id           = '9'
                     type_id                 = '12'
                     power                   = 80
@@ -13751,7 +13839,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '903'
-                    identifier              = 'syrup-bomb'
+                    identifier              = 'Syrup Bomb'
                     generation_id           = '9'
                     type_id                 = '12'
                     power                   = 60
@@ -13766,7 +13854,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '904'
-                    identifier              = 'ivy-cudgel'
+                    identifier              = 'Ivy Cudgel'
                     generation_id           = '9'
                     type_id                 = '12'
                     power                   = 100
@@ -13781,7 +13869,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '905'
-                    identifier              = 'electro-shot'
+                    identifier              = 'Electro Shot'
                     generation_id           = '9'
                     type_id                 = '13'
                     power                   = 130
@@ -13796,7 +13884,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '906'
-                    identifier              = 'tera-starstorm'
+                    identifier              = 'Tera Starstorm'
                     generation_id           = '9'
                     type_id                 = '1'
                     power                   = 120
@@ -13811,7 +13899,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '907'
-                    identifier              = 'fickle-beam'
+                    identifier              = 'Fickle Beam'
                     generation_id           = '9'
                     type_id                 = '16'
                     power                   = 80
@@ -13826,7 +13914,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '908'
-                    identifier              = 'burning-bulwark'
+                    identifier              = 'Burning Bulwark'
                     generation_id           = '9'
                     type_id                 = '10'
                     power                   = 0
@@ -13841,7 +13929,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '909'
-                    identifier              = 'thunderclap'
+                    identifier              = 'Thunderclap'
                     generation_id           = '9'
                     type_id                 = '13'
                     power                   = 70
@@ -13856,7 +13944,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '910'
-                    identifier              = 'mighty-cleave'
+                    identifier              = 'Mighty Cleave'
                     generation_id           = '9'
                     type_id                 = '6'
                     power                   = 95
@@ -13871,7 +13959,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '911'
-                    identifier              = 'tachyon-cutter'
+                    identifier              = 'Tachyon Cutter'
                     generation_id           = '9'
                     type_id                 = '9'
                     power                   = 50
@@ -13886,7 +13974,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '912'
-                    identifier              = 'hard-press'
+                    identifier              = 'Hard Press'
                     generation_id           = '9'
                     type_id                 = '9'
                     power                   = 0
@@ -13901,7 +13989,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '913'
-                    identifier              = 'dragon-cheer'
+                    identifier              = 'Dragon Cheer'
                     generation_id           = '9'
                     type_id                 = '16'
                     power                   = 0
@@ -13916,7 +14004,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '914'
-                    identifier              = 'alluring-voice'
+                    identifier              = 'Alluring Voice'
                     generation_id           = '9'
                     type_id                 = '18'
                     power                   = 80
@@ -13931,7 +14019,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '915'
-                    identifier              = 'temper-flare'
+                    identifier              = 'Temper Flare'
                     generation_id           = '9'
                     type_id                 = '10'
                     power                   = 75
@@ -13946,7 +14034,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '916'
-                    identifier              = 'supercell-slam'
+                    identifier              = 'Supercell Slam'
                     generation_id           = '9'
                     type_id                 = '13'
                     power                   = 100
@@ -13961,7 +14049,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '917'
-                    identifier              = 'psychic-noise'
+                    identifier              = 'Psychic Noise'
                     generation_id           = '9'
                     type_id                 = '14'
                     power                   = 75
@@ -13976,7 +14064,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '918'
-                    identifier              = 'upper-hand'
+                    identifier              = 'Upper Hand'
                     generation_id           = '9'
                     type_id                 = '2'
                     power                   = 65
@@ -13991,7 +14079,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '919'
-                    identifier              = 'malignant-chain'
+                    identifier              = 'Malignant Chain'
                     generation_id           = '9'
                     type_id                 = '4'
                     power                   = 100
@@ -14006,7 +14094,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10001'
-                    identifier              = 'shadow-rush'
+                    identifier              = 'Shadow Rush'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 55
@@ -14021,7 +14109,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10002'
-                    identifier              = 'shadow-blast'
+                    identifier              = 'Shadow Blast'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 80
@@ -14036,7 +14124,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10003'
-                    identifier              = 'shadow-blitz'
+                    identifier              = 'Shadow Blitz'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 40
@@ -14051,7 +14139,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10004'
-                    identifier              = 'shadow-bolt'
+                    identifier              = 'Shadow Bolt'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 75
@@ -14066,7 +14154,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10005'
-                    identifier              = 'shadow-break'
+                    identifier              = 'Shadow Break'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 75
@@ -14081,7 +14169,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10006'
-                    identifier              = 'shadow-chill'
+                    identifier              = 'Shadow Chill'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 75
@@ -14096,7 +14184,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10007'
-                    identifier              = 'shadow-end'
+                    identifier              = 'Shadow End'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 120
@@ -14111,7 +14199,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10008'
-                    identifier              = 'shadow-fire'
+                    identifier              = 'Shadow Fire'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 75
@@ -14126,7 +14214,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10009'
-                    identifier              = 'shadow-rave'
+                    identifier              = 'Shadow Rave'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 70
@@ -14141,7 +14229,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10010'
-                    identifier              = 'shadow-storm'
+                    identifier              = 'Shadow Storm'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 95
@@ -14156,7 +14244,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10011'
-                    identifier              = 'shadow-wave'
+                    identifier              = 'Shadow Wave'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 50
@@ -14171,7 +14259,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10012'
-                    identifier              = 'shadow-down'
+                    identifier              = 'Shadow Down'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 0
@@ -14186,7 +14274,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10013'
-                    identifier              = 'shadow-half'
+                    identifier              = 'Shadow Half'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 0
@@ -14201,7 +14289,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10014'
-                    identifier              = 'shadow-hold'
+                    identifier              = 'Shadow Hold'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 0
@@ -14216,7 +14304,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10015'
-                    identifier              = 'shadow-mist'
+                    identifier              = 'Shadow Mist'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 0
@@ -14231,7 +14319,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10016'
-                    identifier              = 'shadow-panic'
+                    identifier              = 'Shadow Panic'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 0
@@ -14246,7 +14334,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10017'
-                    identifier              = 'shadow-shed'
+                    identifier              = 'Shadow Shed'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 0
@@ -14261,7 +14349,7 @@ CLASS zcl_pk_other IMPLEMENTATION.
                     contest_effect_id       = ''
                     super_contest_effect_id = ''  ) INTO TABLE lt_move.
     INSERT VALUE #( id                      = '10018'
-                    identifier              = 'shadow-sky'
+                    identifier              = 'Shadow Sky'
                     generation_id           = '3'
                     type_id                 = '10002'
                     power                   = 0

@@ -19,373 +19,375 @@ CLASS zcl_pk_ability_gen IMPLEMENTATION.
 
   METHOD generate_ability.
     DATA: lt_ability TYPE TABLE OF zpk_ability.
-    INSERT VALUE #( id = '1' identifier = 'stench' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '2' identifier = 'drizzle' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '3' identifier = 'speed-boost' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '4' identifier = 'battle-armor' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '5' identifier = 'sturdy' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '6' identifier = 'damp' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '7' identifier = 'limber' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '8' identifier = 'sand-veil' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '9' identifier = 'static' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10' identifier = 'volt-absorb' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '11' identifier = 'water-absorb' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '12' identifier = 'oblivious' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '13' identifier = 'cloud-nine' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '14' identifier = 'compound-eyes' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '15' identifier = 'insomnia' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '16' identifier = 'color-change' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '17' identifier = 'immunity' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '18' identifier = 'flash-fire' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '19' identifier = 'shield-dust' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '20' identifier = 'own-tempo' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '21' identifier = 'suction-cups' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '22' identifier = 'intimidate' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '23' identifier = 'shadow-tag' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '24' identifier = 'rough-skin' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '25' identifier = 'wonder-guard' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '26' identifier = 'levitate' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '27' identifier = 'effect-spore' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '28' identifier = 'synchronize' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '29' identifier = 'clear-body' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '30' identifier = 'natural-cure' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '31' identifier = 'lightning-rod' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '32' identifier = 'serene-grace' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '33' identifier = 'swift-swim' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '34' identifier = 'chlorophyll' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '35' identifier = 'illuminate' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '36' identifier = 'trace' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '37' identifier = 'huge-power' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '38' identifier = 'poison-point' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '39' identifier = 'inner-focus' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '40' identifier = 'magma-armor' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '41' identifier = 'water-veil' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '42' identifier = 'magnet-pull' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '43' identifier = 'soundproof' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '44' identifier = 'rain-dish' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '45' identifier = 'sand-stream' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '46' identifier = 'pressure' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '47' identifier = 'thick-fat' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '48' identifier = 'early-bird' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '49' identifier = 'flame-body' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '50' identifier = 'run-away' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '51' identifier = 'keen-eye' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '52' identifier = 'hyper-cutter' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '53' identifier = 'pickup' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '54' identifier = 'truant' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '55' identifier = 'hustle' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '56' identifier = 'cute-charm' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '57' identifier = 'plus' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '58' identifier = 'minus' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '59' identifier = 'forecast' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '60' identifier = 'sticky-hold' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '61' identifier = 'shed-skin' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '62' identifier = 'guts' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '63' identifier = 'marvel-scale' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '64' identifier = 'liquid-ooze' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '65' identifier = 'overgrow' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '66' identifier = 'blaze' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '67' identifier = 'torrent' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '68' identifier = 'swarm' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '69' identifier = 'rock-head' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '70' identifier = 'drought' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '71' identifier = 'arena-trap' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '72' identifier = 'vital-spirit' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '73' identifier = 'white-smoke' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '74' identifier = 'pure-power' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '75' identifier = 'shell-armor' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '76' identifier = 'air-lock' generation_id = '3' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '77' identifier = 'tangled-feet' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '78' identifier = 'motor-drive' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '79' identifier = 'rivalry' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '80' identifier = 'steadfast' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '81' identifier = 'snow-cloak' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '82' identifier = 'gluttony' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '83' identifier = 'anger-point' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '84' identifier = 'unburden' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '85' identifier = 'heatproof' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '86' identifier = 'simple' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '87' identifier = 'dry-skin' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '88' identifier = 'download' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '89' identifier = 'iron-fist' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '90' identifier = 'poison-heal' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '91' identifier = 'adaptability' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '92' identifier = 'skill-link' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '93' identifier = 'hydration' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '94' identifier = 'solar-power' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '95' identifier = 'quick-feet' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '96' identifier = 'normalize' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '97' identifier = 'sniper' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '98' identifier = 'magic-guard' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '99' identifier = 'no-guard' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '100' identifier = 'stall' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '101' identifier = 'technician' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '102' identifier = 'leaf-guard' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '103' identifier = 'klutz' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '104' identifier = 'mold-breaker' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '105' identifier = 'super-luck' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '106' identifier = 'aftermath' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '107' identifier = 'anticipation' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '108' identifier = 'forewarn' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '109' identifier = 'unaware' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '110' identifier = 'tinted-lens' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '111' identifier = 'filter' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '112' identifier = 'slow-start' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '113' identifier = 'scrappy' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '114' identifier = 'storm-drain' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '115' identifier = 'ice-body' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '116' identifier = 'solid-rock' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '117' identifier = 'snow-warning' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '118' identifier = 'honey-gather' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '119' identifier = 'frisk' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '120' identifier = 'reckless' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '121' identifier = 'multitype' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '122' identifier = 'flower-gift' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '123' identifier = 'bad-dreams' generation_id = '4' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '124' identifier = 'pickpocket' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '125' identifier = 'sheer-force' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '126' identifier = 'contrary' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '127' identifier = 'unnerve' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '128' identifier = 'defiant' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '129' identifier = 'defeatist' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '130' identifier = 'cursed-body' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '131' identifier = 'healer' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '132' identifier = 'friend-guard' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '133' identifier = 'weak-armor' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '134' identifier = 'heavy-metal' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '135' identifier = 'light-metal' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '136' identifier = 'multiscale' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '137' identifier = 'toxic-boost' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '138' identifier = 'flare-boost' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '139' identifier = 'harvest' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '140' identifier = 'telepathy' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '141' identifier = 'moody' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '142' identifier = 'overcoat' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '143' identifier = 'poison-touch' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '144' identifier = 'regenerator' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '145' identifier = 'big-pecks' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '146' identifier = 'sand-rush' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '147' identifier = 'wonder-skin' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '148' identifier = 'analytic' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '149' identifier = 'illusion' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '150' identifier = 'imposter' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '151' identifier = 'infiltrator' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '152' identifier = 'mummy' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '153' identifier = 'moxie' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '154' identifier = 'justified' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '155' identifier = 'rattled' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '156' identifier = 'magic-bounce' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '157' identifier = 'sap-sipper' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '158' identifier = 'prankster' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '159' identifier = 'sand-force' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '160' identifier = 'iron-barbs' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '161' identifier = 'zen-mode' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '162' identifier = 'victory-star' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '163' identifier = 'turboblaze' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '164' identifier = 'teravolt' generation_id = '5' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '165' identifier = 'aroma-veil' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '166' identifier = 'flower-veil' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '167' identifier = 'cheek-pouch' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '168' identifier = 'protean' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '169' identifier = 'fur-coat' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '170' identifier = 'magician' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '171' identifier = 'bulletproof' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '172' identifier = 'competitive' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '173' identifier = 'strong-jaw' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '174' identifier = 'refrigerate' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '175' identifier = 'sweet-veil' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '176' identifier = 'stance-change' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '177' identifier = 'gale-wings' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '178' identifier = 'mega-launcher' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '179' identifier = 'grass-pelt' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '180' identifier = 'symbiosis' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '181' identifier = 'tough-claws' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '182' identifier = 'pixilate' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '183' identifier = 'gooey' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '184' identifier = 'aerilate' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '185' identifier = 'parental-bond' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '186' identifier = 'dark-aura' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '187' identifier = 'fairy-aura' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '188' identifier = 'aura-break' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '189' identifier = 'primordial-sea' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '190' identifier = 'desolate-land' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '191' identifier = 'delta-stream' generation_id = '6' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '192' identifier = 'stamina' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '193' identifier = 'wimp-out' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '194' identifier = 'emergency-exit' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '195' identifier = 'water-compaction' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '196' identifier = 'merciless' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '197' identifier = 'shields-down' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '198' identifier = 'stakeout' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '199' identifier = 'water-bubble' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '200' identifier = 'steelworker' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '201' identifier = 'berserk' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '202' identifier = 'slush-rush' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '203' identifier = 'long-reach' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '204' identifier = 'liquid-voice' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '205' identifier = 'triage' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '206' identifier = 'galvanize' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '207' identifier = 'surge-surfer' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '208' identifier = 'schooling' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '209' identifier = 'disguise' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '210' identifier = 'battle-bond' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '211' identifier = 'power-construct' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '212' identifier = 'corrosion' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '213' identifier = 'comatose' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '214' identifier = 'queenly-majesty' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '215' identifier = 'innards-out' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '216' identifier = 'dancer' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '217' identifier = 'battery' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '218' identifier = 'fluffy' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '219' identifier = 'dazzling' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '220' identifier = 'soul-heart' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '221' identifier = 'tangling-hair' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '222' identifier = 'receiver' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '223' identifier = 'power-of-alchemy' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '224' identifier = 'beast-boost' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '225' identifier = 'rks-system' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '226' identifier = 'electric-surge' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '227' identifier = 'psychic-surge' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '228' identifier = 'misty-surge' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '229' identifier = 'grassy-surge' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '230' identifier = 'full-metal-body' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '231' identifier = 'shadow-shield' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '232' identifier = 'prism-armor' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '233' identifier = 'neuroforce' generation_id = '7' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '234' identifier = 'intrepid-sword' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '235' identifier = 'dauntless-shield' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '236' identifier = 'libero' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '237' identifier = 'ball-fetch' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '238' identifier = 'cotton-down' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '239' identifier = 'propeller-tail' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '240' identifier = 'mirror-armor' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '241' identifier = 'gulp-missile' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '242' identifier = 'stalwart' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '243' identifier = 'steam-engine' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '244' identifier = 'punk-rock' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '245' identifier = 'sand-spit' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '246' identifier = 'ice-scales' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '247' identifier = 'ripen' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '248' identifier = 'ice-face' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '249' identifier = 'power-spot' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '250' identifier = 'mimicry' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '251' identifier = 'screen-cleaner' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '252' identifier = 'steely-spirit' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '253' identifier = 'perish-body' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '254' identifier = 'wandering-spirit' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '255' identifier = 'gorilla-tactics' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '256' identifier = 'neutralizing-gas' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '257' identifier = 'pastel-veil' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '258' identifier = 'hunger-switch' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '259' identifier = 'quick-draw' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '260' identifier = 'unseen-fist' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '261' identifier = 'curious-medicine' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '262' identifier = 'transistor' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '263' identifier = 'dragons-maw' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '264' identifier = 'chilling-neigh' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '265' identifier = 'grim-neigh' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '266' identifier = 'as-one-glastrier' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '267' identifier = 'as-one-spectrier' generation_id = '8' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '268' identifier = 'lingering-aroma' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '269' identifier = 'seed-sower' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '270' identifier = 'thermal-exchange' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '271' identifier = 'anger-shell' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '272' identifier = 'purifying-salt' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '273' identifier = 'well-baked-body' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '274' identifier = 'wind-rider' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '275' identifier = 'guard-dog' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '276' identifier = 'rocky-payload' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '277' identifier = 'wind-power' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '278' identifier = 'zero-to-hero' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '279' identifier = 'commander' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '280' identifier = 'electromorphosis' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '281' identifier = 'protosynthesis' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '282' identifier = 'quark-drive' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '283' identifier = 'good-as-gold' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '284' identifier = 'vessel-of-ruin' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '285' identifier = 'sword-of-ruin' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '286' identifier = 'tablets-of-ruin' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '287' identifier = 'beads-of-ruin' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '288' identifier = 'orichalcum-pulse' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '289' identifier = 'hadron-engine' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '290' identifier = 'opportunist' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '291' identifier = 'cud-chew' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '292' identifier = 'sharpness' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '293' identifier = 'supreme-overlord' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '294' identifier = 'costar' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '295' identifier = 'toxic-debris' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '296' identifier = 'armor-tail' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '297' identifier = 'earth-eater' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '298' identifier = 'mycelium-might' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '299' identifier = 'minds-eye' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '300' identifier = 'supersweet-syrup' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '301' identifier = 'hospitality' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '302' identifier = 'toxic-chain' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '303' identifier = 'embody-aspect' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '304' identifier = 'tera-shift' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '305' identifier = 'tera-shell' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '306' identifier = 'teraform-zero' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '307' identifier = 'poison-puppeteer' generation_id = '9' is_main_series = 'X' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10001' identifier = 'mountaineer' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10002' identifier = 'wave-rider' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10003' identifier = 'skater' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10004' identifier = 'thrust' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10005' identifier = 'perception' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10006' identifier = 'parry' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10007' identifier = 'instinct' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10008' identifier = 'dodge' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10009' identifier = 'jagged-edge' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10010' identifier = 'frostbite' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10011' identifier = 'tenacity' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10012' identifier = 'pride' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10013' identifier = 'deep-sleep' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10014' identifier = 'power-nap' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10015' identifier = 'spirit' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10016' identifier = 'warm-blanket' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10017' identifier = 'gulp' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10018' identifier = 'herbivore' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10019' identifier = 'sandpit' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10020' identifier = 'hot-blooded' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10021' identifier = 'medic' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10022' identifier = 'life-force' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10023' identifier = 'lunchbox' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10024' identifier = 'nurse' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10025' identifier = 'melee' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10026' identifier = 'sponge' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10027' identifier = 'bodyguard' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10028' identifier = 'hero' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10029' identifier = 'last-bastion' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10030' identifier = 'stealth' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10031' identifier = 'vanguard' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10032' identifier = 'nomad' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10033' identifier = 'sequence' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10034' identifier = 'grass-cloak' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10035' identifier = 'celebrate' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10036' identifier = 'lullaby' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10037' identifier = 'calming' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10038' identifier = 'daze' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10039' identifier = 'frighten' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10040' identifier = 'interference' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10041' identifier = 'mood-maker' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10042' identifier = 'confidence' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10043' identifier = 'fortune' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10044' identifier = 'bonanza' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10045' identifier = 'explode' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10046' identifier = 'omnipotent' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10047' identifier = 'share' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10048' identifier = 'black-hole' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10049' identifier = 'shadow-dash' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10050' identifier = 'sprint' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10051' identifier = 'disgust' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10052' identifier = 'high-rise' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10053' identifier = 'climber' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10054' identifier = 'flame-boost' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10055' identifier = 'aqua-boost' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10056' identifier = 'run-up' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10057' identifier = 'conqueror' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10058' identifier = 'shackle' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10059' identifier = 'decoy' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
-    INSERT VALUE #( id = '10060' identifier = 'shield' generation_id = '5' is_main_series = '' ) INTO TABLE lt_ability.
+
+    INSERT VALUE #( id = '1' identifier = 'Stench' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '2' identifier = 'Drizzle' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '3' identifier = 'Speed Boost' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '4' identifier = 'Battle Armor' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '5' identifier = 'Sturdy' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '6' identifier = 'Damp' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '7' identifier = 'Limber' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '8' identifier = 'Sand Veil' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '9' identifier = 'Static' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10' identifier = 'Volt Absorb' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '11' identifier = 'Water Absorb' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '12' identifier = 'Oblivious' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '13' identifier = 'Cloud Nine' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '14' identifier = 'Compound Eyes' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '15' identifier = 'Insomnia' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '16' identifier = 'Color Change' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '17' identifier = 'Immunity' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '18' identifier = 'Flash Fire' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '19' identifier = 'Shield Dust' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '20' identifier = 'Own Tempo' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '21' identifier = 'Suction Cups' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '22' identifier = 'Intimidate' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '23' identifier = 'Shadow Tag' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '24' identifier = 'Rough Skin' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '25' identifier = 'Wonder Guard' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '26' identifier = 'Levitate' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '27' identifier = 'Effect Spore' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '28' identifier = 'Synchronize' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '29' identifier = 'Clear Body' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '30' identifier = 'Natural Cure' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '31' identifier = 'Lightning Rod' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '32' identifier = 'Serene Grace' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '33' identifier = 'Swift Swim' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '34' identifier = 'Chlorophyll' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '35' identifier = 'Illuminate' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '36' identifier = 'Trace' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '37' identifier = 'Huge Power' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '38' identifier = 'Poison Point' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '39' identifier = 'Inner Focus' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '40' identifier = 'Magma Armor' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '41' identifier = 'Water Veil' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '42' identifier = 'Magnet Pull' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '43' identifier = 'Soundproof' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '44' identifier = 'Rain Dish' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '45' identifier = 'Sand Stream' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '46' identifier = 'Pressure' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '47' identifier = 'Thick Fat' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '48' identifier = 'Early Bird' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '49' identifier = 'Flame Body' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '50' identifier = 'Run Away' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '51' identifier = 'Keen Eye' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '52' identifier = 'Hyper Cutter' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '53' identifier = 'Pickup' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '54' identifier = 'Truant' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '55' identifier = 'Hustle' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '56' identifier = 'Cute Charm' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '57' identifier = 'Plus' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '58' identifier = 'Minus' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '59' identifier = 'Forecast' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '60' identifier = 'Sticky Hold' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '61' identifier = 'Shed Skin' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '62' identifier = 'Guts' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '63' identifier = 'Marvel Scale' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '64' identifier = 'Liquid Ooze' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '65' identifier = 'Overgrow' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '66' identifier = 'Blaze' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '67' identifier = 'Torrent' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '68' identifier = 'Swarm' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '69' identifier = 'Rock Head' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '70' identifier = 'Drought' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '71' identifier = 'Arena Trap' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '72' identifier = 'Vital Spirit' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '73' identifier = 'White Smoke' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '74' identifier = 'Pure Power' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '75' identifier = 'Shell Armor' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '76' identifier = 'Air Lock' generation_id = '3' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '77' identifier = 'Tangled Feet' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '78' identifier = 'Motor Drive' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '79' identifier = 'Rivalry' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '80' identifier = 'Steadfast' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '81' identifier = 'Snow Cloak' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '82' identifier = 'Gluttony' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '83' identifier = 'Anger Point' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '84' identifier = 'Unburden' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '85' identifier = 'Heatproof' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '86' identifier = 'Simple' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '87' identifier = 'Dry Skin' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '88' identifier = 'Download' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '89' identifier = 'Iron Fist' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '90' identifier = 'Poison Heal' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '91' identifier = 'Adaptability' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '92' identifier = 'Skill Link' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '93' identifier = 'Hydration' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '94' identifier = 'Solar Power' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '95' identifier = 'Quick Feet' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '96' identifier = 'Normalize' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '97' identifier = 'Sniper' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '98' identifier = 'Magic Guard' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '99' identifier = 'No Guard' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '100' identifier = 'Stall' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '101' identifier = 'Technician' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '102' identifier = 'Leaf Guard' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '103' identifier = 'Klutz' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '104' identifier = 'Mold Breaker' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '105' identifier = 'Super Luck' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '106' identifier = 'Aftermath' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '107' identifier = 'Anticipation' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '108' identifier = 'Forewarn' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '109' identifier = 'Unaware' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '110' identifier = 'Tinted Lens' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '111' identifier = 'Filter' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '112' identifier = 'Slow Start' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '113' identifier = 'Scrappy' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '114' identifier = 'Storm Drain' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '115' identifier = 'Ice Body' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '116' identifier = 'Solid Rock' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '117' identifier = 'Snow Warning' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '118' identifier = 'Honey Gather' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '119' identifier = 'Frisk' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '120' identifier = 'Reckless' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '121' identifier = 'Multitype' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '122' identifier = 'Flower Gift' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '123' identifier = 'Bad Dreams' generation_id = '4' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '124' identifier = 'Pickpocket' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '125' identifier = 'Sheer Force' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '126' identifier = 'Contrary' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '127' identifier = 'Unnerve' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '128' identifier = 'Defiant' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '129' identifier = 'Defeatist' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '130' identifier = 'Cursed Body' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '131' identifier = 'Healer' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '132' identifier = 'Friend Guard' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '133' identifier = 'Weak Armor' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '134' identifier = 'Heavy Metal' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '135' identifier = 'Light Metal' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '136' identifier = 'Multiscale' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '137' identifier = 'Toxic Boost' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '138' identifier = 'Flare Boost' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '139' identifier = 'Harvest' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '140' identifier = 'Telepathy' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '141' identifier = 'Moody' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '142' identifier = 'Overcoat' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '143' identifier = 'Poison Touch' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '144' identifier = 'Regenerator' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '145' identifier = 'Big Pecks' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '146' identifier = 'Sand Rush' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '147' identifier = 'Wonder Skin' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '148' identifier = 'Analytic' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '149' identifier = 'Illusion' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '150' identifier = 'Imposter' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '151' identifier = 'Infiltrator' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '152' identifier = 'Mummy' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '153' identifier = 'Moxie' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '154' identifier = 'Justified' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '155' identifier = 'Rattled' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '156' identifier = 'Magic Bounce' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '157' identifier = 'Sap Sipper' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '158' identifier = 'Prankster' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '159' identifier = 'Sand Force' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '160' identifier = 'Iron Barbs' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '161' identifier = 'Zen Mode' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '162' identifier = 'Victory Star' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '163' identifier = 'Turboblaze' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '164' identifier = 'Teravolt' generation_id = '5' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '165' identifier = 'Aroma Veil' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '166' identifier = 'Flower Veil' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '167' identifier = 'Cheek Pouch' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '168' identifier = 'Protean' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '169' identifier = 'Fur Coat' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '170' identifier = 'Magician' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '171' identifier = 'Bulletproof' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '172' identifier = 'Competitive' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '173' identifier = 'Strong Jaw' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '174' identifier = 'Refrigerate' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '175' identifier = 'Sweet Veil' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '176' identifier = 'Stance Change' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '177' identifier = 'Gale Wings' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '178' identifier = 'Mega Launcher' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '179' identifier = 'Grass Pelt' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '180' identifier = 'Symbiosis' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '181' identifier = 'Tough Claws' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '182' identifier = 'Pixilate' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '183' identifier = 'Gooey' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '184' identifier = 'Aerilate' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '185' identifier = 'Parental Bond' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '186' identifier = 'Dark Aura' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '187' identifier = 'Fairy Aura' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '188' identifier = 'Aura Break' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '189' identifier = 'Primordial Sea' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '190' identifier = 'Desolate Land' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '191' identifier = 'Delta Stream' generation_id = '6' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '192' identifier = 'Stamina' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '193' identifier = 'Wimp Out' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '194' identifier = 'Emergency Exit' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '195' identifier = 'Water Compaction' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '196' identifier = 'Merciless' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '197' identifier = 'Shields Down' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '198' identifier = 'Stakeout' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '199' identifier = 'Water Bubble' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '200' identifier = 'Steelworker' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '201' identifier = 'Berserk' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '202' identifier = 'Slush Rush' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '203' identifier = 'Long Reach' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '204' identifier = 'Liquid Voice' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '205' identifier = 'Triage' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '206' identifier = 'Galvanize' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '207' identifier = 'Surge Surfer' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '208' identifier = 'Schooling' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '209' identifier = 'Disguise' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '210' identifier = 'Battle Bond' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '211' identifier = 'Power Construct' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '212' identifier = 'Corrosion' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '213' identifier = 'Comatose' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '214' identifier = 'Queenly Majesty' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '215' identifier = 'Innards Out' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '216' identifier = 'Dancer' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '217' identifier = 'Battery' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '218' identifier = 'Fluffy' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '219' identifier = 'Dazzling' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '220' identifier = 'Soul Heart' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '221' identifier = 'Tangling Hair' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '222' identifier = 'Receiver' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '223' identifier = 'Power Of Alchemy' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '224' identifier = 'Beast Boost' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '225' identifier = 'Rks System' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '226' identifier = 'Electric Surge' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '227' identifier = 'Psychic Surge' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '228' identifier = 'Misty Surge' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '229' identifier = 'Grassy Surge' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '230' identifier = 'Full Metal Body' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '231' identifier = 'Shadow Shield' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '232' identifier = 'Prism Armor' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '233' identifier = 'Neuroforce' generation_id = '7' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '234' identifier = 'Intrepid Sword' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '235' identifier = 'Dauntless Shield' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '236' identifier = 'Libero' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '237' identifier = 'Ball Fetch' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '238' identifier = 'Cotton Down' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '239' identifier = 'Propeller Tail' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '240' identifier = 'Mirror Armor' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '241' identifier = 'Gulp Missile' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '242' identifier = 'Stalwart' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '243' identifier = 'Steam Engine' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '244' identifier = 'Punk Rock' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '245' identifier = 'Sand Spit' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '246' identifier = 'Ice Scales' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '247' identifier = 'Ripen' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '248' identifier = 'Ice Face' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '249' identifier = 'Power Spot' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '250' identifier = 'Mimicry' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '251' identifier = 'Screen Cleaner' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '252' identifier = 'Steely Spirit' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '253' identifier = 'Perish Body' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '254' identifier = 'Wandering Spirit' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '255' identifier = 'Gorilla Tactics' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '256' identifier = 'Neutralizing Gas' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '257' identifier = 'Pastel Veil' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '258' identifier = 'Hunger Switch' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '259' identifier = 'Quick Draw' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '260' identifier = 'Unseen Fist' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '261' identifier = 'Curious Medicine' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '262' identifier = 'Transistor' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '263' identifier = 'Dragons Maw' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '264' identifier = 'Chilling Neigh' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '265' identifier = 'Grim Neigh' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '266' identifier = 'As One Glastrier' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '267' identifier = 'As One Spectrier' generation_id = '8' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '268' identifier = 'Lingering Aroma' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '269' identifier = 'Seed Sower' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '270' identifier = 'Thermal Exchange' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '271' identifier = 'Anger Shell' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '272' identifier = 'Purifying Salt' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '273' identifier = 'Well Baked Body' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '274' identifier = 'Wind Rider' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '275' identifier = 'Guard Dog' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '276' identifier = 'Rocky Payload' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '277' identifier = 'Wind Power' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '278' identifier = 'Zero To Hero' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '279' identifier = 'Commander' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '280' identifier = 'Electromorphosis' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '281' identifier = 'Protosynthesis' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '282' identifier = 'Quark Drive' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '283' identifier = 'Good As Gold' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '284' identifier = 'Vessel Of Ruin' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '285' identifier = 'Sword Of Ruin' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '286' identifier = 'Tablets Of Ruin' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '287' identifier = 'Beads Of Ruin' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '288' identifier = 'Orichalcum Pulse' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '289' identifier = 'Hadron Engine' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '290' identifier = 'Opportunist' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '291' identifier = 'Cud Chew' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '292' identifier = 'Sharpness' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '293' identifier = 'Supreme Overlord' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '294' identifier = 'Costar' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '295' identifier = 'Toxic Debris' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '296' identifier = 'Armor Tail' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '297' identifier = 'Earth Eater' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '298' identifier = 'Mycelium Might' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '299' identifier = 'Minds Eye' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '300' identifier = 'Supersweet Syrup' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '301' identifier = 'Hospitality' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '302' identifier = 'Toxic Chain' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '303' identifier = 'Embody Aspect' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '304' identifier = 'Tera Shift' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '305' identifier = 'Tera Shell' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '306' identifier = 'Teraform Zero' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '307' identifier = 'Poison Puppeteer' generation_id = '9' is_main_series = 'X'  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10001' identifier = 'Mountaineer' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10002' identifier = 'Wave Rider' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10003' identifier = 'Skater' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10004' identifier = 'Thrust' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10005' identifier = 'Perception' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10006' identifier = 'Parry' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10007' identifier = 'Instinct' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10008' identifier = 'Dodge' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10009' identifier = 'Jagged Edge' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10010' identifier = 'Frostbite' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10011' identifier = 'Tenacity' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10012' identifier = 'Pride' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10013' identifier = 'Deep Sleep' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10014' identifier = 'Power Nap' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10015' identifier = 'Spirit' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10016' identifier = 'Warm Blanket' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10017' identifier = 'Gulp' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10018' identifier = 'Herbivore' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10019' identifier = 'Sandpit' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10020' identifier = 'Hot Blooded' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10021' identifier = 'Medic' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10022' identifier = 'Life Force' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10023' identifier = 'Lunchbox' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10024' identifier = 'Nurse' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10025' identifier = 'Melee' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10026' identifier = 'Sponge' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10027' identifier = 'Bodyguard' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10028' identifier = 'Hero' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10029' identifier = 'Last Bastion' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10030' identifier = 'Stealth' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10031' identifier = 'Vanguard' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10032' identifier = 'Nomad' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10033' identifier = 'Sequence' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10034' identifier = 'Grass Cloak' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10035' identifier = 'Celebrate' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10036' identifier = 'Lullaby' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10037' identifier = 'Calming' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10038' identifier = 'Daze' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10039' identifier = 'Frighten' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10040' identifier = 'Interference' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10041' identifier = 'Mood Maker' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10042' identifier = 'Confidence' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10043' identifier = 'Fortune' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10044' identifier = 'Bonanza' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10045' identifier = 'Explode' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10046' identifier = 'Omnipotent' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10047' identifier = 'Share' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10048' identifier = 'Black Hole' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10049' identifier = 'Shadow Dash' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10050' identifier = 'Sprint' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10051' identifier = 'Disgust' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10052' identifier = 'High Rise' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10053' identifier = 'Climber' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10054' identifier = 'Flame Boost' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10055' identifier = 'Aqua Boost' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10056' identifier = 'Run Up' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10057' identifier = 'Conqueror' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10058' identifier = 'Shackle' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10059' identifier = 'Decoy' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+    INSERT VALUE #( id = '10060' identifier = 'Shield' generation_id = '5' is_main_series = ''  ) INTO TABLE lt_ability.
+
 
     MODIFY zpk_ability FROM TABLE @lt_ability.
   ENDMETHOD.

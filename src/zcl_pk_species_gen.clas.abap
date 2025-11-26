@@ -20,15 +20,15 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
   METHOD generate_generation.
     DATA: lt_generation TYPE TABLE OF zpk_generation.
 
-    INSERT VALUE #( id = '1' main_region_id = '1' identifier = 'generation-i' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '2' main_region_id = '2' identifier = 'generation-ii' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '3' main_region_id = '3' identifier = 'generation-iii' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '4' main_region_id = '4' identifier = 'generation-iv' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '5' main_region_id = '5' identifier = 'generation-v' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '6' main_region_id = '6' identifier = 'generation-vi' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '7' main_region_id = '7' identifier = 'generation-vii' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '8' main_region_id = '8' identifier = 'generation-viii' ) INTO TABLE lt_generation.
-    INSERT VALUE #( id = '9' main_region_id = '10' identifier = 'generation-ix' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '1' main_region_id = '1' identifier = 'Generation I' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '2' main_region_id = '2' identifier = 'Generation II' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '3' main_region_id = '3' identifier = 'Generation III' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '4' main_region_id = '4' identifier = 'Generation IV' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '5' main_region_id = '5' identifier = 'Generation V' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '6' main_region_id = '6' identifier = 'Generation VI' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '7' main_region_id = '7' identifier = 'Generation VII' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '8' main_region_id = '8' identifier = 'Generation VIII' ) INTO TABLE lt_generation.
+    INSERT VALUE #( id = '9' main_region_id = '10' identifier = 'Generation IX' ) INTO TABLE lt_generation.
 
     MODIFY zpk_generation FROM TABLE @lt_generation.
   ENDMETHOD.
@@ -51,7 +51,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1'
@@ -71,7 +71,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '2'
@@ -91,7 +91,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '3'
@@ -111,7 +111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '4'
@@ -131,7 +131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '5'
@@ -151,7 +151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '6'
@@ -171,7 +171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '7'
@@ -191,7 +191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '8'
@@ -211,7 +211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '9'
@@ -231,7 +231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '10'
@@ -251,7 +251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '11'
@@ -271,7 +271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '12'
@@ -291,7 +291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '13'
@@ -311,7 +311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '14'
@@ -331,7 +331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '15'
@@ -351,7 +351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '16'
@@ -371,7 +371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '17'
@@ -391,7 +391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '18'
@@ -411,7 +411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '19'
@@ -431,7 +431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '20'
@@ -451,7 +451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '21'
@@ -471,7 +471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '22'
@@ -491,7 +491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '23'
@@ -511,7 +511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '24'
@@ -531,7 +531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '26'
@@ -551,7 +551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '27'
@@ -571,7 +571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '28'
@@ -591,7 +591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '29'
@@ -611,7 +611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '30'
@@ -631,7 +631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '31'
@@ -651,7 +651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '32'
@@ -671,7 +671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '33'
@@ -691,7 +691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '34'
@@ -711,7 +711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '35'
@@ -731,7 +731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '37'
@@ -751,7 +751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '38'
@@ -771,7 +771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '39'
@@ -791,7 +791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '40'
@@ -811,7 +811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '42'
@@ -831,7 +831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '43'
@@ -851,7 +851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '44'
@@ -871,7 +871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '45'
@@ -891,7 +891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '47'
@@ -911,7 +911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '48'
@@ -931,7 +931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '49'
@@ -951,7 +951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '51'
@@ -971,7 +971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '52'
@@ -991,7 +991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '53'
@@ -1011,7 +1011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '54'
@@ -1031,7 +1031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '55'
@@ -1051,7 +1051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '56'
@@ -1071,7 +1071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '57'
@@ -1091,7 +1091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '58'
@@ -1111,7 +1111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '59'
@@ -1131,7 +1131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '60'
@@ -1151,7 +1151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '61'
@@ -1171,7 +1171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '62'
@@ -1191,7 +1191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '63'
@@ -1211,7 +1211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '64'
@@ -1231,7 +1231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '65'
@@ -1251,7 +1251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '66'
@@ -1271,7 +1271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '67'
@@ -1291,7 +1291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '69'
@@ -1311,7 +1311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '70'
@@ -1331,7 +1331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '71'
@@ -1351,7 +1351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '72'
@@ -1371,7 +1371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '73'
@@ -1391,7 +1391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '74'
@@ -1411,7 +1411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '75'
@@ -1431,7 +1431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '76'
@@ -1451,7 +1451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '77'
@@ -1471,7 +1471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '78'
@@ -1491,7 +1491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '79'
@@ -1511,7 +1511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '80'
@@ -1531,7 +1531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '81'
@@ -1551,7 +1551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '82'
@@ -1571,7 +1571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '83'
@@ -1591,7 +1591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '84'
@@ -1611,7 +1611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '85'
@@ -1631,7 +1631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '86'
@@ -1651,7 +1651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '88'
@@ -1671,7 +1671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '89'
@@ -1691,7 +1691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '91'
@@ -1711,7 +1711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '92'
@@ -1731,7 +1731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '93'
@@ -1751,7 +1751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '94'
@@ -1771,7 +1771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '95'
@@ -1791,7 +1791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '96'
@@ -1811,7 +1811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '97'
@@ -1831,7 +1831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '98'
@@ -1851,7 +1851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '99'
@@ -1871,7 +1871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '100'
@@ -1891,7 +1891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '101'
@@ -1911,7 +1911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '102'
@@ -1931,7 +1931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '103'
@@ -1951,7 +1951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '105'
@@ -1971,7 +1971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '106'
@@ -1991,7 +1991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '107'
@@ -2011,7 +2011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '108'
@@ -2031,7 +2031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '109'
@@ -2051,7 +2051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '110'
@@ -2071,7 +2071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '111'
@@ -2091,7 +2091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '112'
@@ -2111,7 +2111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '113'
@@ -2131,7 +2131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '114'
@@ -2151,7 +2151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '116'
@@ -2171,7 +2171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '117'
@@ -2191,7 +2191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '119'
@@ -2211,7 +2211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '121'
@@ -2231,7 +2231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '122'
@@ -2251,7 +2251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '123'
@@ -2271,7 +2271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '124'
@@ -2291,7 +2291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '127'
@@ -2311,7 +2311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '129'
@@ -2331,7 +2331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '131'
@@ -2351,7 +2351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '132'
@@ -2371,7 +2371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '133'
@@ -2391,7 +2391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '135'
@@ -2411,7 +2411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '136'
@@ -2431,7 +2431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '137'
@@ -2451,7 +2451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '138'
@@ -2471,7 +2471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '140'
@@ -2491,7 +2491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '141'
@@ -2511,7 +2511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '144'
@@ -2531,7 +2531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '146'
@@ -2551,7 +2551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '149'
@@ -2571,7 +2571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '151'
@@ -2591,7 +2591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '152'
@@ -2611,7 +2611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 5
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '153'
@@ -2631,7 +2631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 5
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '154'
@@ -2651,7 +2651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '155'
@@ -2671,7 +2671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '156'
@@ -2691,7 +2691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '157'
@@ -2711,7 +2711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '158'
@@ -2731,7 +2731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '159'
@@ -2751,7 +2751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '160'
@@ -2771,7 +2771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '166'
@@ -2791,7 +2791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '169'
@@ -2811,7 +2811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '170'
@@ -2831,7 +2831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '171'
@@ -2851,7 +2851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '172'
@@ -2871,7 +2871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '173'
@@ -2891,7 +2891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '175'
@@ -2911,7 +2911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '176'
@@ -2931,7 +2931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '177'
@@ -2951,7 +2951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '178'
@@ -2971,7 +2971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '179'
@@ -2991,7 +2991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '180'
@@ -3011,7 +3011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '181'
@@ -3031,7 +3031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '182'
@@ -3051,7 +3051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '183'
@@ -3071,7 +3071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '184'
@@ -3091,7 +3091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '185'
@@ -3111,7 +3111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '186'
@@ -3131,7 +3131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '187'
@@ -3151,7 +3151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '188'
@@ -3171,7 +3171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '189'
@@ -3191,7 +3191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '190'
@@ -3211,7 +3211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '191'
@@ -3231,7 +3231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '192'
@@ -3251,7 +3251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '193'
@@ -3271,7 +3271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '194'
@@ -3291,7 +3291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '195'
@@ -3311,7 +3311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '196'
@@ -3331,7 +3331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '197'
@@ -3351,7 +3351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '198'
@@ -3371,7 +3371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '199'
@@ -3391,7 +3391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '200'
@@ -3411,7 +3411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '46'
@@ -3431,7 +3431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '201'
@@ -3451,7 +3451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '202'
@@ -3471,7 +3471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '25'
@@ -3491,7 +3491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '36'
@@ -3511,7 +3511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '41'
@@ -3531,7 +3531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '203'
@@ -3551,7 +3551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '204'
@@ -3571,7 +3571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '206'
@@ -3591,7 +3591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '207'
@@ -3611,7 +3611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '208'
@@ -3631,7 +3631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '209'
@@ -3651,7 +3651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '210'
@@ -3671,7 +3671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '50'
@@ -3691,7 +3691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '212'
@@ -3711,7 +3711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '213'
@@ -3731,7 +3731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '215'
@@ -3751,7 +3751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '68'
@@ -3771,7 +3771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '216'
@@ -3791,7 +3791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '217'
@@ -3811,7 +3811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '218'
@@ -3831,7 +3831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '219'
@@ -3851,7 +3851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '221'
@@ -3871,7 +3871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '222'
@@ -3891,7 +3891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '223'
@@ -3911,7 +3911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '225'
@@ -3931,7 +3931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '226'
@@ -3951,7 +3951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '161'
@@ -3971,7 +3971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '162'
@@ -3991,7 +3991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '227'
@@ -4011,7 +4011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '87'
@@ -4031,7 +4031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '229'
@@ -4051,7 +4051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '231'
@@ -4071,7 +4071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '233'
@@ -4091,7 +4091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '234'
@@ -4111,7 +4111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '235'
@@ -4131,7 +4131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '236'
@@ -4151,7 +4151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '237'
@@ -4171,7 +4171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '238'
@@ -4191,7 +4191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '104'
@@ -4211,7 +4211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '240'
@@ -4231,7 +4231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '241'
@@ -4251,7 +4251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '242'
@@ -4271,7 +4271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '142'
@@ -4291,7 +4291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '243'
@@ -4311,7 +4311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '244'
@@ -4331,7 +4331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '245'
@@ -4351,7 +4351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '247'
@@ -4371,7 +4371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '248'
@@ -4391,7 +4391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '249'
@@ -4411,7 +4411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '250'
@@ -4431,7 +4431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '251'
@@ -4451,7 +4451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '252'
@@ -4471,7 +4471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '254'
@@ -4491,7 +4491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '255'
@@ -4511,7 +4511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '256'
@@ -4531,7 +4531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '257'
@@ -4551,7 +4551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '259'
@@ -4571,7 +4571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '260'
@@ -4591,7 +4591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '261'
@@ -4611,7 +4611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '262'
@@ -4631,7 +4631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '134'
@@ -4651,7 +4651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '263'
@@ -4671,7 +4671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '264'
@@ -4691,7 +4691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '167'
@@ -4711,7 +4711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '265'
@@ -4731,7 +4731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '266'
@@ -4751,7 +4751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '115'
@@ -4771,7 +4771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '118'
@@ -4791,7 +4791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '143'
@@ -4811,7 +4811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '145'
@@ -4831,7 +4831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '148'
@@ -4851,7 +4851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '267'
@@ -4871,7 +4871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '128'
@@ -4891,7 +4891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '268'
@@ -4911,7 +4911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '269'
@@ -4931,7 +4931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '270'
@@ -4951,7 +4951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '271'
@@ -4971,7 +4971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '272'
@@ -4991,7 +4991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '273'
@@ -5011,7 +5011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '274'
@@ -5031,7 +5031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '275'
@@ -5051,7 +5051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '276'
@@ -5071,7 +5071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '277'
@@ -5091,7 +5091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '278'
@@ -5111,7 +5111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '279'
@@ -5131,7 +5131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '280'
@@ -5151,7 +5151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '281'
@@ -5171,7 +5171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '282'
@@ -5191,7 +5191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '283'
@@ -5211,7 +5211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '284'
@@ -5231,7 +5231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '285'
@@ -5251,7 +5251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '286'
@@ -5271,7 +5271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '287'
@@ -5291,7 +5291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '288'
@@ -5311,7 +5311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '289'
@@ -5331,7 +5331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '290'
@@ -5351,7 +5351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '291'
@@ -5371,7 +5371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '292'
@@ -5391,7 +5391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '293'
@@ -5411,7 +5411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '294'
@@ -5431,7 +5431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '295'
@@ -5451,7 +5451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '296'
@@ -5471,7 +5471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '297'
@@ -5491,7 +5491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '298'
@@ -5511,7 +5511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '299'
@@ -5531,7 +5531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '300'
@@ -5551,7 +5551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '301'
@@ -5571,7 +5571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '302'
@@ -5591,7 +5591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '303'
@@ -5611,7 +5611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '304'
@@ -5631,7 +5631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '305'
@@ -5651,7 +5651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '306'
@@ -5671,7 +5671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '307'
@@ -5691,7 +5691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '309'
@@ -5711,7 +5711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '310'
@@ -5731,7 +5731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '311'
@@ -5751,7 +5751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '312'
@@ -5771,7 +5771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '313'
@@ -5791,7 +5791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '314'
@@ -5811,7 +5811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '315'
@@ -5831,7 +5831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '316'
@@ -5851,7 +5851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '317'
@@ -5871,7 +5871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '318'
@@ -5891,7 +5891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '319'
@@ -5911,7 +5911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '320'
@@ -5931,7 +5931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '321'
@@ -5951,7 +5951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '322'
@@ -5971,7 +5971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '323'
@@ -5991,7 +5991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '211'
@@ -6011,7 +6011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '324'
@@ -6031,7 +6031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '326'
@@ -6051,7 +6051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '327'
@@ -6071,7 +6071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '328'
@@ -6091,7 +6091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '329'
@@ -6111,7 +6111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '330'
@@ -6131,7 +6131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '331'
@@ -6151,7 +6151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '332'
@@ -6171,7 +6171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '333'
@@ -6191,7 +6191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '334'
@@ -6211,7 +6211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '335'
@@ -6231,7 +6231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '336'
@@ -6251,7 +6251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '337'
@@ -6271,7 +6271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '338'
@@ -6291,7 +6291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '339'
@@ -6311,7 +6311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '340'
@@ -6331,7 +6331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '342'
@@ -6351,7 +6351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '344'
@@ -6371,7 +6371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '345'
@@ -6391,7 +6391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '346'
@@ -6411,7 +6411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '347'
@@ -6431,7 +6431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '348'
@@ -6451,7 +6451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '349'
@@ -6471,7 +6471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '350'
@@ -6491,7 +6491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '351'
@@ -6511,7 +6511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '352'
@@ -6531,7 +6531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '353'
@@ -6551,7 +6551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '354'
@@ -6571,7 +6571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '355'
@@ -6591,7 +6591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '356'
@@ -6611,7 +6611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '357'
@@ -6631,7 +6631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '358'
@@ -6651,7 +6651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '359'
@@ -6671,7 +6671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '360'
@@ -6691,7 +6691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '361'
@@ -6711,7 +6711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '362'
@@ -6731,7 +6731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '363'
@@ -6751,7 +6751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '364'
@@ -6771,7 +6771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '365'
@@ -6791,7 +6791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '366'
@@ -6811,7 +6811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '367'
@@ -6831,7 +6831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '368'
@@ -6851,7 +6851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '369'
@@ -6871,7 +6871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '370'
@@ -6891,7 +6891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '371'
@@ -6911,7 +6911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '372'
@@ -6931,7 +6931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '373'
@@ -6951,7 +6951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '374'
@@ -6971,7 +6971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '375'
@@ -6991,7 +6991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '376'
@@ -7011,7 +7011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '377'
@@ -7031,7 +7031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '378'
@@ -7051,7 +7051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '379'
@@ -7071,7 +7071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '380'
@@ -7091,7 +7091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '381'
@@ -7111,7 +7111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '382'
@@ -7131,7 +7131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '383'
@@ -7151,7 +7151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '384'
@@ -7171,7 +7171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '386'
@@ -7191,7 +7191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '388'
@@ -7211,7 +7211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '389'
@@ -7231,7 +7231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '232'
@@ -7251,7 +7251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '390'
@@ -7271,7 +7271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '391'
@@ -7291,7 +7291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '393'
@@ -7311,7 +7311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '394'
@@ -7331,7 +7331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '395'
@@ -7351,7 +7351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '396'
@@ -7371,7 +7371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '397'
@@ -7391,7 +7391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '398'
@@ -7411,7 +7411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '399'
@@ -7431,7 +7431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '400'
@@ -7451,7 +7451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '401'
@@ -7471,7 +7471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '402'
@@ -7491,7 +7491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '403'
@@ -7511,7 +7511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '404'
@@ -7531,7 +7531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '405'
@@ -7551,7 +7551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '406'
@@ -7571,7 +7571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '407'
@@ -7591,7 +7591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '408'
@@ -7611,7 +7611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '409'
@@ -7631,7 +7631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '410'
@@ -7651,7 +7651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '411'
@@ -7671,7 +7671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '412'
@@ -7691,7 +7691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '413'
@@ -7711,7 +7711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '414'
@@ -7731,7 +7731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '415'
@@ -7751,7 +7751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '416'
@@ -7771,7 +7771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '417'
@@ -7791,7 +7791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '418'
@@ -7811,7 +7811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '419'
@@ -7831,7 +7831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '420'
@@ -7851,7 +7851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '421'
@@ -7871,7 +7871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '422'
@@ -7891,7 +7891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '423'
@@ -7911,7 +7911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '424'
@@ -7931,7 +7931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '425'
@@ -7951,7 +7951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '426'
@@ -7971,7 +7971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '427'
@@ -7991,7 +7991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '428'
@@ -8011,7 +8011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '429'
@@ -8031,7 +8031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '430'
@@ -8051,7 +8051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '431'
@@ -8071,7 +8071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '432'
@@ -8091,7 +8091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '433'
@@ -8111,7 +8111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '434'
@@ -8131,7 +8131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '435'
@@ -8151,7 +8151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '341'
@@ -8171,7 +8171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '343'
@@ -8191,7 +8191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '436'
@@ -8211,7 +8211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '437'
@@ -8231,7 +8231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '438'
@@ -8251,7 +8251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '439'
@@ -8271,7 +8271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '440'
@@ -8291,7 +8291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '441'
@@ -8311,7 +8311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '442'
@@ -8331,7 +8331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '443'
@@ -8351,7 +8351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '444'
@@ -8371,7 +8371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '445'
@@ -8391,7 +8391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '446'
@@ -8411,7 +8411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '447'
@@ -8431,7 +8431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '448'
@@ -8451,7 +8451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '449'
@@ -8471,7 +8471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '450'
@@ -8491,7 +8491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '451'
@@ -8511,7 +8511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '220'
@@ -8531,7 +8531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '452'
@@ -8551,7 +8551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '6'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '453'
@@ -8571,7 +8571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '454'
@@ -8591,7 +8591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '455'
@@ -8611,7 +8611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '230'
@@ -8631,7 +8631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '228'
@@ -8651,7 +8651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '456'
@@ -8671,7 +8671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '457'
@@ -8691,7 +8691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '387'
@@ -8711,7 +8711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '458'
@@ -8731,7 +8731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '459'
@@ -8751,7 +8751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '460'
@@ -8771,7 +8771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '461'
@@ -8791,7 +8791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '214'
@@ -8811,7 +8811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '139'
@@ -8831,7 +8831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '126'
@@ -8851,7 +8851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '462'
@@ -8871,7 +8871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '463'
@@ -8891,7 +8891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '464'
@@ -8911,7 +8911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '465'
@@ -8931,7 +8931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '466'
@@ -8951,7 +8951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '174'
@@ -8971,7 +8971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '467'
@@ -8991,7 +8991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '468'
@@ -9011,7 +9011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '469'
@@ -9031,7 +9031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '470'
@@ -9051,7 +9051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '471'
@@ -9071,7 +9071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '472'
@@ -9091,7 +9091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '473'
@@ -9111,7 +9111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '474'
@@ -9131,7 +9131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '475'
@@ -9151,7 +9151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '476'
@@ -9171,7 +9171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '477'
@@ -9191,7 +9191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '258'
@@ -9211,7 +9211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '478'
@@ -9231,7 +9231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '479'
@@ -9251,7 +9251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '246'
@@ -9271,7 +9271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '90'
@@ -9291,7 +9291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '120'
@@ -9311,7 +9311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '125'
@@ -9331,7 +9331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '130'
@@ -9351,7 +9351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '147'
@@ -9371,7 +9371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '150'
@@ -9391,7 +9391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '205'
@@ -9411,7 +9411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '224'
@@ -9431,7 +9431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '163'
@@ -9451,7 +9451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '164'
@@ -9471,7 +9471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '239'
@@ -9491,7 +9491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '253'
@@ -9511,7 +9511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '168'
@@ -9531,7 +9531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '308'
@@ -9551,7 +9551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '325'
@@ -9571,7 +9571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '385'
@@ -9591,7 +9591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '392'
@@ -9611,7 +9611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '480'
@@ -9631,7 +9631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '481'
@@ -9651,7 +9651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '482'
@@ -9671,7 +9671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '483'
@@ -9691,7 +9691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '484'
@@ -9711,7 +9711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '485'
@@ -9731,7 +9731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '486'
@@ -9751,7 +9751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '487'
@@ -9771,7 +9771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '488'
@@ -9791,7 +9791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '489'
@@ -9811,7 +9811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '490'
@@ -9831,7 +9831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '491'
@@ -9851,7 +9851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '492'
@@ -9871,7 +9871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '493'
@@ -9891,7 +9891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '494'
@@ -9911,7 +9911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '495'
@@ -9931,7 +9931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '496'
@@ -9951,7 +9951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '497'
@@ -9971,7 +9971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '498'
@@ -9991,7 +9991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '499'
@@ -10011,7 +10011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '500'
@@ -10031,7 +10031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '501'
@@ -10051,7 +10051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '502'
@@ -10071,7 +10071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '503'
@@ -10091,7 +10091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '504'
@@ -10111,7 +10111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '505'
@@ -10131,7 +10131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '506'
@@ -10151,7 +10151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '507'
@@ -10171,7 +10171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '508'
@@ -10191,7 +10191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '509'
@@ -10211,7 +10211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '510'
@@ -10231,7 +10231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '511'
@@ -10251,7 +10251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '512'
@@ -10271,7 +10271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '513'
@@ -10291,7 +10291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '514'
@@ -10311,7 +10311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '515'
@@ -10331,7 +10331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '516'
@@ -10351,7 +10351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '517'
@@ -10371,7 +10371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '518'
@@ -10391,7 +10391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '519'
@@ -10411,7 +10411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '520'
@@ -10431,7 +10431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '521'
@@ -10451,7 +10451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '522'
@@ -10471,7 +10471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '523'
@@ -10491,7 +10491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '524'
@@ -10511,7 +10511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '525'
@@ -10531,7 +10531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '526'
@@ -10551,7 +10551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '527'
@@ -10571,7 +10571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '528'
@@ -10591,7 +10591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '529'
@@ -10611,7 +10611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '530'
@@ -10631,7 +10631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '531'
@@ -10651,7 +10651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '532'
@@ -10671,7 +10671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '533'
@@ -10691,7 +10691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '534'
@@ -10711,7 +10711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '535'
@@ -10731,7 +10731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '536'
@@ -10751,7 +10751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '537'
@@ -10771,7 +10771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '538'
@@ -10791,7 +10791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '539'
@@ -10811,7 +10811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '540'
@@ -10831,7 +10831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '541'
@@ -10851,7 +10851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '542'
@@ -10871,7 +10871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '543'
@@ -10891,7 +10891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '544'
@@ -10911,7 +10911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '545'
@@ -10931,7 +10931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '546'
@@ -10951,7 +10951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '547'
@@ -10971,7 +10971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '548'
@@ -10991,7 +10991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '549'
@@ -11011,7 +11011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '550'
@@ -11031,7 +11031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '551'
@@ -11051,7 +11051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '552'
@@ -11071,7 +11071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '553'
@@ -11091,7 +11091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '554'
@@ -11111,7 +11111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '555'
@@ -11131,7 +11131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '556'
@@ -11151,7 +11151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '557'
@@ -11171,7 +11171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '558'
@@ -11191,7 +11191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '559'
@@ -11211,7 +11211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '560'
@@ -11231,7 +11231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '561'
@@ -11251,7 +11251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '562'
@@ -11271,7 +11271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '563'
@@ -11291,7 +11291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '564'
@@ -11311,7 +11311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '565'
@@ -11331,7 +11331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '566'
@@ -11351,7 +11351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '567'
@@ -11371,7 +11371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '568'
@@ -11391,7 +11391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '569'
@@ -11411,7 +11411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '570'
@@ -11431,7 +11431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '571'
@@ -11451,7 +11451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '572'
@@ -11471,7 +11471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '573'
@@ -11491,7 +11491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '574'
@@ -11511,7 +11511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '575'
@@ -11531,7 +11531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '576'
@@ -11551,7 +11551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '577'
@@ -11571,7 +11571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '578'
@@ -11591,7 +11591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '579'
@@ -11611,7 +11611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '580'
@@ -11631,7 +11631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '581'
@@ -11651,7 +11651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '582'
@@ -11671,7 +11671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '583'
@@ -11691,7 +11691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '584'
@@ -11711,7 +11711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '585'
@@ -11731,7 +11731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '586'
@@ -11751,7 +11751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '587'
@@ -11771,7 +11771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '588'
@@ -11791,7 +11791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '589'
@@ -11811,7 +11811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '590'
@@ -11831,7 +11831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '591'
@@ -11851,7 +11851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '592'
@@ -11871,7 +11871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '593'
@@ -11891,7 +11891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '594'
@@ -11911,7 +11911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '595'
@@ -11931,7 +11931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '596'
@@ -11951,7 +11951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '597'
@@ -11971,7 +11971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '598'
@@ -11991,7 +11991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '599'
@@ -12011,7 +12011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '600'
@@ -12031,7 +12031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '601'
@@ -12051,7 +12051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '602'
@@ -12071,7 +12071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '603'
@@ -12091,7 +12091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '604'
@@ -12111,7 +12111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '605'
@@ -12131,7 +12131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '606'
@@ -12151,7 +12151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '607'
@@ -12171,7 +12171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '608'
@@ -12191,7 +12191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '609'
@@ -12211,7 +12211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '610'
@@ -12231,7 +12231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '611'
@@ -12251,7 +12251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '612'
@@ -12271,7 +12271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '613'
@@ -12291,7 +12291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '614'
@@ -12311,7 +12311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '615'
@@ -12331,7 +12331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '616'
@@ -12351,7 +12351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '617'
@@ -12371,7 +12371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '618'
@@ -12391,7 +12391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '619'
@@ -12411,7 +12411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '620'
@@ -12431,7 +12431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '621'
@@ -12451,7 +12451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '622'
@@ -12471,7 +12471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '623'
@@ -12491,7 +12491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '624'
@@ -12511,7 +12511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '625'
@@ -12531,7 +12531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '626'
@@ -12551,7 +12551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '627'
@@ -12571,7 +12571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '628'
@@ -12591,7 +12591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '629'
@@ -12611,7 +12611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '630'
@@ -12631,7 +12631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '631'
@@ -12651,7 +12651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '632'
@@ -12671,7 +12671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '633'
@@ -12691,7 +12691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '634'
@@ -12711,7 +12711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '635'
@@ -12731,7 +12731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '636'
@@ -12751,7 +12751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '637'
@@ -12771,7 +12771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '638'
@@ -12791,7 +12791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '639'
@@ -12811,7 +12811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '640'
@@ -12831,7 +12831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '641'
@@ -12851,7 +12851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '642'
@@ -12871,7 +12871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '643'
@@ -12891,7 +12891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '644'
@@ -12911,7 +12911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '645'
@@ -12931,7 +12931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '646'
@@ -12951,7 +12951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '647'
@@ -12971,7 +12971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 80
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '648'
@@ -12991,7 +12991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '649'
@@ -13011,7 +13011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '650'
@@ -13031,7 +13031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '651'
@@ -13051,7 +13051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '652'
@@ -13071,7 +13071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '653'
@@ -13091,7 +13091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '654'
@@ -13111,7 +13111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '655'
@@ -13131,7 +13131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '656'
@@ -13151,7 +13151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '657'
@@ -13171,7 +13171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '658'
@@ -13191,7 +13191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '659'
@@ -13211,7 +13211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '660'
@@ -13231,7 +13231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '661'
@@ -13251,7 +13251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '662'
@@ -13271,7 +13271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '663'
@@ -13291,7 +13291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '664'
@@ -13311,7 +13311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '665'
@@ -13331,7 +13331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '666'
@@ -13351,7 +13351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '667'
@@ -13371,7 +13371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '668'
@@ -13391,7 +13391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '669'
@@ -13411,7 +13411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '670'
@@ -13431,7 +13431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '671'
@@ -13451,7 +13451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '672'
@@ -13471,7 +13471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '673'
@@ -13491,7 +13491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '674'
@@ -13511,7 +13511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '675'
@@ -13531,7 +13531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '676'
@@ -13551,7 +13551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '677'
@@ -13571,7 +13571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '678'
@@ -13591,7 +13591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '679'
@@ -13611,7 +13611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '680'
@@ -13631,7 +13631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '681'
@@ -13651,7 +13651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '682'
@@ -13671,7 +13671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '683'
@@ -13691,7 +13691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '684'
@@ -13711,7 +13711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '685'
@@ -13731,7 +13731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '686'
@@ -13751,7 +13751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '687'
@@ -13771,7 +13771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '688'
@@ -13791,7 +13791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '689'
@@ -13811,7 +13811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '690'
@@ -13831,7 +13831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '691'
@@ -13851,7 +13851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '692'
@@ -13871,7 +13871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '693'
@@ -13891,7 +13891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '694'
@@ -13911,7 +13911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '695'
@@ -13931,7 +13931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '696'
@@ -13951,7 +13951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '697'
@@ -13971,7 +13971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '698'
@@ -13991,7 +13991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '699'
@@ -14011,7 +14011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '700'
@@ -14031,7 +14031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '165'
@@ -14051,7 +14051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '701'
@@ -14071,7 +14071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '702'
@@ -14091,7 +14091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '703'
@@ -14111,7 +14111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '704'
@@ -14131,7 +14131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '705'
@@ -14151,7 +14151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '706'
@@ -14171,7 +14171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '707'
@@ -14191,7 +14191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '708'
@@ -14211,7 +14211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '709'
@@ -14231,7 +14231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '710'
@@ -14251,7 +14251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '711'
@@ -14271,7 +14271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '712'
@@ -14291,7 +14291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '713'
@@ -14311,7 +14311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '714'
@@ -14331,7 +14331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '715'
@@ -14351,7 +14351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '716'
@@ -14371,7 +14371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '717'
@@ -14391,7 +14391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '718'
@@ -14411,7 +14411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '719'
@@ -14431,7 +14431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '720'
@@ -14451,7 +14451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '721'
@@ -14471,7 +14471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '722'
@@ -14491,7 +14491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '723'
@@ -14511,7 +14511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '724'
@@ -14531,7 +14531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '725'
@@ -14551,7 +14551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '726'
@@ -14571,7 +14571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '727'
@@ -14591,7 +14591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '728'
@@ -14611,7 +14611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '729'
@@ -14631,7 +14631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '730'
@@ -14651,7 +14651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '731'
@@ -14671,7 +14671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '732'
@@ -14691,7 +14691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '733'
@@ -14711,7 +14711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '734'
@@ -14731,7 +14731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '735'
@@ -14751,7 +14751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '736'
@@ -14771,7 +14771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '737'
@@ -14791,7 +14791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '738'
@@ -14811,7 +14811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '739'
@@ -14831,7 +14831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '740'
@@ -14851,7 +14851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '741'
@@ -14871,7 +14871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '742'
@@ -14891,7 +14891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '743'
@@ -14911,7 +14911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '744'
@@ -14931,7 +14931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '745'
@@ -14951,7 +14951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '746'
@@ -14971,7 +14971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '747'
@@ -14991,7 +14991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '748'
@@ -15011,7 +15011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '749'
@@ -15031,7 +15031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '750'
@@ -15051,7 +15051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '751'
@@ -15071,7 +15071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '752'
@@ -15091,7 +15091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '753'
@@ -15111,7 +15111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '754'
@@ -15131,7 +15131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '755'
@@ -15151,7 +15151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '756'
@@ -15171,7 +15171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '757'
@@ -15191,7 +15191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '758'
@@ -15211,7 +15211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '759'
@@ -15231,7 +15231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '760'
@@ -15251,7 +15251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '761'
@@ -15271,7 +15271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '762'
@@ -15291,7 +15291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '763'
@@ -15311,7 +15311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '764'
@@ -15331,7 +15331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '765'
@@ -15351,7 +15351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '766'
@@ -15371,7 +15371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '767'
@@ -15391,7 +15391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '768'
@@ -15411,7 +15411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '769'
@@ -15431,7 +15431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '770'
@@ -15451,7 +15451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '771'
@@ -15471,7 +15471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '772'
@@ -15491,7 +15491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '773'
@@ -15511,7 +15511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '774'
@@ -15531,7 +15531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '775'
@@ -15551,7 +15551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '776'
@@ -15571,7 +15571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '777'
@@ -15591,7 +15591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '778'
@@ -15611,7 +15611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '779'
@@ -15631,7 +15631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '780'
@@ -15651,7 +15651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '781'
@@ -15671,7 +15671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '782'
@@ -15691,7 +15691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '783'
@@ -15711,7 +15711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '784'
@@ -15731,7 +15731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '785'
@@ -15751,7 +15751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '786'
@@ -15771,7 +15771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '787'
@@ -15791,7 +15791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '788'
@@ -15811,7 +15811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '789'
@@ -15831,7 +15831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '790'
@@ -15851,7 +15851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '791'
@@ -15871,7 +15871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '792'
@@ -15891,7 +15891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '793'
@@ -15911,7 +15911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '794'
@@ -15931,7 +15931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '795'
@@ -15951,7 +15951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '796'
@@ -15971,7 +15971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '797'
@@ -15991,7 +15991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '798'
@@ -16011,7 +16011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '799'
@@ -16031,7 +16031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '800'
@@ -16051,7 +16051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '801'
@@ -16071,7 +16071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '802'
@@ -16091,7 +16091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '803'
@@ -16111,7 +16111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '804'
@@ -16131,7 +16131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '805'
@@ -16151,7 +16151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '806'
@@ -16171,7 +16171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '807'
@@ -16191,7 +16191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '808'
@@ -16211,7 +16211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '809'
@@ -16231,7 +16231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '810'
@@ -16251,7 +16251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '811'
@@ -16271,7 +16271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '812'
@@ -16291,7 +16291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '813'
@@ -16311,7 +16311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '814'
@@ -16331,7 +16331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '815'
@@ -16351,7 +16351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '816'
@@ -16371,7 +16371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '817'
@@ -16391,7 +16391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '818'
@@ -16411,7 +16411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '819'
@@ -16431,7 +16431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '820'
@@ -16451,7 +16451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '821'
@@ -16471,7 +16471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '822'
@@ -16491,7 +16491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '823'
@@ -16511,7 +16511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '824'
@@ -16531,7 +16531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '825'
@@ -16551,7 +16551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '826'
@@ -16571,7 +16571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '827'
@@ -16591,7 +16591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '828'
@@ -16611,7 +16611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '829'
@@ -16631,7 +16631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '830'
@@ -16651,7 +16651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '831'
@@ -16671,7 +16671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '832'
@@ -16691,7 +16691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '833'
@@ -16711,7 +16711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '834'
@@ -16731,7 +16731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '835'
@@ -16751,7 +16751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '836'
@@ -16771,7 +16771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '837'
@@ -16791,7 +16791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '838'
@@ -16811,7 +16811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '839'
@@ -16831,7 +16831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '840'
@@ -16851,7 +16851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '841'
@@ -16871,7 +16871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '842'
@@ -16891,7 +16891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '843'
@@ -16911,7 +16911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '844'
@@ -16931,7 +16931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '845'
@@ -16951,7 +16951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '846'
@@ -16971,7 +16971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '847'
@@ -16991,7 +16991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '848'
@@ -17011,7 +17011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '849'
@@ -17031,7 +17031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '850'
@@ -17051,7 +17051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '851'
@@ -17071,7 +17071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '852'
@@ -17091,7 +17091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '853'
@@ -17111,7 +17111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '854'
@@ -17131,7 +17131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '855'
@@ -17151,7 +17151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '856'
@@ -17171,7 +17171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '857'
@@ -17191,7 +17191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '858'
@@ -17211,7 +17211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '859'
@@ -17231,7 +17231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '860'
@@ -17251,7 +17251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '861'
@@ -17271,7 +17271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '862'
@@ -17291,7 +17291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '863'
@@ -17311,7 +17311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '864'
@@ -17331,7 +17331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '865'
@@ -17351,7 +17351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '866'
@@ -17371,7 +17371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '867'
@@ -17391,7 +17391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '868'
@@ -17411,7 +17411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '869'
@@ -17431,7 +17431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '870'
@@ -17451,7 +17451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '871'
@@ -17471,7 +17471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '872'
@@ -17491,7 +17491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '873'
@@ -17511,7 +17511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '874'
@@ -17531,7 +17531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '875'
@@ -17551,7 +17551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = 'X'
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '876'
@@ -17571,7 +17571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '877'
@@ -17591,7 +17591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '878'
@@ -17611,7 +17611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '879'
@@ -17631,7 +17631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '880'
@@ -17651,7 +17651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '881'
@@ -17671,7 +17671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '882'
@@ -17691,7 +17691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '883'
@@ -17711,7 +17711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '884'
@@ -17731,7 +17731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '885'
@@ -17751,7 +17751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '886'
@@ -17771,7 +17771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '887'
@@ -17791,7 +17791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '888'
@@ -17811,7 +17811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '889'
@@ -17831,7 +17831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '890'
@@ -17851,7 +17851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '891'
@@ -17871,7 +17871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '892'
@@ -17891,7 +17891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '893'
@@ -17911,7 +17911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '894'
@@ -17931,7 +17931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '895'
@@ -17951,7 +17951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '896'
@@ -17971,7 +17971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '897'
@@ -17991,7 +17991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 120
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '898'
@@ -18011,7 +18011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '899'
@@ -18031,7 +18031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '900'
@@ -18051,7 +18051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '901'
@@ -18071,7 +18071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '902'
@@ -18091,7 +18091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '903'
@@ -18111,7 +18111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '904'
@@ -18131,7 +18131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '1'
+                    forms_switchable        = 'X'
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '905'
@@ -18151,7 +18151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '906'
@@ -18171,7 +18171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '907'
@@ -18191,7 +18191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '908'
@@ -18211,7 +18211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '909'
@@ -18231,7 +18231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '910'
@@ -18251,7 +18251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '911'
@@ -18271,7 +18271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '912'
@@ -18291,7 +18291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '913'
@@ -18311,7 +18311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '914'
@@ -18331,7 +18331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '915'
@@ -18351,7 +18351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = 'X'
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '916'
@@ -18371,7 +18371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '918'
@@ -18391,7 +18391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '919'
@@ -18411,7 +18411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '920'
@@ -18431,7 +18431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '921'
@@ -18451,7 +18451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '954'
@@ -18471,7 +18471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '955'
@@ -18491,7 +18491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '956'
@@ -18511,7 +18511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '945'
@@ -18531,7 +18531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 10
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '946'
@@ -18551,7 +18551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '970'
@@ -18571,7 +18571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '971'
@@ -18591,7 +18591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '935'
@@ -18611,7 +18611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '936'
@@ -18631,7 +18631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '937'
@@ -18651,7 +18651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 15
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '960'
@@ -18671,7 +18671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '963'
@@ -18691,7 +18691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '964'
@@ -18711,7 +18711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '965'
@@ -18731,7 +18731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1003'
@@ -18751,7 +18751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1004'
@@ -18771,7 +18771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1005'
@@ -18791,7 +18791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '940'
@@ -18811,7 +18811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '941'
@@ -18831,7 +18831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '957'
@@ -18851,7 +18851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '958'
@@ -18871,7 +18871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '972'
@@ -18891,7 +18891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '973'
@@ -18911,7 +18911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '968'
@@ -18931,7 +18931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '969'
@@ -18951,7 +18951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '974'
@@ -18971,7 +18971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '975'
@@ -18991,7 +18991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1006'
@@ -19011,7 +19011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1007'
@@ -19031,7 +19031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '962'
@@ -19051,7 +19051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '938'
@@ -19071,7 +19071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '939'
@@ -19091,7 +19091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '922'
@@ -19111,7 +19111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '923'
@@ -19131,7 +19131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '926'
@@ -19151,7 +19151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '927'
@@ -19171,7 +19171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1000'
@@ -19191,7 +19191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1001'
@@ -19211,7 +19211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1002'
@@ -19231,7 +19231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '929'
@@ -19251,7 +19251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '930'
@@ -19271,7 +19271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '959'
@@ -19291,7 +19291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '933'
@@ -19311,7 +19311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '934'
@@ -19331,7 +19331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '942'
@@ -19351,7 +19351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '943'
@@ -19371,7 +19371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '953'
@@ -19391,7 +19391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '944'
@@ -19411,7 +19411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '966'
@@ -19431,7 +19431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '967'
@@ -19451,7 +19451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '924'
@@ -19471,7 +19471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '925'
@@ -19491,7 +19491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '961'
@@ -19511,7 +19511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '947'
@@ -19531,7 +19531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 25
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '948'
@@ -19551,7 +19551,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '3'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '932'
@@ -19571,7 +19571,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '931'
@@ -19591,7 +19591,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 35
                     has_gender_differences  = ''
                     growth_rate_id          = '4'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '952'
@@ -19611,7 +19611,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1010'
@@ -19631,7 +19631,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1009'
@@ -19651,7 +19651,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '928'
@@ -19671,7 +19671,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '917'
@@ -19691,7 +19691,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1008'
@@ -19711,7 +19711,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '978'
@@ -19731,7 +19731,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '982'
@@ -19751,7 +19751,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '979'
@@ -19771,7 +19771,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '983'
@@ -19791,7 +19791,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '984'
@@ -19811,7 +19811,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '981'
@@ -19831,7 +19831,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '986'
@@ -19851,7 +19851,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '992'
@@ -19871,7 +19871,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '989'
@@ -19891,7 +19891,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '990'
@@ -19911,7 +19911,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '988'
@@ -19931,7 +19931,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '991'
@@ -19951,7 +19951,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '949'
@@ -19971,7 +19971,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '950'
@@ -19991,7 +19991,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 40
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '951'
@@ -20011,7 +20011,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '976'
@@ -20031,7 +20031,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '977'
@@ -20051,7 +20051,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '996'
@@ -20071,7 +20071,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '995'
@@ -20091,7 +20091,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '994'
@@ -20111,7 +20111,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '997'
@@ -20131,7 +20131,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '985'
@@ -20151,7 +20151,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '993'
@@ -20171,7 +20171,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '998'
@@ -20191,7 +20191,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '999'
@@ -20211,7 +20211,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1011'
@@ -20231,7 +20231,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1012'
@@ -20251,7 +20251,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1013'
@@ -20271,7 +20271,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1014'
@@ -20291,7 +20291,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1015'
@@ -20311,7 +20311,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '1016'
@@ -20331,7 +20331,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '1017'
@@ -20351,7 +20351,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '1018'
@@ -20371,7 +20371,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '1019'
@@ -20391,7 +20391,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 30
                     has_gender_differences  = ''
                     growth_rate_id          = '2'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1020'
@@ -20411,7 +20411,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '5'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1021'
@@ -20431,7 +20431,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1022'
@@ -20451,7 +20451,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1023'
@@ -20471,7 +20471,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1024'
@@ -20491,7 +20491,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 50
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = ''
                     species_order           = '1025'
@@ -20511,7 +20511,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 5
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = 'X'
                     is_mythical             = ''
                     species_order           = '1026'
@@ -20531,7 +20531,7 @@ CLASS zcl_pk_species_gen IMPLEMENTATION.
                     hatch_counter           = 20
                     has_gender_differences  = ''
                     growth_rate_id          = '1'
-                    forms_switchable        = '0'
+                    forms_switchable        = ''
                     is_legendary            = ''
                     is_mythical             = 'X'
                     species_order           = '1027'

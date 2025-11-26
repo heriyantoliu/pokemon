@@ -2,10 +2,11 @@
 
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 
-@EndUserText.label: 'Region'
+@EndUserText.label: 'Color'
 
 @Metadata.ignorePropagatedAnnotations: true
 
+@ObjectModel.dataCategory: #TEXT
 @ObjectModel.representativeKey: 'ID'
 @ObjectModel.semanticKey: [ 'ID' ]
 
@@ -16,5 +17,8 @@ define view entity ZPK_I_Color
 {
   key cast(substring(value_low, 1, 2) as zde_pk_color_id) as ID,
 
-      text                                             as Identifier
-} where language = $session.system_language
+      @Semantics.text: true
+      text                                                as Identifier
+}
+
+where language = $session.system_language

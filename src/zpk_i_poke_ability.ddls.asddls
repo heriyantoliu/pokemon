@@ -9,6 +9,7 @@
 @ObjectModel.representativeKey: 'AbilityID'
 @ObjectModel.semanticKey: [ 'PokemonID', 'AbilityID' ]
 
+@Metadata.allowExtensions: true
 @VDM.viewType: #BASIC
 
 define view entity ZPK_I_Poke_Ability
@@ -21,7 +22,7 @@ define view entity ZPK_I_Poke_Ability
       @ObjectModel.foreignKey.association: '_Pokemon'
   key pokemon_id as PokemonID,
 
-      @ObjectModel.foreignKey.association: '_Ability'
+      @ObjectModel.foreignKey.association: '_Ability'      
   key ability_id as AbilityID,
 
       is_hidden  as IsHidden,
