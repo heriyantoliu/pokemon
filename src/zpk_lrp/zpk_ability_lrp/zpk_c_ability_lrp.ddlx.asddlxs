@@ -23,7 +23,8 @@ annotate entity ZPK_C_Ability_LRP
   ID;
 
   @EndUserText.label: 'Ability'
-  @UI.lineItem: [ { position: 10 } ]
+  @UI.lineItem: [ { position: 10 }, { type: #FOR_INTENT_BASED_NAVIGATION, semanticObjectAction: 'display' } ]
+  @Consumption.semanticObject: 'zpk_ability'  
   Identifier;
 
   @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_GENERATION_VH', element: 'ID' } } ]

@@ -20,7 +20,7 @@ provider contract transactional_query
 
       @Semantics.imageUrl: true
       _Pokemon.PokemonSprites as PokemonSprites,
-
+            
       _Pokemon.Identifier     as PokemonName,
 
       /* Associations */

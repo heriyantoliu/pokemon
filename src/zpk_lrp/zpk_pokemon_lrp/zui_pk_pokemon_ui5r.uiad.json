@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Pokemon List",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Pokemon"
+  },
+  "ui5AppDetails": {
+    "appId": "com.pk.zuipkpokemon"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_39BBF2A5FBAA55FC8A852BBF2B398A571DE5C078_TM",
+    "semanticObject": "zpk_pokemon",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_39BBF2A5FBAA55FC8A852BBF2B398A571DE5C078_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Pokemon",
+        "subtitle": "Pokemon"
+      }
+    }
+  ]
+}

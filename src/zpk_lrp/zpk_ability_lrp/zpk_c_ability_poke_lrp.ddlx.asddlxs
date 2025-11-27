@@ -5,9 +5,18 @@ annotate entity ZPK_C_Ability_Poke_LRP
   @UI.lineItem: [{ position: 10 }]
   @EndUserText.label: 'Sprites'
   PokemonSprites;
-
-  @UI.lineItem: [{ position: 20 }]
-  @EndUserText.label: 'Pokemon'
+  
+  
+  @EndUserText.label: 'Pokemon' 
+  @UI.lineItem: [{ position: 20 }, { type: #FOR_INTENT_BASED_NAVIGATION, semanticObjectAction: 'display' }]
+  @Consumption.semanticObject: 'zpk_pokemon'
+  @Consumption.semanticObjectMapping.additionalBinding: [
+  { element: 'ID', localElement: 'PokemonID' }
+  ]
   PokemonName;
+  
+  
+//  @EndUserText.label: 'ID'
+//  PokemonID;
   
 }

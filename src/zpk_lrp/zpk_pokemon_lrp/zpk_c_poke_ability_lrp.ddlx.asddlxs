@@ -3,10 +3,10 @@ annotate entity ZPK_C_Poke_Ability_LRP
   with 
 {
   @EndUserText.label: 'Ability'
-//  @UI.lineItem: [{ position: 10 }, { type: #FOR_INTENT_BASED_NAVIGATION, semanticObject: 'ZPK_ABILITY', semanticObjectAction: 'DISPLAY', value: 'AbilityID' }]
-//  @UI.identification: [ { type: #FOR_INTENT_BASED_NAVIGATION, semanticObject: 'ZPK_ABILITY', semanticObjectAction: 'DISPLAY' } ]
-  @UI.textArrangement: #TEXT_ONLY
-  
+  @UI.lineItem: [{ position: 10 }, { type: #FOR_INTENT_BASED_NAVIGATION, semanticObjectAction: 'display' }]
+  @Consumption.semanticObject: 'zpk_ability'
+  @Consumption.semanticObjectMapping.additionalBinding: [{ element: 'ID', localElement: 'AbilityID' }]  
+  @UI.textArrangement: #TEXT_ONLY  
   AbilityID;
   @EndUserText.label: 'Is Hidden'
   @UI.lineItem: [{ position: 20 }]
