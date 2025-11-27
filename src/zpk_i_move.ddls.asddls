@@ -18,6 +18,8 @@ define view entity ZPK_I_Move
   association [1..1] to ZPK_I_Type                 as _Type                 on $projection.TypeID = _Type.ID
   association [1..1] to ZPK_I_Contest_Effect       as _Contest_Effect       on $projection.ContestEffectID = _Contest_Effect.ID
   association [1..1] to ZPK_I_Super_Contest_Effect as _Super_Contest_Effect on $projection.SuperContestEffectID = _Super_Contest_Effect.ID
+  association [1..1] to ZPK_I_Damage_Class         as _Damage_Class         on $projection.DamageClassID = _Damage_Class.ID
+  association [1..1] to ZPK_I_Target as _Target on $projection.TargetID = _Target.ID
 
 {
       @ObjectModel.text.element: [ 'Identifier' ]
@@ -35,7 +37,7 @@ define view entity ZPK_I_Move
       power                   as Power,
       pp                      as PP,
       accuracy                as Accuracy,
-      priority                as Priority,
+      priority                as Priority,      
       target_id               as TargetID,
       damage_class_id         as DamageClassID,
       effect_id               as EffectID,
@@ -51,5 +53,7 @@ define view entity ZPK_I_Move
       _Generation,
       _Type,
       _Contest_Effect,
-      _Super_Contest_Effect
+      _Super_Contest_Effect,
+      _Damage_Class,
+      _Target
 }

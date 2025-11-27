@@ -6,7 +6,9 @@
 "ZPK_GENERATION"
 ],
 "ASSOCIATED":
-[],
+[
+"ZPK_I_REGION"
+],
 "BASE":
 [],
 "ANNO_REF":

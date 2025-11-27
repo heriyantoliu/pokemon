@@ -1,0 +1,6 @@
+@EndUserText.label: 'Move (List Report Page)'
+@ObjectModel.leadingEntity.name: 'ZPK_C_MOVE_LRP'
+define service ZPK_Move_LRP {
+  expose ZPK_C_Move_LRP      as Move;
+  expose ZPK_C_Move_Poke_LRP as MovePoke;
+}

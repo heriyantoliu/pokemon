@@ -1,0 +1,145 @@
+@Metadata.layer: #CUSTOMER
+
+@Search.searchable: true
+
+@UI.headerInfo: { typeName: 'Move',
+                  typeNamePlural: 'Moves',
+                  title: { value: 'Identifier', type: #STANDARD } }
+
+annotate entity ZPK_C_Move_LRP
+  with
+
+{
+  @UI.dataPoint.title: 'ID'
+  @UI.facet: [ { id: 'IDDataPointFacet',
+                 position: 10,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'ID' },
+               { id: 'GenerationDataPointFacet',
+                 position: 20,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'GenerationID' },
+               { id: 'TypeDataPointFacet',
+                 position: 30,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'TypeID' },
+               { id: 'DamageClassDataPointFacet',
+                 position: 40,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'DamageClassID' },
+               { id: 'GeneralInfoCollectionFacet', label: 'General Info', type: #COLLECTION, purpose: #STANDARD },
+               { id: 'PowerAccuracyFieldGroupReferenceFacet',
+                 label: 'Power & Accuracy',
+                 position: 10,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'GeneralInfoCollectionFacet',
+                 targetQualifier: 'PowerAccuracyFieldGroup' },
+               { id: 'MoveUsageFieldGroupReferenceFacet',
+                 label: 'Move Usage',
+                 position: 20,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'GeneralInfoCollectionFacet',
+                 targetQualifier: 'MoveUsageFieldGroup' },
+               { id: 'MoveEffectFieldGroupReferenceFacet',
+                 label: 'Move Effect',
+                 position: 30,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'GeneralInfoCollectionFacet',
+                 targetQualifier: 'MoveEffectFieldGroup' },
+               { id: 'TargetInfoFieldGroupReferenceFacet',
+                 label: 'Target Info',
+                 position: 40,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'GeneralInfoCollectionFacet',
+                 targetQualifier: 'TargetInfoFieldGroup' },
+               { id: 'TechnicalMetadataFieldGroupReferenceFacet',
+                 label: 'Technical Metadata',
+                 position: 50,
+                 type: #FIELDGROUP_REFERENCE,
+                 purpose: #STANDARD,
+                 parentId: 'GeneralInfoCollectionFacet',
+                 targetQualifier: 'TechnicalMetadataFieldGroup' },
+               { id: 'PokemonLineItemReferenceFacet',
+                 label: 'Pokemon',
+                 position: 20,
+                 type: #LINEITEM_REFERENCE,
+                 purpose: #STANDARD,
+                 targetElement: '_Move_Poke' } ]
+  ID;
+
+  @EndUserText.label: 'Move'
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  @Search.ranking: #HIGH
+  @UI.lineItem: [ { position: 10 } ]
+  Identifier;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_Generation_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Generation'
+  @UI.dataPoint.title: 'Generation'
+  @UI.lineItem: [ { position: 20 } ]
+  @UI.selectionField: [ { position: 10 } ]
+  GenerationID;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_Type_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Type'
+  @UI.dataPoint.title: 'Type'
+  @UI.lineItem: [ { position: 30 } ]
+  @UI.selectionField: [ { position: 20 } ]
+  TypeID;
+
+  @UI.fieldGroup: [ { qualifier: 'PowerAccuracyFieldGroup', position: 10, label: 'Power' } ]
+  Power;
+
+  @UI.fieldGroup: [ { qualifier: 'MoveUsageFieldGroup', position: 10, label: 'PP' } ]
+  PP;
+
+  @UI.fieldGroup: [ { qualifier: 'PowerAccuracyFieldGroup', position: 20, label: 'Accuracy' } ]
+  Accuracy;
+
+  @UI.fieldGroup: [ { qualifier: 'PowerAccuracyFieldGroup', position: 30, label: 'Priority' } ]
+  Priority;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_Target_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Target'
+  @UI.fieldGroup: [ { qualifier: 'TargetInfoFieldGroup', position: 10, label: 'Target' } ]
+  @UI.lineItem: [ { position: 40 } ]
+  @UI.selectionField: [ { position: 30 } ]
+  TargetID;
+
+  @Consumption.valueHelpDefinition: [ { entity: { name: 'ZPK_C_Damage_Class_VH', element: 'ID' } } ]
+  @EndUserText.label: 'Damage Class'
+  @UI.dataPoint.title: 'Damage Class'
+  @UI.lineItem: [ { position: 50 } ]
+  @UI.selectionField: [ { position: 40 } ]
+  DamageClassID;
+
+  @UI.fieldGroup: [ { qualifier: 'MoveEffectFieldGroup', position: 10, label: 'Effect ID' } ]
+  EffectID;
+
+  @UI.fieldGroup: [ { qualifier: 'MoveEffectFieldGroup', position: 20, label: 'Effect Chance' } ]
+  EffectChance;
+
+  @UI.fieldGroup: [ { qualifier: 'TechnicalMetadataFieldGroup', position: 10, label: 'Contest Type' } ]
+  ContestTypeID;
+
+  @UI.fieldGroup: [ { qualifier: 'TechnicalMetadataFieldGroup', position: 20, label: 'Contest Effect' } ]
+  ContestEffectID;
+
+  @UI.fieldGroup: [ { qualifier: 'TechnicalMetadataFieldGroup', position: 30, label: 'Special Contest Effect' } ]
+  SuperContestEffectID;
+  /* Associations */
+  //  _Contest_Effect;
+  //  _Generation;
+  //  _Move_Poke;
+  //  _Super_Contest_Effect;
+  //  _Type;
+}

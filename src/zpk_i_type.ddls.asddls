@@ -14,7 +14,8 @@
 define view entity ZPK_I_Type
   as select from zpk_type
 
-  association [1..1] to ZPK_I_Generation as _Generation on $projection.GenerationID = _Generation.ID
+  association [1..1] to ZPK_I_Generation   as _Generation  on $projection.GenerationID = _Generation.ID
+  association [1..1] to ZPK_I_Damage_Class as _DamageClass on $projection.DamageClassID = _DamageClass.ID
 
 {
       @ObjectModel.text.element: [ 'Identifier' ]
@@ -28,5 +29,6 @@ define view entity ZPK_I_Type
 
       damage_class_id as DamageClassID,
 
-      _Generation
+      _Generation,
+      _DamageClass
 }

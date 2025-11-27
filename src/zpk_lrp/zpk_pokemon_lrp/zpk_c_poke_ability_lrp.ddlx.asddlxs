@@ -1,22 +1,31 @@
 @Metadata.layer: #CUSTOMER
+
+@Search.searchable: true
+
 annotate entity ZPK_C_Poke_Ability_LRP
-  with 
+  with
+
 {
-  @EndUserText.label: 'Ability'
-  @UI.lineItem: [{ position: 10 }, { type: #FOR_INTENT_BASED_NAVIGATION, semanticObjectAction: 'display' }]
   @Consumption.semanticObject: 'zpk_ability'
-  @Consumption.semanticObjectMapping.additionalBinding: [{ element: 'ID', localElement: 'AbilityID' }]  
-  @UI.textArrangement: #TEXT_ONLY  
+  @Consumption.semanticObjectMapping.additionalBinding: [ { element: 'ID', localElement: 'AbilityID' } ]
+  @EndUserText.label: 'Ability'
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  @Search.ranking: #HIGH
+  @UI.lineItem: [ { position: 10 },
+                  { type: #FOR_INTENT_BASED_NAVIGATION, semanticObjectAction: 'display' } ]
+  @UI.textArrangement: #TEXT_ONLY
   AbilityID;
+
   @EndUserText.label: 'Is Hidden'
-  @UI.lineItem: [{ position: 20 }]
+  @UI.lineItem: [ { position: 20 } ]
   IsHidden;
+
   @EndUserText.label: 'Slot'
-  @UI.lineItem: [{ position: 30 }]
+  @UI.lineItem: [ { position: 30 } ]
   Slot;
 //  /* Associations */
-//  _Ability;
-//  _IsHidden;
-//  _Pokemon;
-  
+  //  _Ability;
+  //  _IsHidden;
+  //  _Pokemon;
 }

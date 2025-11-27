@@ -11,23 +11,28 @@ annotate entity ZPK_C_Pokemon_LRP
   with
 
 {
-  @UI.facet: [ { id: 'HeightDataPointFacet',
+  @UI.facet: [ { id: 'IDDataPointFacet',
                  position: 10,
+                 type: #DATAPOINT_REFERENCE,
+                 purpose: #HEADER,
+                 targetQualifier: 'ID' },
+               { id: 'HeightDataPointFacet',
+                 position: 20,
                  type: #DATAPOINT_REFERENCE,
                  purpose: #HEADER,
                  targetQualifier: 'Height' },
                { id: 'WeightDataPointFacet',
-                 position: 20,
+                 position: 30,
                  type: #DATAPOINT_REFERENCE,
                  purpose: #HEADER,
                  targetQualifier: 'Weight' },
                { id: 'BaseExperienceDataPointFacet',
-                 position: 30,
+                 position: 40,
                  type: #DATAPOINT_REFERENCE,
                  purpose: #HEADER,
                  targetQualifier: 'BaseExperience' },
                { id: 'IsDefaultDataPointFacet',
-                 position: 40,
+                 position: 50,
                  type: #DATAPOINT_REFERENCE,
                  purpose: #HEADER,
                  targetQualifier: 'IsDefault' },
@@ -78,7 +83,7 @@ annotate entity ZPK_C_Pokemon_LRP
                  position: 30,
                  type: #LINEITEM_REFERENCE,
                  purpose: #STANDARD,
-                 targetElement: '_Poke_Stats' },    
+                 targetElement: '_Poke_Stats' },
                { id: 'PokemonAbilityLineItemReferenceFacet',
                  label: 'Ability',
                  position: 40,
@@ -91,7 +96,7 @@ annotate entity ZPK_C_Pokemon_LRP
                  type: #LINEITEM_REFERENCE,
                  purpose: #STANDARD,
                  targetElement: '_Poke_Move' } ]
-  @UI.hidden: true
+  @UI.dataPoint.title: 'ID'
   ID;
 
   @EndUserText.label: 'Pokemon'

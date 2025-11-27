@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "Move List",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Pokemon"
+  },
+  "ui5AppDetails": {
+    "appId": "com.pk.zuipkmove"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_504AC69C401D1972EC07B87AAAFE88580BCCF02C_TM",
+    "semanticObject": "zpk_move",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_504AC69C401D1972EC07B87AAAFE88580BCCF02C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Pokemon",
+        "subtitle": "Move"
+      }
+    }
+  ]
+}

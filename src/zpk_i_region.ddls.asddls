@@ -14,7 +14,11 @@ define view entity ZPK_I_Region
                    p_domain_name : 'ZDO_PK_REGION_ID')
 
 {
+      @ObjectModel.text.element: [ 'Identifier' ]
   key cast(substring(value_low, 1, 2) as zde_pk_region_id) as ID,
 
-      text                                             as Identifier
-} where language = $session.system_language
+      @Semantics.text: true
+      text                                                 as Identifier
+}
+
+where language = $session.system_language

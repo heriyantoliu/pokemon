@@ -6,27 +6,31 @@ annotate entity ZPK_C_Poke_Move_LRP
   with
 
 {
-  @UI.lineItem: [ { position: 10 } ]
+  @Consumption.semanticObject: 'zpk_move'
+  @Consumption.semanticObjectMapping.additionalBinding: [ { element: 'ID', localElement: 'MoveID' } ]
   @EndUserText.label: 'Move'
+  @UI.lineItem: [ { position: 10 },
+                  { type: #FOR_INTENT_BASED_NAVIGATION, semanticObjectAction: 'display' } ]
+  @UI.textArrangement: #TEXT_ONLY
   MoveID;
 
-  @UI.lineItem: [ { position: 20 } ]
   @EndUserText.label: 'Version Group'
+  @UI.lineItem: [ { position: 20 } ]
   VersionGroupID;
 
-  @UI.lineItem: [ { position: 30 } ]
   @EndUserText.label: 'Move Method'
+  @UI.lineItem: [ { position: 30 } ]
   MoveMethodID;
 
-  @UI.lineItem: [ { position: 40 } ]
   @EndUserText.label: 'Move Level'
+  @UI.lineItem: [ { position: 40 } ]
   MoveLevel;
 
 //  @UI.lineItem: [ { position: 40 } ]
-//  MoveOrder;
+  //  MoveOrder;
 
-  @UI.lineItem: [ { position: 50 } ]
   @EndUserText.label: 'Mastery'
+  @UI.lineItem: [ { position: 50 } ]
   Mastery;
 
   @Search.defaultSearchElement: true

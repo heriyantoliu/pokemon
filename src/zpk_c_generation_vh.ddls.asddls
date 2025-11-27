@@ -20,11 +20,14 @@ define view entity ZPK_C_Generation_VH
 {
       @ObjectModel.text.element: [ 'Identifier' ]      
   key ID,
-
+      @ObjectModel.text.association: '_Region'
+      @UI.textArrangement: #TEXT_FIRST
       MainRegionID,
 
       @Search.defaultSearchElement: true
       @Search.fuzzinessThreshold: 0.8
       @Semantics.text: true
-      Identifier
+      Identifier,
+      
+      _Region
 }

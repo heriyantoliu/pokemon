@@ -14,7 +14,11 @@ define view entity ZPK_I_Damage_Class
                    p_domain_name : 'ZDO_PK_DAMAGE_CLASS_ID')
 
 {
+      @ObjectModel.text.element: [ 'Identifier' ]
   key cast(substring(value_low, 1, 1) as zde_pk_damage_class_id) as ID,
 
-      text                                             as Identifier
-} where language = $session.system_language
+      @Semantics.text: true
+      text                                                       as Identifier
+}
+
+where language = $session.system_language

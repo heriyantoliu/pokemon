@@ -9,6 +9,7 @@ annotate entity ZPK_C_Poke_Type_LRP
   //  PokemonID;
   @EndUserText.label: 'Type'
   @UI.lineItem: [ { position: 10 } ]
+  @UI.textArrangement: #TEXT_ONLY
   TypeID;
 
   @EndUserText.label: 'Slot'
