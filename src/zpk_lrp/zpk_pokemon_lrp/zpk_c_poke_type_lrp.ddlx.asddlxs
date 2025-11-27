@@ -1,0 +1,25 @@
+@Metadata.layer: #CUSTOMER
+
+@Search.searchable: true
+
+annotate entity ZPK_C_Poke_Type_LRP
+  with
+
+{
+  //  PokemonID;
+  @EndUserText.label: 'Type'
+  @UI.lineItem: [ { position: 10 } ]
+  TypeID;
+
+  @EndUserText.label: 'Slot'
+  @UI.lineItem: [ { position: 20 } ]
+  Slot;
+
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  @Search.ranking: #HIGH
+  TypeDescription;
+  /* Associations */
+  //  _Pokemon;
+  //  _Type;
+}

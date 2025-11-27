@@ -12,10 +12,15 @@ define view entity ZPK_C_Poke_Stats_LRP
 
 {
   key PokemonID,
+
+      @ObjectModel.text.element: [ 'StatDescription' ]
   key StatID,
 
       BaseStat,
       Effort,
+
+      @Semantics.text: true
+      _Stat.Identifier as StatDescription,
 
       /* Associations */
       _Pokemon : redirected to parent ZPK_C_Pokemon_LRP,

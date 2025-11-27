@@ -1,0 +1,24 @@
+@Metadata.layer: #CUSTOMER
+@Search.searchable: true
+annotate entity ZPK_C_Poke_Stats_LRP
+  with 
+{
+//  PokemonID;
+  @UI.lineItem: [{ position: 10 }]
+  @EndUserText.label: 'Stat'
+  StatID;
+  @UI.lineItem: [{ position: 20 }]
+  @EndUserText.label: 'Base Stats'
+  BaseStat;
+  @UI.lineItem: [{ position: 30 }]
+  @EndUserText.label: 'Effort'
+  Effort;
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  @Search.ranking: #HIGH
+  StatDescription;
+  /* Associations */
+//  _Pokemon;
+//  _Stat;
+  
+}

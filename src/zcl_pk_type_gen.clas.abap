@@ -2108,27 +2108,27 @@ CLASS zcl_pk_type_gen IMPLEMENTATION.
   METHOD generate_type.
     DATA: lt_type TYPE TABLE OF zpk_type.
 
-    INSERT VALUE #( id = '1' identifier = 'normal' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '2' identifier = 'fighting' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '3' identifier = 'flying' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '4' identifier = 'poison' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '5' identifier = 'ground' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '6' identifier = 'rock' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '7' identifier = 'bug' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '8' identifier = 'ghost' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '9' identifier = 'steel' generation_id = '2' damage_class_id = '2' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '10' identifier = 'fire' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '11' identifier = 'water' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '12' identifier = 'grass' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '13' identifier = 'electric' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '14' identifier = 'psychic' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '15' identifier = 'ice' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '16' identifier = 'dragon' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '17' identifier = 'dark' generation_id = '2' damage_class_id = '3' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '18' identifier = 'fairy' generation_id = '6' damage_class_id = '' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '19' identifier = 'stellar' generation_id = '9' damage_class_id = '' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '10001' identifier = 'unknown' generation_id = '2' damage_class_id = '' ) INTO TABLE lt_type.
-    INSERT VALUE #( id = '10002' identifier = 'shadow' generation_id = '3' damage_class_id = '' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '1' identifier = 'Normal' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '2' identifier = 'Fighting' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '3' identifier = 'Flying' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '4' identifier = 'Poison' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '5' identifier = 'Ground' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '6' identifier = 'Rock' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '7' identifier = 'Bug' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '8' identifier = 'Ghost' generation_id = '1' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '9' identifier = 'Steel' generation_id = '2' damage_class_id = '2' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '10' identifier = 'Fire' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '11' identifier = 'Water' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '12' identifier = 'Grass' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '13' identifier = 'Electric' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '14' identifier = 'Psychic' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '15' identifier = 'Ice' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '16' identifier = 'Dragon' generation_id = '1' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '17' identifier = 'Dark' generation_id = '2' damage_class_id = '3' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '18' identifier = 'Fairy' generation_id = '6' damage_class_id = '' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '19' identifier = 'Stellar' generation_id = '9' damage_class_id = '' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '10001' identifier = 'Unknown' generation_id = '2' damage_class_id = '' ) INTO TABLE lt_type.
+    INSERT VALUE #( id = '10002' identifier = 'Shadow' generation_id = '3' damage_class_id = '' ) INTO TABLE lt_type.
 
 
     MODIFY zpk_type FROM TABLE @lt_type.

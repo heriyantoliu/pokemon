@@ -7999,7 +7999,7 @@ CLASS zcl_pk_stat_gen IMPLEMENTATION.
     INSERT VALUE #( id = '2' damage_class_id = '2' identifier = 'Attack' is_battle_only = '' game_index = '2' ) INTO TABLE lt_stat.
     INSERT VALUE #( id = '3' damage_class_id = '2' identifier = 'Defense' is_battle_only = '' game_index = '3' ) INTO TABLE lt_stat.
     INSERT VALUE #( id = '4' damage_class_id = '3' identifier = 'Special Attack' is_battle_only = '' game_index = '5' ) INTO TABLE lt_stat.
-    INSERT VALUE #( id = '5' damage_class_id = '3' identifier = 'SpecialDefense' is_battle_only = '' game_index = '6' ) INTO TABLE lt_stat.
+    INSERT VALUE #( id = '5' damage_class_id = '3' identifier = 'Special Defense' is_battle_only = '' game_index = '6' ) INTO TABLE lt_stat.
     INSERT VALUE #( id = '6' damage_class_id = '' identifier = 'Speed' is_battle_only = '' game_index = '4' ) INTO TABLE lt_stat.
     INSERT VALUE #( id = '7' damage_class_id = '' identifier = 'Accuracy' is_battle_only = 'X' game_index = '' ) INTO TABLE lt_stat.
     INSERT VALUE #( id = '8' damage_class_id = '' identifier = 'Evasion' is_battle_only = 'X' game_index = '' ) INTO TABLE lt_stat.

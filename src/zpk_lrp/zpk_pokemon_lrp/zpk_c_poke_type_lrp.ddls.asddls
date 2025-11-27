@@ -12,9 +12,14 @@ define view entity ZPK_C_Poke_Type_LRP
 
 {
   key PokemonID,
+
+      @ObjectModel.text.element: [ 'TypeDescription' ]
   key TypeID,
 
       Slot,
+
+      @Semantics.text: true
+      _Type.Identifier as TypeDescription,
 
       /* Associations */
       _Pokemon : redirected to parent ZPK_C_Pokemon_LRP,

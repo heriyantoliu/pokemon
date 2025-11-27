@@ -3,6 +3,7 @@
 {
 "FROM":
 [
+"ZPK_I_STAT",
 "ZPK_R_POKE_STATS"
 ],
 "ASSOCIATED":

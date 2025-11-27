@@ -3,6 +3,7 @@
 {
 "FROM":
 [
+"ZPK_I_TYPE",
 "ZPK_R_POKE_TYPE"
 ],
 "ASSOCIATED":
