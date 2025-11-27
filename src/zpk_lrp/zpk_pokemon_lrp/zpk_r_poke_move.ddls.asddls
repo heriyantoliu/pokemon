@@ -26,5 +26,6 @@ define view entity ZPK_R_Poke_Move
       /* Associations */
       _Move,
       _Pokemon,
-      _Version_Group
+      _Version_Group,
+      _Move_Method
 }

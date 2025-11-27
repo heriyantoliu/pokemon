@@ -69,9 +69,16 @@ annotate entity ZPK_C_Pokemon_LRP
                  targetQualifier: 'FormMetadataFieldGroup' },
                { id: 'PokemonAbilityLineItemReferenceFacet',
                  label: 'Ability',
+                 position: 20,
                  type: #LINEITEM_REFERENCE,
                  purpose: #STANDARD,
-                 targetElement: '_Poke_Ability' } ]
+                 targetElement: '_Poke_Ability' },
+               { id: 'PokemonMoveLineItemReferenceFacet',
+                 label: 'Move',
+                 position: 30,
+                 type: #LINEITEM_REFERENCE,
+                 purpose: #STANDARD,
+                 targetElement: '_Poke_Move' } ]
   @UI.hidden: true
   ID;
 

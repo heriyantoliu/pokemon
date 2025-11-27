@@ -1,0 +1,40 @@
+@Metadata.layer: #CUSTOMER
+
+@Search.searchable: true
+
+annotate entity ZPK_C_Poke_Move_LRP
+  with
+
+{
+  @UI.lineItem: [ { position: 10 } ]
+  @EndUserText.label: 'Move'
+  MoveID;
+
+  @UI.lineItem: [ { position: 20 } ]
+  @EndUserText.label: 'Version Group'
+  VersionGroupID;
+
+  @UI.lineItem: [ { position: 30 } ]
+  @EndUserText.label: 'Move Method'
+  MoveMethodID;
+
+  @UI.lineItem: [ { position: 40 } ]
+  @EndUserText.label: 'Move Level'
+  MoveLevel;
+
+//  @UI.lineItem: [ { position: 40 } ]
+//  MoveOrder;
+
+  @UI.lineItem: [ { position: 50 } ]
+  @EndUserText.label: 'Mastery'
+  Mastery;
+
+  @Search.defaultSearchElement: true
+  @Search.fuzzinessThreshold: 0.8
+  @Search.ranking: #HIGH
+  MoveDescription;
+  /* Associations */
+  //  _Move;
+  //  _Pokemon;
+  //  _Version_Group;
+}

@@ -12,17 +12,33 @@ define view entity ZPK_C_Poke_Move_LRP
 
 {
   key PokemonID,
+
+      @ObjectModel.text.element: [ 'VersionGroupDescription' ]
   key VersionGroupID,
+
+      @ObjectModel.text.element: [ 'MoveDescription' ]
   key MoveID,
 
+      @ObjectModel.text.element: [ 'MoveMethodDescription' ]
       MoveMethodID,
+
       MoveLevel,
       MoveOrder,
       Mastery,
+
+      @Semantics.text: true
+      _Move.Identifier          as MoveDescription,
+
+      @Semantics.text: true
+      _Version_Group.Identifier as VersionGroupDescription,
+
+      @Semantics.text: true
+      _Move_Method.Identifier   as MoveMethodDescription,
 
       /* Associations */
       _Move,
       _Pokemon : redirected to parent ZPK_C_Pokemon_LRP,
 
-      _Version_Group
+      _Version_Group,
+      _Move_Method
 }
