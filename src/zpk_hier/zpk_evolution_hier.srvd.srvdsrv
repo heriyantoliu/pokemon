@@ -1,0 +1,5 @@
+@EndUserText.label: 'Pokemon Evolution (Hierarchy)'
+@ObjectModel.leadingEntity.name: 'ZPK_C_Poke_Evo_Rel'
+define service ZPK_Evolution_HIER {
+  expose ZPK_C_Poke_Evo_Rel as Pokemon;
+}

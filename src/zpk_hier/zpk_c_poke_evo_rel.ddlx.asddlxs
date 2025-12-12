@@ -1,0 +1,8 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZPK_C_Poke_Evo_Rel
+  with 
+{ 
+  @UI.lineItem: [{ position: 10 }]
+  PokemonName;
+  
+}
